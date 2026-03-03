@@ -1,5 +1,5 @@
 <!--
-PROMPT/KONTEXT (wklejony zgodnie z Twoją prośbą — jako „kontekst” na początku pliku):
+PROMPT/KONTEXT (oryginalny — wymagany na początku pliku):
 
 Przeczytaj najpierw pliki:
 https://cutelittlegoat.github.io/ChatGPT_Backup/Scenariusz_Rico/Backup_Rico.html
@@ -11,20 +11,17 @@ Potrzebuję Twojej pomocy w pisaniu tego scenariusza. Możesz dodawać własne u
 Następnie przygotuj nowe pliki HTML. Przygotuj je jako niezależne bloki kodu gotowe do wklejenia.
 Pierwszy plik ma zawierać zmodyfikowany i rozszerzony scenariusz. Nazwij go "Scenariusz_01_2026-03-03.html"
 Kod pliku HTML musi zawierać ten prompt na początku, żeby był kontekst.
-Drugi plik ma zawierać wszystkie handouty. Fragmenty dzienników, fragmenty nagrań voxów itp.
-Ma się nazywać "Handouty.html"
-Trzeci plik ma się nazywać "prompty.html" i zawierać ultra-dokładne prompty do generowania obrazków. Wszystko będzie generowane w ChatGPT. Zastosuj tagi oraz tagi negatywne. Mam kilka obrazków przedstawiających postać Rico.
-Jest on wzorowany na postaci Juan "Johnnie" Rico granego przez Casper Van Dien (...) Będę załączać obrazki (...).
+(...)
 
 Zaczynamy modyfikować scenariusz.
-1. Koncepcja Upadku Rico Pozostaje bez zmian.
-2. Stat Block – Rico (...) Statystyki nie są potrzebne (...) RICO „KURTZ” VERITUS = Rico ma na nazwisko Williams
-3. Prompt do AI – Aquila + Tzeentch (...) prompty zoptymalizowane pod ChatGPT premium (...) bez zastrzeżonych znaków towarowych (np. Aquilla) tylko opisowo
-4. Cytaty Rico (...) + "Pamiętaj komu służysz"
-5. Vox-Logi Rico (...) "Wątpliwości" zamiast "Herezja" (...)
-6. Fragmenty Pamiętnika (...) „Zmiana jest nauczycielem. A ja byłem pilnym uczniem.”
-7. Scenariusz – „Jądro Popiołu” (...) sekwencja na mostku (...) bomba cyklonowa (...) pojazd w hangarze (...)
-Etapy I–V + Finał + Dodatkowe uwagi (Gilead Primus, burze osnowy, Varonius, Flamon, zdrada zwiadowcy Astartes itd.)
+(… pełna treść poprzednich założeń …)
+
+DODATKOWY KOMENTARZ (uwagi z tej rozmowy — do wprowadzenia):
+1) Ładunek: ma być zrozumiały jako „bomba atomowa”, ostateczna zagłada; zaproponować lore-owo pasujące rozwiązanie (nie „cyklonowa w plecaku”).
+2) Zwiadowca Astartes: motywacja „logika celu”; dopisać twardy detal + fragment wypowiedzi do BG, by ich przekonać.
+3) Tzeentch: podszept Zmiany jako praktyczne zjawisko, bez magicznych fajerwerków (akceptowane).
+4) Polityka Varoniusa/Inkwizycja: nie dopisywać wyjaśnień (gracze znają z kampanii).
+5) Finał: usunąć rozpisane zakończenia/konsekwencje; scenariusz kończy się monologiem Rico i jego propozycją — reszta improwizowana na sesji.
 -->
 
 <!doctype html>
@@ -32,7 +29,7 @@ Etapy I–V + Finał + Dodatkowe uwagi (Gilead Primus, burze osnowy, Varonius, F
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Scenariusz_01_2026-03-03 — „Jądro Popiołu”</title>
+  <title>Scenariusz_01_2026-03-03 — „Jądro Popiołu” (wersja szlifowana)</title>
   <style>
     :root{
       --bg:#0b0d10; --panel:#11151b; --panel2:#0f1319;
@@ -42,16 +39,13 @@ Etapy I–V + Finał + Dodatkowe uwagi (Gilead Primus, burze osnowy, Varonius, F
       --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
     }
     html,body{background:radial-gradient(1200px 800px at 20% 0%, #101826 0%, var(--bg) 45%, #07080a 100%); color:var(--text); font-family:var(--sans); margin:0;}
-    a{color:var(--accent); text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:1100px; margin:0 auto; padding:28px 18px 64px;}
+    .wrap{max-width:1120px; margin:0 auto; padding:28px 18px 64px;}
     header{background:linear-gradient(180deg, rgba(125,211,252,.10), transparent 70%); border:1px solid var(--line); border-radius:18px; padding:18px 18px 14px; box-shadow:0 10px 30px rgba(0,0,0,.35)}
     h1{margin:0 0 8px; font-size:28px; letter-spacing:.2px}
     .sub{color:var(--muted); line-height:1.45}
-    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
-    .chip{border:1px solid var(--line); background:rgba(255,255,255,.03); padding:6px 10px; border-radius:999px; font-size:12px; color:var(--muted)}
-    .chip b{color:var(--text); font-weight:600}
     nav{margin-top:14px; display:flex; flex-wrap:wrap; gap:10px}
-    nav a{border:1px solid var(--line); background:rgba(0,0,0,.2); padding:8px 10px; border-radius:12px; font-size:13px}
+    nav a{color:var(--text); border:1px solid var(--line); background:rgba(0,0,0,.2); padding:8px 10px; border-radius:12px; font-size:13px; text-decoration:none}
+    nav a:hover{border-color:rgba(125,211,252,.45)}
     section{margin-top:18px; background:rgba(17,21,27,.75); border:1px solid var(--line); border-radius:18px; overflow:hidden}
     section > .hd{padding:14px 16px; background:linear-gradient(180deg, rgba(192,132,252,.10), rgba(0,0,0,0)); border-bottom:1px solid var(--line)}
     section > .bd{padding:14px 16px}
@@ -78,6 +72,7 @@ Etapy I–V + Finał + Dodatkowe uwagi (Gilead Primus, burze osnowy, Varonius, F
     .tag.violet{border-color:rgba(192,132,252,.35); background:rgba(192,132,252,.08)}
     .tag.red{border-color:rgba(251,113,133,.35); background:rgba(251,113,133,.08)}
     .tag.green{border-color:rgba(52,211,153,.35); background:rgba(52,211,153,.08)}
+    .mono{font-family:var(--mono)}
   </style>
 </head>
 
@@ -85,143 +80,102 @@ Etapy I–V + Finał + Dodatkowe uwagi (Gilead Primus, burze osnowy, Varonius, F
 <div class="wrap">
 
   <header>
-    <h1>„Jądro Popiołu” — finał kampanii (Gilead Primus, post-apo, klimat „Apocalypse Now”)</h1>
+    <h1>„Jądro Popiołu” — finał kampanii (Gilead Primus, post-apo, vibe „Apocalypse Now”)</h1>
     <div class="sub">
       <div><span class="tag blue">Tone</span> duszne pustkowia, radioaktywne burze, moralna erozja, charyzmatyczny „Kurtz” w mundurze Imperium.</div>
       <div><span class="tag violet">Motyw</span> „Pamiętaj komu służysz” → lojalność wobec idei Imperium vs lojalność wobec ludzi (i podszepty Zmiany).</div>
-      <div><span class="tag red">Ryzyko</span> misja „po cichu” (polityka Varoniusa, rywalka Flamon, zdrada zwiadowcy Astartes).</div>
-    </div>
-    <div class="chips">
-      <div class="chip"><b>Rico</b> = Rico Williams (dawniej służbista, dziś „korekta Imperium”)</div>
-      <div class="chip"><b>Konflikt</b> moralny / polityczny / metafizyczny</div>
-      <div class="chip"><b>Finał</b> rozmowa + wybór + konsekwencje (nie tylko walka)</div>
-      <div class="chip"><b>Środowisko</b> toksyny, chem-jeziora, promieniowanie, burze osnowy</div>
+      <div><span class="tag red">Stawka</span> ładunek „atomowy” zdolny unicestwić fundamenty miasta-ula / wymazać region z mapy.</div>
     </div>
     <nav>
       <a href="#streszczenie">Streszczenie</a>
-      <a href="#npc">Dramatis Personae</a>
+      <a href="#npc">Postacie</a>
       <a href="#mostek">Tajna misja — mostek</a>
+      <a href="#ladunek">Ładunek „atomowy”</a>
       <a href="#etapy">Etapy I–V</a>
-      <a href="#final">Finał</a>
-      <a href="#konsekwencje">Konsekwencje</a>
+      <a href="#astartes">Zwiadowca Astartes — dialog</a>
+      <a href="#final">Finał (koniec scenariusza)</a>
       <a href="#uwagi">Uwagi MG</a>
     </nav>
   </header>
 
   <section id="streszczenie">
-    <div class="hd"><h2>Streszczenie w 60 sekund</h2></div>
+    <div class="hd"><h2>Streszczenie</h2></div>
     <div class="bd">
       <div class="callout">
-        Gracze dostają od Rogue Tradera Varoniusa misję „po cichu”: odnaleźć Rico Williamsa, który porzucił rozkazy, zebrał wygnanych mutantów i prowadzi ich przez radioaktywne pustkowia ku „Nowemu Imperium”.
-        Flota Varoniusa przechwyciła fragmenty transmisji vox: <span class="quote">„Imperium was odrzuciło. Ja dam wam nowy cel.”</span>
-        Aby nie stracić twarzy przed Flamon i lokalnym Militarum, Varonius wysyła graczy lądem, uzbrojonych w ładunek zdolny zniszczyć fundamenty całego miasta-ula.
+        BG dostają od Rogue Tradera Varoniusa misję „po cichu”: odnaleźć Rico Williamsa, który porzucił rozkazy, zebrał wygnanych mutantów i prowadzi ich przez skażone pustkowia ku „Nowemu Imperium”.
+        Varonius przejął fragmenty transmisji vox: <span class="quote">„Imperium was odrzuciło. Ja dam wam nowy cel.”</span>
+        Żeby sprawa nie wypłynęła, BG mają działać lądem — z ładunkiem, który w praktyce jest „bombą atomową” dla fundamentów i infrastruktury ula.
       </div>
 
       <div class="grid two" style="margin-top:12px">
         <div class="box">
-          <div class="k">Klimat i struktura „Heart of Darkness”</div>
+          <div class="k">Konstrukcja „Heart of Darkness”</div>
           <ul class="bullets">
-            <li>Każdy kolejny „przystanek” pokazuje inną twarz Rico: najpierw jako żołnierza, potem jako prawodawcę, wreszcie jako proroka.</li>
-            <li>Coraz mniej „cywilizacji” Imperium, coraz więcej improwizowanej społeczności na końcu świata.</li>
-            <li>Niepewność: czy Rico jest zdrajcą… czy lustrem, w którym Imperium nie chce się przejrzeć?</li>
+            <li>Każdy etap = kolejna warstwa prawdy o Rico (żołnierz → prawodawca → prorok).</li>
+            <li>Coraz mniej Imperium, coraz więcej pustkowia, improwizacji i wiary w „cel”.</li>
+            <li>Tzeentch nie jest „czarami” — jest praktycznym wzorem, który zaczyna działać.</li>
           </ul>
         </div>
         <div class="box">
-          <div class="k">Najważniejsze „bity”</div>
+          <div class="k">Punkt ciężkości</div>
           <ul class="bullets">
-            <li>Scena na mostku: tajemnica + bomba + katechizm mechaniczny.</li>
-            <li>Posterunek i ciała ludzi Rico: pierwszy dowód „braterskiej” schizmy.</li>
-            <li>Osada mutantów: strach przed czystką vs nadzieja.</li>
-            <li>Zwiadowca Astartes: „dobrowolna zdrada” i zaproszenie na audiencję.</li>
-            <li>Amfiteatr odkrywki: przemowa + propozycja Rico + wybór graczy.</li>
+            <li>Finał to rozmowa i propozycja Rico.</li>
+            <li>Scenariusz celowo nie rozpisuje konsekwencji — zostawione na improwizację MG.</li>
           </ul>
         </div>
-      </div>
-
-      <div class="hr"></div>
-      <div class="muted sig">
-        Uwaga techniczna: udało mi się wczytać „Backup_Rico.html”; link do „01.md” zwrócił błąd po stronie serwera (nie dało się go pobrać w tej sesji narzędziem web).
-        Poniżej bazuję na treści backupu + Twoich aktualnych zmianach i dopisuję brakujące elementy spójne z lore Gilead oraz klimatem.
       </div>
     </div>
   </section>
 
   <section id="npc">
-    <div class="hd"><h2>Dramatis Personae (bez statystyk)</h2></div>
+    <div class="hd"><h2>Postacie (bez statystyk)</h2></div>
     <div class="bd">
       <div class="grid three">
         <div class="box">
           <h3>Rico Williams („Kurtz”)</h3>
-          <div class="muted">Dawniej: służbista, regulamin, frustracja. Dziś: spokojny, charyzmatyczny, „logiczny fanatyk” Zmiany.</div>
+          <div class="muted">Dawniej służbista; dziś spokojny reformator. Wierzy, że ratuje Imperium — i nie widzi, że jest pionkiem Zmiany.</div>
           <ul class="bullets">
-            <li>Nie mówi o Chaosie. Mówi o „wzorach”, „korekcie”, „celu”.</li>
-            <li>Wierzy, że ratuje Imperium przed nim samym.</li>
-            <li>Podszepty „Zmiany” traktuje jak własne sumienie.</li>
+            <li>Mówi o „celu”, „korekcie”, „porządku”, „drodze”.</li>
+            <li>Nie mówi „Chaos”. Podszepty to dla niego „sumienie” i „wzór”.</li>
+            <li>Relacja z BG: od konfliktu do szacunku (ważne w finale).</li>
           </ul>
-          <div class="callout ok" style="margin-top:10px">
-            Klucz: Rico naprawdę lubi (i szanuje) BG — to nie jest „boss do ubicia”, tylko tragiczny finał relacji.
-          </div>
         </div>
 
         <div class="box">
           <h3>Rogue Trader Varonius</h3>
-          <div class="muted">Ambitny polityk, chce władzy w sektorze przez wpływy, nie przez rzeź.</div>
+          <div class="muted">Polityk i gracz frakcyjny. Misja musi być dyskretna; Varonius chce „wyciąć problem” i zachować kontrolę narracji.</div>
           <ul class="bullets">
-            <li>Największy lęk: utrata autorytetu przed Flamon.</li>
-            <li>Dlatego sprawa Rico ma „nie istnieć” oficjalnie.</li>
-            <li>Jest gotów na brudną robotę, byle nie było świadków.</li>
+            <li>Wydaje rozkaz jak transakcję: bez emocji, z kalkulacją ryzyka.</li>
+            <li>Wie, że BG są skuteczni — i że mogą być trudni do kontroli.</li>
           </ul>
-          <div class="callout warn" style="margin-top:10px">
-            Varonius daje graczom bombę — ale to też test lojalności. Chce wiedzieć, czy BG są jego „narzędziem”, czy niezależną siłą.
-          </div>
         </div>
 
         <div class="box">
           <h3>Flamon (Astra Militarum)</h3>
-          <div class="muted">Głównodowodząca „Gileadzkich Grabarzy”. Twarda, pragmatyczna, uczulona na kompromitacje.</div>
+          <div class="muted">Rywalka Varoniusa. Obserwuje rejon. Zrzut orbitalny zwróciłby uwagę i zostawiłby podpis polityczny.</div>
           <ul class="bullets">
-            <li>Obserwuje ruchy Varoniusa, szuka pretekstu do osłabienia go politycznie.</li>
-            <li>Jeśli dowie się o zdradzie Rico: „Varonius nie panuje nad ludźmi”.</li>
-            <li>Jeśli dowie się o bombie: „Varonius igra z losem miasta-ula”.</li>
+            <li>Jej obecność wymusza „podróż lądem”.</li>
+            <li>Jest cieniem w tle: nie musi wejść na scenę, by była groźna.</li>
           </ul>
         </div>
       </div>
 
       <details style="margin-top:12px">
-        <summary>Dodatkowe postacie wspierające (krótkie role)</summary>
-        <div class="bd">
-          <div class="grid two">
-            <div class="box">
-              <h3>Przyboczny Varoniusa (znany BG)</h3>
-              <ul class="bullets">
-                <li>Wychodzi z mostku na rozkaz „NIEZBĘDNI ZOSTAJĄ” — sygnał, że tym razem Varonius nie gra pod publiczkę.</li>
-                <li>Może później wrócić jako „kontrola szkód”: pilnuje, by BG nie wynieśli historii poza statek.</li>
-              </ul>
-            </div>
-            <div class="box">
-              <h3>Nieznany Adeptus Mechanicus</h3>
-              <ul class="bullets">
-                <li>Chłodny, rytualny, mówi jak instrukcja obsługi świata.</li>
-                <li>Wnosi „plecak kabli i przełączników” — ładunek klasy „cyklon” (nazwy możesz użyć w świecie, mechanikę zostawiasz sobie).</li>
-                <li>Uczy procedury uzbrojenia i „modlitwy do maszyny” (handouty w osobnym pliku).</li>
-              </ul>
-            </div>
-            <div class="box">
-              <h3>Zwiadowca Astartes</h3>
-              <ul class="bullets">
-                <li>Nie „zniewolony” — przekonany. To najgorsze.</li>
-                <li>Jest spokojny, rzeczowy, mówi o Rico jak o dowódcy, którego Imperium potrzebowało, ale odrzuciło.</li>
-                <li>Zaprasza BG „na rozmowę”, nie na egzekucję.</li>
-              </ul>
-            </div>
-            <div class="box">
-              <h3>Ludzie Rico</h3>
-              <ul class="bullets">
-                <li>Mieszanina: mutanci, wyrzutki, zbiegli robotnicy, kilku dawnych żołnierzy.</li>
-                <li>Organizacja: „nowy regulamin”, patrole, kuchnie polowe, punkt medyczny.</li>
-                <li>Symbol: przerobiony znak Imperium (opisowo; graficznie w promptach).</li>
-              </ul>
-            </div>
+        <summary>Postacie wspierające</summary>
+        <div class="grid two" style="margin-top:10px">
+          <div class="box">
+            <h3>Nieznany tech-kapłan Mechanicusa</h3>
+            <ul class="bullets">
+              <li>Wnosi ładunek i uczy rytuału uzbrojenia.</li>
+              <li>Mówi chłodno i liturgicznie: „procedura jest wiarą”.</li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>Zwiadowca Astartes</h3>
+            <ul class="bullets">
+              <li>Dobrowolnie dołączył do Rico.</li>
+              <li>Motywacja: „logika celu” + twardy detal z jego doświadczenia (opis niżej).</li>
+            </ul>
           </div>
         </div>
       </details>
@@ -229,232 +183,183 @@ Etapy I–V + Finał + Dodatkowe uwagi (Gilead Primus, burze osnowy, Varonius, F
   </section>
 
   <section id="mostek">
-    <div class="hd"><h2>Tajna misja — scena na mostku (Twoja sekwencja, rozbudowana)</h2></div>
+    <div class="hd"><h2>Tajna misja — scena na mostku (rozbudowana sekwencja)</h2></div>
     <div class="bd">
       <div class="grid two">
         <div class="box">
-          <h3>Beat po beacie (do odegrania)</h3>
+          <h3>Beat po beacie</h3>
           <ol class="bullets">
-            <li>BG przychodzą na mostek na wezwanie (bez publicznego powodu).</li>
-            <li>Varonius głośno: <span class="quote">„Każdy, kto nie jest niezbędny — WYJŚĆ.”</span></li>
-            <li>Zostaje tylko szkieletowa załoga (minimum konieczne).</li>
-            <li>Przyboczny Varoniusa (znany BG) również wychodzi — jasny sygnał „to nie jest teatr”.</li>
-            <li>W cieniu: nieznany Adeptus Mechanicus (obcy nawet dla części załogi).</li>
-            <li>Varonius: zdrada Rico potwierdzona przechwyconym VOX-em (on mówi to jak biznesową katastrofę).</li>
+            <li>BG przychodzą na mostek.</li>
+            <li>Varonius głośno: <span class="quote">„Każdy kto nie jest niezbędny — WYJŚĆ.”</span></li>
+            <li>Zostaje szkieletowa załoga potrzebna do funkcjonowania okrętu.</li>
+            <li>Przyboczny Varoniusa (znany BG) również wychodzi — sygnał, że sprawa jest poważna.</li>
+            <li>W cieniu stoi nieznany przedstawiciel Adeptus Mechanicus.</li>
+            <li>Varonius: Rico zdradził — przejęli część transmisji VOX.</li>
             <li>Odtwarza fragment: <span class="quote">„Imperium was odrzuciło. Ja dam wam nowy cel.”</span></li>
-            <li>Varonius: flota zakłóciła sygnał, żeby sprawa nie wyszła na jaw.</li>
-            <li>„Wysłaliśmy zwiadowcę Astartes. Nie wrócił.” (pauza; ciężar słów)</li>
-            <li>Mechanicus kładzie na stół plecak kabli i przełączników.</li>
-            <li>Varonius: „To ładunek, którym można wyrwać fundamenty miasta-ula.”</li>
-            <li>Mechanicus demonstruje uzbrojenie / odbezpieczenie / procedurę detonacji + uczy krótkiego katechizmu.</li>
-            <li>Varonius: nie mogą dokonać zrzutu orbitalnego (Flamon patrzy; zbyt łatwo wskazać winnego).</li>
-            <li>BG jadą lądem przez pustkowia Gilead Primus.</li>
-            <li>Pojazd już czeka w hangarze. Mechanicus sugeruje filtry i zabezpieczenie oddechu.</li>
+            <li>Varonius: flota zakłóciła sygnał, żeby zdrada nie wyszła na jaw.</li>
+            <li>Varonius: wysłano zwiadowcę Astartes. Nie wrócił.</li>
+            <li>Mechanicus kładzie na stół ciężki „plecak relikwiarz” przewodów i przełączników.</li>
+            <li>Varonius: to ładunek zdolny unicestwić fundamenty miasta-ula (w praktyce: „bomba atomowa”).</li>
+            <li>Mechanicus demonstruje uzbrojenie, zabezpieczenia, detonację; uczy krótkiej „modlitwy do maszyny”.</li>
+            <li>Varonius: nie mogą wykonać zrzutu (Flamon obserwuje). BG jadą lądem przez pustkowia.</li>
+            <li>Pojazd czeka w hangarze. Mechanicus sugeruje filtry.</li>
           </ol>
         </div>
 
         <div class="box">
-          <h3>Jak to zagrać (Apocalypse Now)</h3>
+          <h3>Jak to zagrać (klimat)</h3>
           <ul class="bullets">
-            <li><b>Mostek jak „briefing w Saigonie”</b>: chłód, półprawdy, polityczna higiena.</li>
-            <li><b>Varonius nie jest święty</b>: chce „wyciąć problem”, nie „uratować duszę Rico”.</li>
-            <li><b>Mechanicus</b> mówi do ładunku jak do relikwii; to buduje sakralny ciężar decyzji.</li>
-            <li><b>Jedno zdanie, które ma zaboleć</b>: Varonius może wspomnieć, że „Rico był waszym cieniem — teraz stał się moim”.</li>
+            <li><b>Varonius</b> mówi jak ktoś, kto porządkuje chaos w tabelce strat.</li>
+            <li><b>Mechanicus</b> traktuje ładunek jak relikwię — sacrum zagłady.</li>
+            <li><b>Jedna linia, która ma zaboleć:</b> Varonius może na chwilę przywołać słowa BG: <span class="quote">„Pamiętaj komu służysz.”</span> i dodać: „Rico wziął to zbyt dosłownie.”</li>
           </ul>
-
-          <div class="hr"></div>
-          <div class="callout">
-            Podbij dramat: Varonius może (na moment) zacytować graczy z przeszłości — <span class="quote">„Pamiętaj komu służysz”</span> — i powiedzieć, że Rico „wziął to zbyt serio”.
+          <div class="callout warn">
+            Ważne: nie rozpisuj testów i mechaniki — tylko obrazy, procedury, ciężar decyzji.
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <details style="margin-top:12px">
-        <summary>Opcjonalne „haczyki” na przyszłe konsekwencje (bez testów)</summary>
-        <ul class="bullets">
-          <li><b>Podsłuch Flamon</b>: ktoś mógł słyszeć o zamkniętym spotkaniu; plotka powstanie niezależnie od BG.</li>
-          <li><b>Mechanicus-świadek</b>: jeśli BG zawiodą, winny będzie „błąd w procedurze” (czyli oni).</li>
-          <li><b>Varonius „bezpiecznik”</b>: w plecaku może być znak identyfikacyjny, który zrzuci winę na BG, jeśli sprawa wypłynie (ty decydujesz).</li>
-        </ul>
-      </details>
+  <section id="ladunek">
+    <div class="hd"><h2>Ładunek „atomowy” — propozycja lore-owo spójna</h2></div>
+    <div class="bd">
+      <div class="callout">
+        Cel: gracze mają to rozumieć jako „bomba atomowa” i ostateczna zagłada, ale w lore 40k wiarygodna jako relikwia Mechanicusa.
+      </div>
+
+      <div class="grid two" style="margin-top:12px">
+        <div class="box">
+          <h3>Propozycja: <span class="mono">Thermonuclear Demolition Relic</span> (archeotech, „walizkowy atom”)</h3>
+          <ul class="bullets">
+            <li><b>Nazwa w świecie (przykłady do wyboru):</b> „Relikt Słońca” / „Sarkofag Helio-IX” / „Cinder-Sun Pattern” / „Ładunek Termojądrowy typu ‘Ashmaker’”.</li>
+            <li><b>Opis:</b> przenośny ładunek termojądrowy (fuzja), zamknięty w ołowiano-ceramicznym relikwiarzu, z pękiem kabli, przełączników i blokad rytualnych.</li>
+            <li><b>Skala skutków (fabularnie):</b> nie „Exterminatus planety”, ale <b>lokalny kataklizm</b> — zdmuchnięcie dzielnic, stopienie podłoża, zapadnięcie fundamentów ula, długotrwały opad radioaktywny. Dla ludzi: „to atom”.</li>
+            <li><b>Dlaczego plecak?</b> bo to <b>ładunek saperski/abordażowy</b> z czasów wojen, gdy „miasta-ule” obalało się od środka; Mechanicus przechowuje takie rzeczy jako zakazane relikwie.</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Jak go pokazać na scenie</h3>
+          <ul class="bullets">
+            <li>Jest ciężki, nienaturalnie „gęsty”; wydaje cichy dźwięk chłodzenia / pracy osłon.</li>
+            <li>Mechanicus mówi o nim jak o świętości: „to nie broń, to oświadczenie wobec rzeczywistości”.</li>
+            <li>Uzbrojenie to rytuał: blokady, sekwencje, „katechizm”.</li>
+            <li>Jeden detal, który sprzedaje „atom”: tabliczka z piktogramem „promieniowania” i ostrzeżeniem w formie run/ikon, bez czytelnego tekstu.</li>
+          </ul>
+          <div class="callout ok">
+            Efekt lore: zachowujesz „nuklearną ostateczność” bez wchodzenia w dyskusję „czy cyclonic to plecak”.
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="etapy">
-    <div class="hd"><h2>Etapy I–V (podróż w głąb popiołu)</h2></div>
+    <div class="hd"><h2>Etapy I–V</h2></div>
     <div class="bd">
 
       <details open>
-        <summary>ETAP I — Desant (pustkowie + posterunek + martwi towarzysze)</summary>
+        <summary>ETAP I — Desant (pustkowie, quad, posterunek, ciała)</summary>
         <div class="grid two" style="margin-top:10px">
           <div class="box">
-            <h3>Założenia sceny</h3>
+            <h3>Założenia</h3>
             <ul class="bullets">
-              <li>BG są „zrzuconi”/wysadzeni na pustkowiu i jadą ku rejonowi ostatniego sygnału (sygnał rozproszony).</li>
-              <li>Pojazd: quad z przyczepką, 2-osobowy (ciasno, brudno, głośno).</li>
-              <li>Świat: toksyczny pył, metaliczny posmak w ustach, dalekie błyski burz radioaktywnych.</li>
+              <li>BG zostają wysadzeni/zrzuceni na pustkowiu i jadą ku rejonowi ostatniego sygnału Rico (sygnał był rozproszony).</li>
+              <li>Pojazd: quad z przyczepką (2-osobowy).</li>
+              <li>Środowisko: toksyczny pył, chemiczne błota, dalekie błyski radioaktywnych burz.</li>
             </ul>
             <div class="callout">
-              Zagraj ciszą: tu nie ma heroicznej muzyki. Jest „silnik + wiatr + świst w uszach”.
+              Prowadź to jak „rzekę” z Apocalypse Now: monotonia drogi + nagłe wyspy grozy.
             </div>
           </div>
-
           <div class="box">
-            <h3>Posterunek i ciała</h3>
+            <h3>Posterunek i martwi towarzysze Rico</h3>
             <ul class="bullets">
-              <li>Po czasie BG docierają do porzuconego posterunku i ciał dawnych towarzyszy Rico.</li>
-              <li>To część oddziału, która sprzeciwiła się jego planom: „mutanci to ludzie, nie potwory”.</li>
-              <li>Jest ślad krótkiej, brutalnej kłótni… i egzekucji „z obowiązku”.</li>
+              <li>Po czasie BG docierają do porzuconego posterunku i do ciał dawnych towarzyszy Rico.</li>
+              <li>To część oddziału, która sprzeciwiła się: oni chcieli „wybić mutantów”; Rico zobaczył porzuconych ludzi.</li>
+              <li>BG znajdują fragment vox-logu rejestrujący urwaną przemowę Rico do podwładnych (handout).</li>
             </ul>
-            <div class="hr"></div>
-            <div class="box" style="padding:10px">
-              <div class="k">Znajdźka (handout)</div>
-              <div class="muted">Fragment vox-logu zarejestrował część przemowy Rico do podwładnych (krótki, urwany, ale poruszający).</div>
-            </div>
           </div>
         </div>
-
-        <details style="margin-top:10px">
-          <summary>MG: detale post-apo, które robią robotę</summary>
-          <ul class="bullets">
-            <li>Woda w manierkach ma film olejowy; filtry „chrupią”.</li>
-            <li>Na ścianie posterunku: stare hasła Imperium, zamalowane nowym „regulaminem”.</li>
-            <li>W kieszeni jednego z poległych: list do rodziny, nigdy nie wysłany (odcięcie układu przez burze osnowy).</li>
-          </ul>
-        </details>
       </details>
 
       <details>
-        <summary>ETAP II — Pustkowia (ślady exodusu + „Nowy Regulamin” + konwoje)</summary>
+        <summary>ETAP II — Pustkowia (ślady exodusu, Nowy Regulamin, wraki konwojów)</summary>
         <div class="grid two" style="margin-top:10px">
           <div class="box">
-            <h3>Ślady tłumu</h3>
+            <h3>Ślady działalności Rico</h3>
             <ul class="bullets">
-              <li>Dużo śladów: prowizoryczne obozy, porzucone konserwy, racje wojskowe, bandaże, „kuchnie z blachy”.</li>
-              <li>Widać, że Rico prowadził ludzi metodycznie: odciski butów w równych kolumnach, znaki kierunkowe, dyżury.</li>
-              <li>Na kamieniach: proste symbole wskazujące „bezpieczne przejście” przez skażone rejony.</li>
+              <li>Widać, że prowadził tłum: wiele śladów, obozowiska, puszki, racje, improwizowane punkty postoju.</li>
+              <li>Znajdowane kartki „Nowego Regulaminu” (handout).</li>
+              <li>W tle (subtelnie): znaki, które „działają” lepiej niż powinny (podszept Zmiany jako praktyka).</li>
             </ul>
-            <div class="callout ok">
-              To ważne: Rico nie jest szaleńcem w piórach. On jest <b>logistyką nadziei</b>.
-            </div>
           </div>
-
           <div class="box">
             <h3>Wraki konwojów</h3>
             <ul class="bullets">
-              <li>Wraki splądrowane przez ludzi Rico: broń, leki, żywność.</li>
-              <li>Nie wygląda to jak bandytyzm — wygląda jak „zorganizowana rekwizycja”.</li>
+              <li>Splądrowane konwoje z bronią, lekami i żywnością — zrobione „zorganizowanie”, nie chaotycznie.</li>
               <li>Graffiti: <span class="quote">„Ten cud jest dowodem na słuszność naszej drogi!”</span></li>
-              <li>Inne: <span class="quote">„Nie kradniemy. Zwracamy to, co nam zabrano.”</span></li>
+              <li>Pojawiają się proporce z przerobionym symbolem Imperium (opisowo: dwugłowy orzeł + fraktalne „pióra” Zmiany).</li>
             </ul>
-            <div class="hr"></div>
-            <div class="box" style="padding:10px">
-              <div class="k">Znajdźka (handout)</div>
-              <div class="muted">Kartki „Nowego Regulaminu” Rico (krótkie paragrafy — w osobnym pliku).</div>
-            </div>
           </div>
         </div>
-
-        <details style="margin-top:10px">
-          <summary>MG: rosnący „warpowy” posmak bez nachalnej magii</summary>
-          <ul class="bullets">
-            <li>Znaki Rico są „za sprytne” — jakby przewidywały pogodę i burze lepiej niż sprzęt.</li>
-            <li>BG czasem widzą w pyłowej zawiesinie układ linii przypominający schemat… ale znika przy mrugnięciu.</li>
-            <li>Zwierzęta-mutanty trzymają się z dala od ścieżek Rico (jakby bały się samej idei).</li>
-          </ul>
-        </details>
       </details>
 
       <details>
         <summary>ETAP III — Ludzie Rico (osada mutantów, strach przed czystką)</summary>
         <div class="grid two" style="margin-top:10px">
           <div class="box">
-            <h3>Osada (post-apo)</h3>
+            <h3>Osada</h3>
             <ul class="bullets">
-              <li>Blacha falista, plandeki, szkielety maszyn jako wieże obserwacyjne.</li>
-              <li>Zbiorniki na deszczówkę są oznaczone czaszkami (toksyczność), obok widać destylator.</li>
-              <li>Ołtarzyk do „czegokolwiek, co jeszcze słucha” — tu ludzie są zmęczeni doktryną.</li>
+              <li>Post-apo slumsy: blacha, plandeki, szkielety maszyn, destylatory, barykady.</li>
+              <li>Rico przechodził tędy; część mieszkańców porzuciła domy i ruszyła za nim.</li>
+              <li>Nie był agresywny — obiecywał lepsze życie i „cel”.</li>
             </ul>
           </div>
-
           <div class="box">
-            <h3>Kontakt z BG</h3>
+            <h3>Interakcja</h3>
             <ul class="bullets">
-              <li>Mutanci nie chcą wpuścić BG. Strach: czystka.</li>
-              <li>Mówią, że Rico przechodził tędy; część ludzi poszła za nim.</li>
-              <li>Rico nie był agresywny. Obiecywał „lepsze życie”, ale… brzmiał jak dowódca, nie kaznodzieja.</li>
-              <li>Mutanci mogą zaoferować zasoby, by szybciej pozbyć się BG: filtry, mapę skażenia, paliwo, wodę (skażoną, ale „do przeróbki”).</li>
+              <li>Mutanci nie chcą wpuścić BG. Boją się czystki.</li>
+              <li>Mogą zaoferować zasoby, by szybciej się pozbyć BG (filtry, paliwo, wskazówki).</li>
+              <li>Podszept Zmiany w tle: Rico zostawia „znaki drogi”, które realnie pomagają przeżyć.</li>
             </ul>
-            <div class="callout warn">
-              Moralny nóż: mutanci proszą BG, by <b>nie zabijali Rico</b>. „On pierwszy mówił do nas jak do ludzi.”
-            </div>
           </div>
         </div>
+      </details>
 
-        <details style="margin-top:10px">
-          <summary>MG: wątek „Exodus” bez dosłowności</summary>
+      <details>
+        <summary>ETAP IV — Zwiadowca Astartes (dobrowolna zdrada, zaproszenie)</summary>
+        <div class="bd">
           <ul class="bullets">
-            <li>W osadzie ktoś mówi: „On powiedział, że pustkowie to tylko etap. Że istnieje miejsce, gdzie pył nie wchodzi w płuca”.</li>
-            <li>Rico zostawia „znaki drogi” jak przykazania logistyczne (kiedy iść, kiedy stać, co palić, co filtrować).</li>
-            <li>Rico nie obiecuje raju. Obiecuje <b>cel</b> — a cel jest religią w świecie bez przyszłości.</li>
+            <li>Zwiadowca dobrowolnie dołączył do Rico.</li>
+            <li>Odnajdzie BG i spróbuje ich przekonać, by przyszli na spotkanie i wysłuchali Rico.</li>
+            <li>Koordynaty: baza w opuszczonej kopalni odkrywkowej.</li>
           </ul>
-        </details>
-      </details>
-
-      <details>
-        <summary>ETAP IV — Zwiadowca Astartes (dobrowolna zdrada i zaproszenie)</summary>
-        <div class="grid two" style="margin-top:10px">
-          <div class="box">
-            <h3>Wejście zwiadowcy</h3>
-            <ul class="bullets">
-              <li>Pojawia się „znikąd” — jakby obserwował BG od dawna.</li>
-              <li>Nie atakuje. Nie grozi. Mówi spokojnie, jak ktoś pewny, że ma rację.</li>
-              <li>Wprost: dołączył do Rico dobrowolnie.</li>
-            </ul>
-            <div class="callout">
-              Najmocniej działa, jeśli zwiadowca mówi: „Rico jest tym, czym Imperium udaje, że jest.”
-            </div>
-          </div>
-
-          <div class="box">
-            <h3>Jego cel</h3>
-            <ul class="bullets">
-              <li>Przekonać BG, by przyszli i wysłuchali Rico.</li>
-              <li>Powiedzieć, że Rico zna o ładunku (i mimo to zaprasza).</li>
-              <li>Dać koordynaty: opuszczona kopalnia odkrywkowa — baza.</li>
-            </ul>
-            <div class="hr"></div>
-            <div class="box" style="padding:10px">
-              <div class="k">Znajdźka (handout)</div>
-              <div class="muted">Krótki „list”/notatka zwiadowcy: dlaczego zdradził. (W pliku handoutów.)</div>
-            </div>
+          <div class="callout ok">
+            Klucz: Astartes nie mówi jak kultysta. Mówi jak ktoś, kto uznał, że „cel” jest ważniejszy niż papier.
           </div>
         </div>
       </details>
 
       <details>
-        <summary>ETAP V — Sanktuarium (kopalnia odkrywkowa jako amfiteatr)</summary>
+        <summary>ETAP V — Sanktuarium (kopalnia odkrywkowa, amfiteatr, obóz)</summary>
         <div class="grid two" style="margin-top:10px">
           <div class="box">
-            <h3>Opis miejsca</h3>
+            <h3>Miejsce</h3>
             <ul class="bullets">
-              <li>Gigantyczna odkrywka, jak amfiteatr starej Grecji.</li>
-              <li>Na brzegach: namioty, prowizoryczne budynki, zadaszenia w budowie.</li>
-              <li>W dole: platforma — „mównica”/centrum logistyczne/wykopane sanktuarium.</li>
-              <li>Wszyscy zdają się zorganizowani: warty, kuchnie, magazyny, punkt medyczny.</li>
+              <li>Gigantyczna odkrywka, jak amfiteatr.</li>
+              <li>Na brzegach mutanci stawiają namioty i prowizoryczne budynki, zadaszenia w budowie.</li>
+              <li>Wszyscy zdają się dobrze zorganizowani (warty, kuchnie, medycy, magazyny).</li>
             </ul>
           </div>
-
           <div class="box">
             <h3>Atmosfera</h3>
             <ul class="bullets">
-              <li>Nie jest „kultowo krwawo”. Jest <b>zbyt spokojnie</b>.</li>
-              <li>Ludzie patrzą na BG jak na legendy — bohaterów Varoniusa — ale bez nienawiści.</li>
-              <li>Widać symbole Imperium przerobione „na nowe” (opisowo; wizualnie w promptach).</li>
+              <li>Nie ma tu histerii — jest niepokojący spokój i poczucie sensu.</li>
+              <li>Symbole Imperium są „poprawione” (opisowo) i noszone jak obietnica.</li>
+              <li>Podszept Zmiany objawia się jako „działający porządek” — nie czary.</li>
             </ul>
-            <div class="callout ok">
-              Jeśli chcesz „Apocalypse Now” do kości: niech w tle słychać monotonny rytm pracy i pieśń-pomruk, jak „modlitwa logistyczna”.
-            </div>
           </div>
         </div>
       </details>
@@ -462,119 +367,87 @@ Etapy I–V + Finał + Dodatkowe uwagi (Gilead Primus, burze osnowy, Varonius, F
     </div>
   </section>
 
+  <section id="astartes">
+    <div class="hd"><h2>Zwiadowca Astartes — fragment wypowiedzi, by przekonać BG</h2></div>
+    <div class="bd">
+      <div class="callout">
+        Motywacja: „logika celu”. Twardy detal: zwiadowca widział, jak imperialna administracja poświęciła ludzi „dla papieru” — i Rico jako pierwszy nazwał to zdradą celu.
+      </div>
+
+      <div class="box" style="margin-top:12px">
+        <div class="k">Monolog / rozmowa (do odegrania; mów spokojnie, bez patosu)</div>
+        <div class="hr"></div>
+        <div class="quote">
+          „Nie przyszedłem po was, żeby was zabić. Gdybym miał taki rozkaz — już byście nie stali.”
+          <br><br>
+          „Wysłano mnie, bo ktoś uznał, że to sprawa honoru. Ja widzę w tym rachunek.”
+          <br><br>
+          „Widziałem tu ludzi umierających w kolejkach po filtry, bo formularz miał złą pieczęć. Widziałem transport leków cofnięty, bo brakowało jednego podpisu. Widziałem oddział, który kazał wrócić na skażony szlak, bo ‘tak było w rozkazie’, choć każdy z nich wiedział, że to ich zabije.”
+          <br><br>
+          „To nie była dyscyplina. To była ślepota.”
+          <br><br>
+          „Rico powiedział wtedy jedno zdanie: <span class="mono">żołnierz nie służy rozkazowi — żołnierz służy celowi</span>. I nagle wszystko stało się… proste. Cel Imperium nie jest papierem. Cel Imperium jest przetrwaniem człowieka, który niesie jego ciężar.”
+          <br><br>
+          „Nie mówię wam, żebyście go poparli. Mówię wam, żebyście go wysłuchali.”
+          <br><br>
+          „On wie, co macie w plecaku. I mimo to kazał mi was przyprowadzić. Bo uważa, że jesteście lepsi niż cudzy strach.”
+        </div>
+        <div class="hr"></div>
+        <div class="muted sig">Wskazówka MG: Astartes nie negocjuje jak handlarz. On „stwierdza fakty”, a to ma brzmieć bardziej niepokojąco niż groźby.</div>
+      </div>
+
+      <details style="margin-top:12px">
+        <summary>Jedna krótka riposta, jeśli BG atakują go słownie</summary>
+        <ul class="bullets">
+          <li><span class="quote">„Jeśli nazywasz to zdradą, to nazwij też zdradą tych, którzy porzucili ludzi dla pieczęci.”</span></li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
   <section id="final">
-    <div class="hd"><h2>Finał — przemowa, rozmowa, propozycja</h2></div>
+    <div class="hd"><h2>Finał (koniec scenariusza): monolog Rico + propozycja</h2></div>
     <div class="bd">
       <div class="grid two">
         <div class="box">
           <h3>Wejście Rico</h3>
           <ul class="bullets">
-            <li>Rico spokojny, czysty jak na warunki (albo przesadnie „uporządkowany”).</li>
-            <li>Wita BG jak dawnych przyjaciół. Bez ironii.</li>
-            <li>Jego oczy: zmęczenie + pewność + coś, co wygląda jak ulga, że „wreszcie przyszli”.</li>
+            <li>Rico jest spokojny. Wita BG jak dawnych przyjaciół.</li>
+            <li>Nie robi teatru. Nie grozi. Nie prosi o litość.</li>
+            <li>W jego spokoju jest coś „nieznośnie logicznego”.</li>
           </ul>
 
-          <h3>Cytaty (zostawione + dopasowane)</h3>
+          <h3>Cytaty (zostawione)</h3>
           <ul class="bullets">
             <li>„Imperium potrzebuje nowej drogi. Ja ją widzę.”</li>
             <li>„Zasady są po to, by prowadzić do zwycięstwa. Jeśli nie prowadzą — należy je zmienić.”</li>
-            <li><span class="quote">„Pamiętaj komu służysz.”</span> (Rico cytuje BG / odnosi się do tego zdania jak do objawienia)</li>
+            <li>„Pamiętaj komu służysz.” (Rico rozumie to jako służbę Imperium — nie dowódcom)</li>
           </ul>
         </div>
 
         <div class="box">
-          <h3>Przemowa (rdzeń)</h3>
+          <h3>Monolog (rdzeń)</h3>
           <div class="callout">
-            Rico mówi o tym, że Imperium zapomniało, iż to ludzie je tworzą — i że nie wolno nikogo porzucać. Mutanci nie są „błędem”, tylko skutkiem trucizn i polityki miasta-ula.
-            „Jeśli Imperium tworzy potwory… to Imperium musi nauczyć się żyć z tym, co stworzyło.”
+            Rico mówi o tym, że Imperium zapomniało, iż tworzą je ludzie. Że nie wolno nikogo porzucać — zwłaszcza tych, których zrodziły toksyny i polityka miasta-ula.
+            Mutanci nie są „potworami”; są rachunkiem, który Imperium wystawiło samo sobie.
           </div>
 
-          <h3>Klucz: Rico odmawia korony</h3>
+          <h3>„Iskra”</h3>
           <ul class="bullets">
-            <li>„Nie będę stał na czele Nowego Imperium.”</li>
-            <li>„Jestem iskrą. Iskra nie rządzi. Iskra zapala.”</li>
+            <li>Rico stanowczo odmawia stania na czele „Nowego Imperium”.</li>
+            <li>„Jestem iskrą, która wybuchnie płomieniem.”</li>
           </ul>
 
           <div class="hr"></div>
-          <h3>Propozycja (Twoje założenie — dopalone dramaturgicznie)</h3>
+          <h3>Propozycja Rico</h3>
           <ul class="bullets">
-            <li>Rico wie o bombie.</li>
-            <li>Daje BG możliwość: „odciąć mu głowę” i zanieść Varoniusowi (dowód wykonania rozkazu).</li>
-            <li>Ale: <b>niech detonują ładunek na mostku Varoniusa</b> — „żeby zrozumiał, komu służy”.</li>
+            <li>Rico wie doskonale o ładunku w plecaku.</li>
+            <li>Mówi, że BG mogą odciąć mu głowę i zanieść do Varoniusa jako dowód.</li>
+            <li>Ale żąda, by <b>zdetonowali ładunek na mostku Varoniusa</b>.</li>
           </ul>
-        </div>
-      </div>
 
-      <details style="margin-top:12px" open>
-        <summary>Jak to rozegrać, żeby gracze nie czuli „jednego słusznego wyjścia”</summary>
-        <div class="grid two" style="margin-top:10px">
-          <div class="box">
-            <h3>Rico nie szantażuje. Rico „prosi logicznie”.</h3>
-            <ul class="bullets">
-              <li>On nie krzyczy. On wylicza. „Varonius zabije was politycznie, jeśli wrócicie z pustymi rękami.”</li>
-              <li>Pokazuje, że rozumie ich świat: honor, rozkaz, lojalność, brudna prawda.</li>
-              <li>Oferuje „wyjście z twarzą” i „wyjście z sumieniem” — ale każde ma cenę.</li>
-            </ul>
-          </div>
-          <div class="box">
-            <h3>Trzy haki moralne (wybierz 1–2)</h3>
-            <ul class="bullets">
-              <li><b>H1:</b> wśród ludzi Rico są dzieci / chorzy (prawdziwa stawka „miasta-ula vs ludzie”).</li>
-              <li><b>H2:</b> Varonius nie cofnie się przed zatuszowaniem prawdy — nawet kosztem BG.</li>
-              <li><b>H3:</b> Flamon wykorzysta każdy błąd: jeśli BG rozniosą sprawę, wojna domowa w sektorze wisi w powietrzu.</li>
-            </ul>
-          </div>
-        </div>
-      </details>
-    </div>
-  </section>
-
-  <section id="konsekwencje">
-    <div class="hd"><h2>Konsekwencje (gałęzie finału)</h2></div>
-    <div class="bd">
-      <div class="grid two">
-        <div class="box">
-          <h3>A) BG zabijają Rico i wracają z dowodem</h3>
-          <ul class="bullets">
-            <li>Varonius „wygrywa” politycznie — chwilowo.</li>
-            <li>Ludzie Rico rozpraszają się / radykalizują (zależy jak chcesz domknąć kampanię).</li>
-            <li>W sektorze zostaje idea: „Imperium porzuca”. To wróci jako plotka / zarzewie buntu.</li>
-          </ul>
           <div class="callout warn">
-            Smaczek: Rico może umrzeć, szepcząc coś niepatetycznego, np. „Zmiana jest nauczycielem… a ja byłem pilnym uczniem.”
-          </div>
-        </div>
-
-        <div class="box">
-          <h3>B) BG dołączają do Rico (jawnie lub „na próbę”)</h3>
-          <ul class="bullets">
-            <li>Varonius staje się ich wrogiem politycznym.</li>
-            <li>Flamon może uznać ich za zdrajców i rozpocząć polowanie.</li>
-            <li>Rico daje „Nowy Regulamin” — BG stają się symbolami ruchu (to ogromna zmiana kampanii, ale to finał, więc może być epilog).</li>
-          </ul>
-          <div class="callout">
-            To jest „Apocalypse Now” do końca: bohater dociera do Kurtza i… nie wraca taki sam.
-          </div>
-        </div>
-
-        <div class="box">
-          <h3>C) BG próbują oszukać wszystkich (najlepsze dla „szarych” graczy)</h3>
-          <ul class="bullets">
-            <li>Udają śmierć Rico / upozorowanie, dogadują „cichy rozejm” lub ewakuację części ludzi.</li>
-            <li>Ryzyko: podszepty Zmiany nagradzają spryt, ale żądają ceny (moralnej lub fabularnej).</li>
-            <li>Varonius i Flamon wchodzą w układ/konflikt zależnie od tego, co wyjdzie na jaw.</li>
-          </ul>
-        </div>
-
-        <div class="box">
-          <h3>D) BG detonują ładunek na mostku Varoniusa</h3>
-          <ul class="bullets">
-            <li>To apokalipsa polityczna (i dosłowna) — epilog kampanii jest natychmiastowy.</li>
-            <li>Sektor pogrąża się w chaosie sukcesyjnym; Flamon przejmuje inicjatywę lub wojna frakcji.</li>
-            <li>Rico „wygrał” ideą: dowiódł, że „autorytet” to fasada.</li>
-          </ul>
-          <div class="callout warn">
-            Jeśli wybiorą to świadomie: zakończ kampanię krótkim, chłodnym epilogiem (jak napis końcowy), bez „heroizacji”.
+            Scenariusz kończy się w tym miejscu: reakcje, decyzje i konsekwencje prowadź improwizacją na sesji.
           </div>
         </div>
       </div>
@@ -582,39 +455,32 @@ Etapy I–V + Finał + Dodatkowe uwagi (Gilead Primus, burze osnowy, Varonius, F
   </section>
 
   <section id="uwagi">
-    <div class="hd"><h2>Uwagi MG (gotowe do użycia)</h2></div>
+    <div class="hd"><h2>Uwagi MG (krótko, bez mechaniki)</h2></div>
     <div class="bd">
       <div class="grid two">
         <div class="box">
-          <h3>Jak prowadzić Rico</h3>
+          <h3>Jak prowadzić „podszept Zmiany” (Tzeentch) bez fajerwerków</h3>
           <ul class="bullets">
-            <li><b>Ton:</b> spokojny oficer, który już „podjął decyzję”.</li>
-            <li><b>Słownictwo:</b> cel, korekta, wzór, logika, odpowiedzialność, lojalność wobec Imperium jako idei.</li>
-            <li><b>Unikaj:</b „muhaha”, manifestacji oczywistej demonologii. To ma być tragicznie wiarygodne.</li>
-            <li><b>Hook:</b zawsze wracaj do zdania BG: „Pamiętaj komu służysz.”</li>
+            <li>Rico „przewiduje” burze i skażenie zbyt dobrze.</li>
+            <li>Znaki drogi działają, jakby ktoś liczył wiatr za nich.</li>
+            <li>Wzory pojawiają się w organizacji obozu, w układzie patroli, w symbolice (fraktalne pióra, „oczy” w ornamentach).</li>
+            <li>Najgorsze jest to, że to jest użyteczne i ratuje życie — dlatego kusi.</li>
           </ul>
         </div>
-
         <div class="box">
-          <h3>Jak prowadzić post-apo Gilead Primus</h3>
+          <h3>Jak prowadzić pustkowia (post-apo)</h3>
           <ul class="bullets">
-            <li>Brud jest wszędzie: filtry, pył, rdza, chemiczne jeziora.</li>
-            <li>Ruiny są „przemysłowe”, nie „romantyczne”.</li>
-            <li>Każdy zasób jest wyborem: woda/paliwo/filtr/energia.</li>
-            <li>Burze radioaktywne i anomalie osnowy jako tło (bez mechaniki w tekście — mechanikę robisz Ty).</li>
+            <li>Pył w zębach, filtry jak waluta, woda jak trucizna do oswojenia.</li>
+            <li>Ruiny są przemysłowe, nie romantyczne: rury, hałdy, szkielety maszyn.</li>
+            <li>W tle zawsze: horyzont burzy, metaliczny wiatr, chemiczne jeziora.</li>
           </ul>
         </div>
       </div>
-
       <details style="margin-top:12px">
-        <summary>Szybka lista „scenowych obrazów” (do opisu na żywo)</summary>
-        <ul class="bullets">
-          <li>Silnik quada wyje, a na horyzoncie widać zielonkawe błyski burzy.</li>
-          <li>Plastikowe woreczki na filtrach powietrza falują jak chorągiewki.</li>
-          <li>Wrak konwoju: skrzynie puste, ale starannie ułożone jak po inwentaryzacji.</li>
-          <li>Osada mutantów: dzieci bawią się łuskami naboi jak monetami.</li>
-          <li>Odkrywka: amfiteatr, gdzie echo przemowy niesie się jak „liturgia w kamieniu”.</li>
-        </ul>
+        <summary>Jedno zdanie, które spina całą przygodę</summary>
+        <div class="callout" style="margin-top:10px">
+          „Pamiętaj komu służysz.” — to zdanie jest zapalnikiem. Rico potraktował je jak objawienie.
+        </div>
       </details>
     </div>
   </section>
