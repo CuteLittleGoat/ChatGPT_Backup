@@ -1,0 +1,1335 @@
+PATRONI
+W systemie Gilead mieszka wiele potężnych postaci, które
+chętnie zatrudnią poszukiwaczy przygód. Postaci zaprezentowane
+poniżej mogłyby stać się sponsorem grupy bohaterów: to
+do nich należałoby zaopatrywanie Bohaterów Graczy w ekwipunek,
+zasoby, a także to w ich imieniu działałyby postaci. Powoływanie
+się na autorytet Wolnego Kupca daje wiele rozmaitych
+możliwości, ale trzeba pamiętać, że w zamian gracze muszą
+poddać się jego woli i wzmacniać wpływy patrona w układzie.
+
+Imperialny feudalizm ma sie w·najlepsze mimo izolacji
+systemu. Ci na górze popekanej piramidy hierarchii
+decyduja o·wiekszosci aspektów zycia tych ponizej.
+Kazdy ma własny plan na obrone przed mrokiem
+Wielkiej Wyrwy badz chce wykorzystac nieskonczona
+noc na swoja korzysc.
+Postacie zaprezentowanych Patronów maja
+ułatwic Mistrzowi Gry zlecanie zadan dla graczy, a·ci
+moga je wykorzystac jako podstawe swojej Konwencji.
+Patroni stoja za polityka kazdej z·opisanych
+w·poprzednim rozdziale Frakcji, a·w·Podreczniku
+głównym Wrath & Glory opisano dwoje dodatkowych.
+Bohaterowie nie musza wiazac sie wyłacznie
+z·jednym Patronem, który nie byłby wcale tak potezny,
+gdyby korzystał z·usług tylko jednej druzyny. Jesli cele
+dwóch Patronów nie sa podobne albo wrecz stoja po
+przeciwnych stronach barykady, bohaterowie powinni
+uwaznie dobierac mocodawców i·filtrowac przekazywane
+im informacje.
+
+Wiekszosc opisanych w·tym rozdziale Patronów to
+obywatele Imperium i·główni gracze poszczególnych
+Frakcji systemu Gilead. Mozna ich podzielic na dwie
+podstawowe grupy: Władców Swiatów Centralnych
+oraz Rade Diademu. Pozostali Patroni sa albo xenos,
+albo renegatami.
+
+WLADCY SWIATÓW CENTRALNYCH
+Trzy lata po pojawieniu sie Wielkiej Wyrwy rzadzacy
+swiatami systemu suwereni publicznie zdali sie na
+zbrojna lord Fylamon, lecz nieoficjalnie wciaz daza do
+spełnienia własnych celów.
+Te swiaty sa ich domem, a·niedawne przybycie
+Jakela Varoniusa, posród wielu innych ponurych
+wydarzen, zmieniło rozkład sił i·wymusiło nowe zmagania
+o·władze. To doprowadziło do potrzeby werbunku
+rozmaitych grup majacych za zadanie stawic
+czoła niezliczonym grozbom utraty niepewnej
+pozycji moznych oraz czujnie obserwowac imperialnych
+sprzymierzenców.
+Do Władców Swiatów Centralnych zalicza sie: arcydiakona
+Merramara Clade’a·z·Eklezjarchatu, władce swiata-
+katedry Enoch; arcydomine Aexekre Vakuul z·Adeptus
+Mechanicus, władczynie swiata-kuzni Avachrus;
+mistrza Eshgara Quintilliusa Lorae z·Administratum,
+władce swiata rolniczego Ostia oraz zbrojna lord Talerie
+Fylamon, władczynie Gilead Primus.
+
+RADA DIADEMU
+Choc wszystkie imperialne siły systemu Gilead pozornie
+podlegaja Jakelowi Varoniusowi, Wolny Kupiec
+musi zmagac sie zarówno z·tradycjonalistycznymi
+strukturami, jak i·prywatnymi knowaniami poteznych
+osobistosci, które przewodza frakcjom. Z·tego powodu
+powołał Rade Diademu, która gromadzi przywódców
+wszystkich organizacji z·całego systemu Gilead oraz –
+kiedy to mozliwe – Władców Swiatów Centralnych. Jej
+zadaniem jest omawianie waznych kwestii i·podejmowanie
+wspólnych działan. Choc kazda z·tych postaci
+działa na korzysc systemu, dysponuja taka potega,
+ze·nikt nie moze ich do niczego zmusic, moga tez
+zatrudniac grupy, których swiatopoglad odpowiada
+zleconym zadaniom.
+Rada Diademu składa sie z·Wolnego Kupca
+Jakela Varoniusa, nowator Octavii Omincary, inkwizytorki
+Ordo Malleus Tytrony Dikaisune, pełniacego obowiazki
+kapitana Akahira oraz przeoryszy Jeanne Grace
+D’Emysy. Władcy Swiatów Centralnych sa zapraszani
+do udziału w·kazdym spotkaniu Rady Diademu.
+
+	WOLNY KUPIEC JAKEL VARONIUS
+Jakel Varonius to głowa rodziny Varonius. Jak przystało
+na Wolnego Kupca, ten szczwany lis przyszedł na świat
+na pokładzie okrętu gwiezdnego – swojego obecnego flagowca
+o nazwie „Książęcy Diadem” – jakieś sto czterdzieści lat temu.
+Do jego wieku dodać trzeba około dekady spędzonej w żegludze
+po Osnowie. „Książęcy Diadem” jest najpotężniejszym
+okrętem w systemie Gilead, bijącym sercem flotylli Varoniusa
+oraz centrum działań samego Kupca i jego armady.
+Kuracje odmładzające ukrywają rzeczywisty wiek
+patriarchy – Jakel Varonius wciąż wygląda, jakby miał nie więcej
+niż trzydzieści lat. Jeśli spojrzeć w jego oczy, widać jednak
+nagromadzoną przez lata mądrość. Ubiór Kupca jest dobrej
+jakości i niezbyt ostentacyjny. Zwykle ujrzeć go można w mundurze
+oficera, spodniach z lampasami oraz oficerskich butach.
+Wszystko to w kolorze sobolowo-niebieskim, czyli oficjalnych
+barwach Dynastii Varonius. Przy boku zwisa mu zmodyfikowany
+pistolet wysokoenergetyczny oraz szabla energetyczna,
+broń, z którą nigdy się nie rozstaje.
+Od momentu przekroczenia Cieśniny Andraste Varonius zajmował
+się poszerzaniem bazy wpływów i zdobywaniem
+sojuszników, których różnorodność wprawia obserwatorów
+w zadziwienie. Niektórzy współpracują z nim z wyrachowania,
+inni z braku alternatywy. Początkowo motywowała ich bowiem
+jedynie chęć ocalenia własnej skóry przed horrorami wylewającymi
+się zza Wielkiej Wyrwy. Charyzmatyczny styl dowodzenia
+Varoniusa sprawił jednak, że jego koalicjanci pozostali
+mu wierni. Zapewne pomógł także fakt, że kupiec przyniósł
+ze sobą informację, że poza szalejącą burzą, jaką jest Cicatrix
+Maledictum, Imperium nadal istnieje.
+W momencie przybycia świetnie uzbrojonej flotylli
+Varoniusa pozostające w systemie Gilead siły imperialne i planetarni
+gubernatorzy obwołali armadę – a także samego Kupca
+– zbawcami systemu. Część z nich żałuje dziś ówczesnego entuzjazmu,
+zadając sobie pytania dotyczące prawdziwych motywów
+przybysza – dlaczego naprawdę przybył on do systemu
+Gilead. Jednak nawet krytykujący go decydenci zdają sobie
+sprawę z siły i potęgi reprezentowanej przez flotyllę (zarówno
+militarną, jak i polityczną). Fakt, że armada jest podległa Wolnemu
+Kupcowi, czyni go najbardziej wpływową osobą w systemie.
+Pozostający w kontakcie z Varoniusem politycy dobrze
+zdają sobie sprawę z tego, że przybysz nie jest z nimi do końca
+szczery – do dziś nie wyjawił np. treści sygnału alarmowego
+wysłanego przez dowództwo Zakonu Absolutorów. Można się
+tylko zastanawiać, co jeszcze zataił.
+
+	ZBROJNA LORD TALERIA FYLAMON
+Taleria Fylamon to zawodowy żołnierz, który szybko piął się
+po szczeblach kariery w Gwardii Imperialnej. Swoje sukcesy
+zawdzięczała jednak własnemu wysiłkowi, a nie, jak to ma często
+miejsce, szlacheckiemu pochodzeniu lub bogactwu. Fylamon
+dowiodła swojej wartości, wykonując nawet najbardziej
+bezwzględne rozkazy i zawsze stawiała misję na pierwszym
+miejscu. Pomagała jej w tym niezachwiana wiara. Taleria jest
+tym typem oficera, który wierzy, że najlepsza obrona to brutalny
+atak na wszystkich frontach.
+Zbrojna lord przejęła kontrolę nad Światami Centralnymi
+po pojawieniu się Wielkiej Wyrwy. Jej pierwszym rozkazem
+był masowy pobór do wojska i okopanie się całości podległych
+sił, aby dać odpór wylewającym się z Osnowy monstrom.
+W ciągu trzech ostatnich lat tej desperackiej obrony jej wpływy
+znacznie wzrosły – udało się jej np. nawiązać bliską współpracę
+z Adeptus Astartes z Zakonu Absolutorów. Z czasem Taleria
+Fylamon stałą się de facto władczynią całego systemu Gilead.
+Rządy żelaznej pięści nie przysporzyły jej wielu przyjaciół, ale
+w zasadzie wszyscy zgadzają się, że w obliczu nieustającej
+presji demonicznych wrogów czasem trzeba pozwolić sobie
+na ustępstwa. Na szereg ustępstw.
+Fylamon na początku powitała przybywającego Wolnego
+Kupca z otwartymi ramionami. Wierzyła, że razem będą mogli
+przejść wreszcie do ofensywy i uderzyć na wrogów. Jednakże
+z czasem pierwotną życzliwość zastąpiło rozczarowanie „czczą
+gadaniną, pustymi gestami i brakiem rezultatów”. W prywatnych
+rozmowach Taleria skarży się na utratę wpływów na rzecz
+Jakela Varoniusa. Oznacza to także, że staje się coraz bardziej
+podatna na podszepty, mówiące jakoby Varonius działał
+na podstawie kłamliwych pobudek, szafując bez celu życiem
+poddanych Imperatora.
+Sytuacja, w której obecnie znajduje się system Gilead,
+uwiera zbrojną lord. Frustrują ją inni przywódcy Światów Centralnych,
+którzy, jeśli chodzi o obronę swojego stanu posiadania,
+nazbyt chętnie polegają na flotylli Varoniusa i odmawiają
+połączenia sił, aby razem rozprawić się z wrogami systemu.
+Dotychczas jej plany powszechnej mobilizacji na wszystkich
+Światach Centralnych spełzły na niczym, ale jakiś czas temu
+postanowiła wprowadzić nowy pomysł – namawia innych
+gubernatorów planetarnych do udziału w krucjacie wymierzonej
+w Głębię, której celem byłoby zadanie ostatecznego ciosu
+renegatom z Wrakowiska. Ci ostatni mocno dają się we znaki
+imperialnym siłom, najeżdżając światy wewnętrzne.
+Oficjalne stanowisko zbrojnej lord daje jej władzę nad
+wszystkimi jednostkami Astra Militarum w systemie Gilead.
+Jest także bezpośrednim dowódcą Gileadzkich Grabarzy, regimentu
+posiadającego, dzięki nieustającym wysiłkom dowódcy,
+wysoką wartość bojową. Fylamon troszczy się o to, aby jej żołnierze
+byli dobrze wyszkoleni i dobrze wyposażeni – nie jest to
+aż takie trudne w jej sytuacji, gdyż jako zbrojna lord piastuje
+także stanowisko gubernatora planetarnego Gilead Primus.
+
+	ARCYDIAKON MERRAMAR CLADE
+Arcydiakon Merramar Clade od pieciu dekad przewodzi
+Synodowi Enoch, przez co stał sie tez wybitnym przewodnikiem
+duchowym całego systemu. Choc zmiekczony
+przez długie zycie w·luksusie i·od przedłuzajacych
+je zabiegów odmładzajacych, to głeboki i·gromki
+głos Clade’a·rozbrzmiewa pełna powaga i·splendorem
+Eklezjarchatu. Merramar osiagnał swoja pozycje nie
+tylko dzieki wierze, lecz równiez uporowi i·sprytowi.
+Relacje miedzy Adeptus Ministorum i·Adeptus
+Astartes czesto bywaja napiete, lecz swiatynia Tygranusa
+Dalira stanowi wspólny swiety grunt dla Synodu
+Enoch i·Zakonu Absolutorów. Aktualnie Clade przedkłada
+ten zwiazek nad wszystkie inne, poniewaz zdaje
+sobie sprawe, ze·Enoch jest kuszacym celem dla zbierajacych
+sie w·Głebi zdrajców i·wypełzajacych z·cuchnacych
+półswiatków systemu heretyków. Tymczasem
+arcydiakon uwaza za rzecz oczywista, ze·Siostry Bitwy
+Zakonu Uswieconej Tarczy beda na kazde jego skinienie.
+Sam patrzy na falujace zrozpaczone masy z·luksusowych
+iglic twierdzy-katedry sw. Urchaeusa. Nie jest
+nieczuły na ich cierpienie, gdyz wie, ze·ono oczyszcza.
+Jego publiczne przemowy, bezpiecznie przekazywane
+z·bazyliki, zmuszaja tłumy do stoickiego znoszenia
+cierpienia, gdyz te wyzwania sa jedynie próba zesłana
+przez Imperatora. W·miare pogarszania sie warunków
+na Enoch arcydiakon coraz mniej hamuje sie w·nawoływaniach
+do gardzenia słabymi i·niewiernymi.
+Posród zaufanego personelu i·biskupów Clade zali sie
+– zwykle po kilku szklaneczkach amaseku – ze·najwieksza
+próbe przechodzi on sam i·to jego cierpienie
+jest najwieksze. Jakby nie było, to jego obowiazkiem
+jest opieka nad wszystkimi duszami na Enoch,
+a·tak naprawde w·całym systemie Gilead. Ich próby sa
+jego próbami.
+AGENCI EKLEZJARCHATU
+Clade od dawna wyszukiwał utalentowanych, godnych
+zaufania i·dyskretnych agentów, ale od pojawienia sie
+Cicatrix Maledictum potrzeba ta jest wieksza niz kiedykolwiek.
+Kilku agentów słuzy mu od dawna, a·ich
+działania znacza droge jego awansu. Wiekszosc zwiazała
+sie z·nim w·ciagu kilku ostatnich lat, od zapadniecia
+Noctis Aeterna. Clade zawsze woli powierzac zadania
+poboznym i·prawym obywatelom, ale zdaje sobie
+sprawe, ze·niektóre misje nalezy zostawic tym, którzy
+juz maja zbrukane rece. Niestety takie misje sie zdarzaja
+i·wtedy Clade jest w·stanie wyjatkowo tolerowac
+imperialne szumowiny, a·niezwykle rzadko równiez
+prawdziwie skruszonych i·nienawidzacych grzesznego
+zycia wyrzutków.
+Linie obronców Enoch sa cienkie, dlatego arcydiakon
+musi wspierac je wszechstronnymi grupami,
+zdolnymi zadbac o·jego interesy na Enoch i·w·całym
+systemie. Clade przydziela zadania na podstawie umiejetnosci
+i, co moze wazniejsze, reputacji agentów. Krzyzowcy,
+Adepta Sororitas i·inni pobozni wojownicy –
+nawet kilku nieco uciazliwych Adeptus Astartes –
+otrzymuja misje ochrony oficjeli Ministorum czy dzierzaw
+w·Gileadzie lub publicznej eksterminacji heretyków
+i·zdrajców. Bardziej dyskretni agenci moga działac
+posród pielgrzymów i·rybaków z·Enoch, wyszukujac
+oznak herezji badz podburzania.
+Najdelikatniejsze kwestie, jak szpiegostwo
+rywali czy podejrzanych o·bluznierstwo członków imperialnych
+organizacji, powierzane sa agentom, od których
+Clade moze sie odciac w·białych rekawiczkach. Poniewaz
+system jest odizolowany, arcydiakon tym bardziej
+musi uwazac na poczynania konkurencji i·potencjalnych
+przeciwników w·zmaganiach o·władze. Najbardziej
+obawia sie, ze·tech-kapłani z·Avachrusa wykorzystaja
+społeczne niepokoje i·niepewnosc do podkopania
+wiary w·Ministorum i·zachwiania wypracowana przez
+tysiaclecia równowaga sił miedzy dwoma organizacjami.
+Oczywiscie oznacza to, ze·musi w·dwójnasób zwalczac
+obmierzłe credo tak zwanego Omnisjasza.
+Choc Merramar jest w·stanie wiele wybaczyc
+zdolnym agentom, nie zdzierzy jawnego bluznierstwa.
+Sporadyczne nonszalanckie uwagi na temat spraw
+duchowych moga spotkac sie jedynie z·nagana, ale
+brak szacunku dla Ministorum lub Imperatora moze
+miec daleko idace i·trwałe konsekwencje.
+Arcydiakon oferuje swoim agentom bodaj najwieksza
+nagrode z·mozliwych – słuzbe Imperatorowi
+i·błogosławienstwo Eklezjarchatu. Dostrzega tez korzysci
+płynace z·czasowego uzyczenia agentom zasobów
+na misje, a·wiernym sługom otwiera podwoje niezmierzonych
+skarbców Enoch. Oprócz Majatku Clade moze
+zapewnic dostep do rzadkiego Ekwipunku, a·dzieki
+wpływom w·Departmento Munitorum nawet do tak
+pozadanej w·systemie amunicji.
+
+	ARCYDOMINA AEXEKRA VAKUUL
+Po zniknieciu princepsa ultima Gola Bessora powstała
+próznia władzy. Wykorzystała ja arcydomina Aexekra
+Vakuul i·ogłosiła sie regentka Avachrusa, choc zapewniła,
+ze·ustapi z·urzedu w·mało prawdopodobnym
+przypadku powrotu Bessora. Niemniej jednak był to
+nagły skok władzy jednostki, która wczesniej zarzadzała
+pojedynczym miastem-kuznia.
+Jak na takie wpływy Vakuul jest zaskakujaco
+młoda magos, poniewaz zyje zaledwie od czterystu
+lat. Mimo tego jest w·wiekszosci scybernetyzowana,
+a·jedynie przeswitujaca miejscami wysuszona
+skóra zdradza jej organiczne pochodzenie. Vakuul wie,
+ze·ciało jest słabe, a·słaboscia gardzi, wiec augmentacje
+sa podyktowane aspiracjami i·wzgledami praktycznymi.
+Ambicja Vakuul napedza jej stalowe konczyny niemal
+w·równym stopniu co Siła Sprawcza.
+Jeszcze przed ostatnimi wydarzeniami politycznie
+nastawieni tech-kapłani Avachrusa uznawali Aexekre
+za bardzo ambitna, gdyz w·dazeniach do lepszej
+efektywnosci i·wydajnosci jest absolutnie bezwzgledna.
+Pracujacy dla niej tech-adepci i·awansujacy sposród
+nich magosi dobrze znaja jej główna maksyme: „Twórz
+nieustannie”. Inni magosi dominus w·kuluarach zastanawiaja
+sie, czy władza nad całym Avachrusem i·jego
+satelitami bedzie w·stanie zaspokoic apetyt Vakuul.
+Poniewaz nie istnieje mozliwosc pozyskania surowców
+spoza systemu, Vakuul musiała przedsiewziac
+działania, by zabezpieczyc władanie Adeptus Mechanicus
+(i·własne) nad zasobami Gileadu. Po cichu
+zwiekszyła wiec liczbe tech-kapłanów opiekujacych
+sie hutami i·sprzetem górniczym na ksiezycach Gilead
+Primus, Anvalu i·Skaelasie, jednoczesnie „proponujac”
+przejecie administracji nad obydwoma satelitami. Jej
+mechadendryty maczały tez chwytaki w·stworzeniu
+farm serwitorów na Ostii i·innych działaniach, których
+celem było uzaleznienie zródła pozywienia od Adeptus
+Mechanicus.
+Vakuul uznaje wpływ Jakela Varoniusa na cały
+system. Co wazniejsze, widzi w·dynastii Varoniusa
+najlepsza szanse na odnowienie kontaktu z·Imperium.
+Dlatego wiec uznaje go za klucz do utrzymania
+swej dominacji na Avachrusie, przynajmniej dopóki
+nie przebija Wielkiej Wyrwy lub dopóki nie powróci
+Gol Bessor, choc jej wyliczenia uznaja to za wielce
+nieprawdopodobne. Niemniej jednak arcydomina jest
+zbyt logiczna, by opierac swoja przyszłosc jedynie na
+lojalnosci wobec Wolnego Kupca. Zaczeła wiec potajemnie
+sledzic działania Jakela, jednoczesnie sprawdzajac
+historie jego dynastii.
+Vakuul chce pozyskac przychylnosc Varoniusa,
+wiec ostentacyjnie dostarcza mu niezbednej ekspertyzy
+i·zasobów technologicznych, nie zadajac w·zamian
+wiele. Twierdzi, ze·czyni tak dla dobra systemu. Arcydomina
+szczególnie chetnie uzyczyła tech-kapłanów
+i·serwitorów, którzy zostali wysłani do wysokiego
+króla Nethreusa. Było to zbiezne z·celami samej
+Vakuul, dazacej do wykucia sojuszu miedzy Avachrusem
+a·pilotami Rycerzy – swietych machin wojennych.
+W·przypadku otwartego konfliktu z·wrogami wewnatrz
+lub z·zewnatrz systemu Rycerze wypełniaja wazna
+luke w·siłach Adeptus Mechanicus, powstała z·braku
+Legio Kaurthos.
+Dzieki rozsianym po całym systemie oczom
+i·uszom Vakuul nie umkneło jej, ze·obecne czasy sa
+trudnym testem wiary imperialnych obywateli, co samo
+w·sobie jest okazja. Imperator, ten przebrany i·czczony
+przez Eklezjarchat, wydaje sie bardziej niedostepny niz
+kiedykolwiek, a·swiete maszyny Omnisjasza kazdego
+dnia podtrzymuja niezliczone zycia w·Gileadzie. Kiedy
+kapłani Ministorum wychwalaja boskie przewodnictwo
+Imperatora, które pozwoliło bezpiecznie przybyc flotylli
+Varoniusa do systemu, Vakuul wskazuje na bardziej
+namacalna boskosc – obecne na kazdym statku silniki
+Osnowy i·pola Gellera.
+AGENCI MECHANICUS
+Adeptus Mechanicus powszechnie uwaza sie za
+tajemnicze i·nieprzystepne. Samo tworzy zołnierzy
+i·maszyny bojowe, jednoczesnie zapewniajac ekspertyze
+i·duchowe przewodnictwo, przez co niemal samowystarczalne
+kapłanstwo Marsa stało sie imperium
+wewnatrz Imperium. Z·tego powodu magosi Mechanicus
+rzadko zwracaja sie o·pomoc do kogos spoza
+swojej organizacji. Arcydomina jest wyjatkiem od tej
+reguły, choc nie wiadomo, czy to dzieki jej ekstremalnej
+ambicji, czy z·powodu nowych niebezpieczenstw
+wobec Imperium Nihilus. Od nastania Noctis Aeterna
+Vakuul coraz czesciej polega na róznorodnych sługach
+i·najemnikach spoza Avachrusa, a·nawet spoza
+samego Mechanicus.
+Jej agenci zazwyczaj podejmuja sie misji, których
+nie mozna powierzyc oddziałom Skitarii lub
+innym oficjalnym siłom Adeptus Mechanicus. Mozliwe,
+ze·jest to próba unikniecia konfliktów z·organizacjami
+Imperium lub nadzoru magosów. Arcydomina nie waha
+sie jednak dołaczyc do takich grup tech-kapłanów, niezaleznych
+Skitarii i·innych członków Adeptus Mechanicus,
+by powierzone zadanie zostało sprawnie wykonane.
+W·przypadku delikatnych misji Vakuul upewnia
+sie, ze·jej podwładnych nie da sie z·nia oficjalnie
+powiazac. Jednakze jesli zadanie nie wymaga dyskrecji,
+Vakuul najchetniej ufa sprawdzonym i·niezawodnym
+agentom Adeptus Mechanicus. Nie ma jednak nic
+przeciwko „wspólnym operacjom” z·innymi sługami
+Imperium, zwłaszcza gdy moze byc pewna ich lojalnosci.
+Odznaczajacy sie agenci moga oczekiwac w·zamian
+za wierna słuzbe rzadkiej i·dobrze wykonanej broni,
+pancerzy i·narzedzi dostepnych zazwyczaj jedynie dla
+członków Mechanicus. Nieszczesnicy, którzy poswiecili
+swe ciała na misjach (lub głosno wyrazili poparcie dla
+pogardy ciała), moga liczyc na zaawansowane protezy
+i·wszczepy. Ci, którzy prawdziwie i·nieustannie wywieraja
+na arcydominie wrazenie, maja szanse otrzymac
+w·darze technologiczne cuda dostepne jedynie dla
+poteznych magosów.
+Dla Aexekry Vakuul agenci sa narzedziami,
+a·te maja tendencje do psucia sie lub gubienia w·miare
+uzytkowania. Choc szereguje wszystkich podwładnych
+pod katem stopnia zastepowalnosci, Adeptus Mechanicus
+zajmuja uprzywilejowana pozycje w·jej ocenach.
+Badz co badz poprzez wprowadzenie do kapłanstwa
+Marsa stali sie przeciez ponadprzecietnymi osobami.
+Nie oznacza to jednak, ze·Vakuul szasta kompetentnymi
+agentami i·wysyła ich na samobójcze misje lub
+bez powodu stawia wobec zagrozenia. Byłoby to wybitnie
+nieefektywne, a·to czujniki arcydominy uznaja za
+niewybaczalny grzech.
+
+	MISTRZ ESHGAR QUINTILLIUS LORAE
+Mistrz Lorae jest dobrze odzywionym mezczyzna
+w·zaawansowanym wieku, choc rysy ma wygładzone
+dzieki zabiegom odmładzajacym. Jego czaszka jest
+usiana wtyczkami umozliwiajacymi mu podłaczanie
+sie do starozytnych maszyn, które zbieraja i·segreguja
+dane o·produkcji zywnosci na Ostii. Lord Sortium
+zawsze ma na sobie szaty starszego adepta
+w·złowieszczo szarym kolorze, które sa pedantycznie
+ułozone i·w·nieskazitelnym stanie. To jeden
+z·przejawów jego działan majacych na celu podtrzymanie
+reputacji i·tworzenia wzoru do nasladowania
+dla podwładnych.
+Choc mistrz Sortium hierarchicznie podlega
+starszym prefektom Administratum na Gilead Primus,
+to od zawsze cieszył sie niezwykłym szacunkiem
+i·władza w·całym systemie z·powodu znaczenia
+Ostii w·wyzywieniu systemu. Od powstania Imperium
+Nihilus znaczenie to wzrosło niepomiernie, przez co
+Lorae jeszcze zwiekszył wpływy i·kontrole.
+Mistrz nie ma litosci dla robotników na Ostii.
+Kazdy obywatel Imperium ma wyznaczone miejsce,
+a·społeczenstwo wymaga od kazdego, by nie
+kwestionował tego miejsca i·sumiennie wykonywał
+przydzielona prace, gdyz w·przeciwnym wypadku
+bedzie kwestionował boski plan Imperatora. Lord
+w·podobny sposób traktuje szlachte swiata rolniczego
+i·uwaza, ze·te rozpieszczone i·prymitywne dzieciaki
+maja wobec niego dług wdziecznosci. Pozwala im na
+pobieranie podatków wystarczajacych do zachowania
+mocy i·pozycji, dzieki czemu oni wspieraja jego imperialna
+biurokracje.
+Lord Sortium jest wielkim tradycjonalista i·pokłada
+zaufanie w·protokołach, lecz rozumie tez, ze·zaistniała
+sytuacja jest bezprecedensowa. Mimo tego dokłada
+wszelkich staran, by eksploatacja Ostii przebiegała na
+tyle efektywnie, na ile tylko sie da. Lorae zdaje sobie
+sprawe, ze·wszelkie dostrzegalne odstepstwa od protokołu,
+niewazne jak bardzo uzasadnione, oznaczaja
+włozenie broni w·dłonie ambitnych podwładnych, którzy
+w·tych niespokojnych czasach chetnie wysadza go
+z·siodła.
+AGENCI ADMINISTRATUM
+Eshgar Quintillius Lorae przy wszystkich zleceniach
+od zawsze polegał na odpowiednio dobranym personelu
+Administratum. Jest niezwykle cierpliwy. Nieraz
+juz czekał całe lata, by przeprocedowano jego zamówienia,
+czasem i·dłuzej, gdy niezbedny był wkład oficjeli
+z·podsektorów. Mimo ze·pedantycznie trzyma sie
+protokołu, Lorae rozumie, ze·sytuacja po pojawieniu
+sie Cicatrix Maledictum jest bezprecedensowa. Bez
+astropatycznej komunikacji czesc swietych ksiag po
+prostu nie moze działac. W·miare jak instytucje Gileadu
+pekaja pod ciezarem izolacji, Lorae uznaje, ze·nie
+moze czekac na akceptacje swoich działan przez
+mistrzów z·Gilead Primus. Ze wzgledu na okolicznosci
+ucieka sie do zatrudniania pomocy spoza organizacji –
+zdolnych i·proaktywnych jednostek, które załatwia
+sprawy zablokowane w·biurokratycznych trybach –
+choc pomysł ten przeraza wielu konserwatystów
+z·Administratum.
+Mimo zmiany perspektywy w·ostatnich latach
+Lorae poswiecił zycie Administratum i·uwaza przestrzeganie
+protokołów za przejaw duchowosci organizacji,
+dlatego nie toleruje zadnego łamania imperialnego
+prawa czy przepisów. Kiedy tylko jest to mozliwe,
+wykorzystuje biurokratyczne kruczki w·celu „zlecania”
+prac, czesto korzystajac przy tym z·biegłych w·prawie
+agentów. Inne misje naleza raczej do szarej strefy
+miedzy czesto sprzecznymi przepisami a·protokołami
+Adeptus Administratum. Lorae zasnie w·spokoju,
+dopiero gdy dopilnuje, ze·zadania wyjasnien zostały
+wysłane do władz podsektorów, nawet jesli wie, iz nie
+przedra sie do nikogo przez Cicatrix Maledictum.
+Jego agenci działaja głównie na Ostii i·jej satelitach,
+badajac raporty na temat rozwiazłosci posród robotników
+rolnych lub sprawdzajac rozbieznosci miedzy
+zbiorami a·eksportowanymi towarami. Nieustanna
+ochrona Korony Ostrzy jest nadrzedna, a·lord Sortium
+priorytetowo traktuje najbłahsze nawet plotki o·grozacych
+jej niebezpieczenstwach.
+Poniewaz płynna praca ostianskich farm jest silnie
+zalezna od Adeptus Ministorum i·Adeptus Mechanicus,
+Lorae moze rozdysponowywac agentów, by pilnowali
+jego interesów w·tych organizacjach na Ostii i·poza nia.
+Jako lord Sortium na Ostii Eshgar Lorae skupia
+w·rekach znaczne zasoby. Jego lojalni podwładni
+moga liczyc na systematyczne i·dobre wyzywienie.
+Lorae jest w·stanie uzyc swych kontaktów w·Administratum
+i·Departmento Munitorum, by zdobyc niemal
+kazdy powszechnie uzywany w·Gileadzie ekwipunek
+i·wynagrodzic tych, którzy nieustannie mu imponuja.
+
+	NOWATOR OCTAVIA OMINCARA
+Choc to Jakelowi Varoniusowi przypadła chwała zbawcy
+systemu, to działania lady Octavii Ecedesy Omincary,
+nowator Domu Omincara z·Navis Nobilite, umozliwiły
+osiagniecie obecnej sytuacji politycznej w·Gileadzie.
+Choc nie wiadomo, czy jakis inny Nawigator byłby w
+stanie przeprowadzic statki przez Ciesnine Andraste,
+to dokonania lady Octavii sa niezaprzeczalne. Przybycie
+flotylli Varoniusa miało miejsce trzy lata temu,
+a·od tamtej pory nowator Omincara chetnie stała w·cieniu,
+pozostawiajac Jakelowi chwałe i·zawiazywanie
+sojuszów. Nie oznacza to jednak, ze·była bezczynna.
+Lady Octavia jest nieludzko wysoka i·szczupła.
+Potrafi tez poruszac sie w·sposób daleko wykraczajacy
+poza mozliwosci stawów swietej ludzkiej formy –
+a·przynajmniej tak mówia niektórzy. Inni twierdza,
+ze·jest wiotka, nieustannie sie wije i·ma skrzela, które
+przetwarzaja bogate w·tlen kapiele w·podobny sposób
+jak ludzkie płuca. Wszystkie te historie łaczy watek
+tego, ze·ciało lady Octavii znacznie odbiega od ludzkiej
+normy, ale wszystkie sa fałszem. Kilku wybranych
+członków domu Varoniusa wie, ze·Omincara
+z·cała pewnoscia jest człowiekiem, choc odmiennym
+w·niemozliwy do okreslenia sposób. Niezaleznie od
+wiarygodnosci tych historii niewielu widziało nowator
+osobiscie, a·jeszcze mniej widziało ja poza metna
+komora medytacyjna lub banka Nawigatorów, która
+wisi wysoko ponad mostkiem „Ksiazecego Diademu”.
+Niewielu jednak jest w·stanie powiedziec, czy zródłem
+tych plotek jest kształt jej ciała, czy ogromne zamiłowanie
+do prywatnosci. Szczere opinie wyrazane
+o·nowator moga spotkac sie z·jej niezadowoleniem, co
+zniecheca do komentarzy nawet samego Jakela Varoniusa.
+Ludziom, z·którymi Omincara chce sie „spotkac”,
+bedzie towarzyszyc wielu jej konsulów – innych
+Nawigatorów. Wszyscy sa wyposazeni w·przypominajace
+katedry zestawy voxowe jej własnego projektu,
+Lady Octavia jest władczynia Domu Omincara
+i·odpowiada za jego przetrwanie i·pozycje, które stanowia
+jej główna motywacje. Nawet w·tych mrocznych
+czasach stale poszukuje mozliwosci rozwiniecia interesów
+Domu. Co wiecej, w·działaniach na rzecz jego przetrwania
+i·dobrobytu Omincara stała sie znacznie bardziej
+przebiegła, niz kiedykolwiek była. Kazdy kolejny
+dzien w·odcieciu od Imperium oznacza, ze·maleje znaczenie
+Nawigatorów w·oczach kapitanów, gubernatorów
+i·generałów. Poniewaz podróze przez Osnowe sa
+niemozliwe, wydaje sie, ze·w·najblizszym czasie nie
+bedzie zapotrzebowania na usługi Nawigatorów. Lady
+Octavia liczy na to, ze·dzieki tym załozeniom jej działalnosc
+pozostanie niezauwazona.
+Zdaje sobie sprawe, ze·nie uda jej sie ponowny
+wyczyn przejscia Wielkiej Wyrwy i·jest całkowicie
+pewna, ze·zaden Nawigator w·systemie tez tego nie
+potrafi. Aby nie marnowac ludzkiego zycia lub, co gorsza,
+aby nie potwierdzic pogłosek o·zbednosci Nawigatorów,
+nowator zakazała członkom swego Domu
+podejmowania prób podrózy przez Ciesnine Andraste.
+Nie moze jednak narzucic tego dekretu Nawigatorom
+z·innych Domów, dlatego chetnie zniecheca ich opowiesciami
+o·swych wstrzasajacych doswiadczeniach. Mimo
+tego niektórzy wydaja sie zdecydowani podjac sie niemozliwego.
+W·ich przypadku Octavia musi korzystac
+z·innych metod.
+Jej najwazniejszym celem jest utrzymanie
+uprzywilejowania Navis Nobilite, dlatego nieustannie
+przypomina władcom Gileadu, ze·ich jedyna nadzieja
+na powrót kontaktów z·Imperium (i·odtworzenie tak
+waznego dla ich interesów i·celów miedzygalaktycznego
+handlu) sa własnie Nawigatorzy. Jednoczesnie
+szuka sposobów na wyniesienie swego Domu ponad
+inne. W·obu przypadkach niezmiernie pomaga jej sukces
+w·przeprowadzeniu flotylli przez Wielka Wyrwe.
+Nowator chetnie przypomina o·tym fakcie innym
+członkom Rady Diademu, lecz sama rzadko spotyka
+sie z·notablami systemu. Lubiaca prywatnosc Nawigatorka,
+nie chce wiec narazac na szwank reputacji
+i·podrózowac od swiata do swiata jedynie dla spotkan
+towarzyskich.
+Widzi jednak, ze·koniecznosc zachowania dobrych
+relacji Navis Nobilite z·Adeptus Mechanicus i·Administratum
+jest absolutnie kluczowa. Natomiast Adeptus
+Ministorum uznaje za z·góry przegrana sprawe, gdyz
+nawet w najlepszym wypadku Eklezjarchat traktuje
+Nawigatorów jako zło konieczne.
+W·tym jednak przypadku niechec do Nawigatorów
+nie jest bezpodstawna. Czy to z·powodu wystawienia
+na działanie zgubnego wpływu Empireum podczas
+przebijania sie przez Wielka Wyrwe, czy wywołanego
+brakiem komunikacji z·Astronomicanem załamania
+nerwowego, czy ze zwykłej zadzy potegi – Omincara
+wykorzystuje wyjatkowe sposobnosci, jakie stawia
+przed nia izolacja systemu, do wprowadzania wielkiego
+i·nieprzeniknionego planu. Octavia próbuje stworzyc
+podobizne Astronomicanu Imperatora, by sprowadzic
+jego swiatło do mroku Imperium Nihilus. Tworzy
+wiec feralna podróbke Złotego Tronu i·gromadzi psioników
+ofiarnych, majacych wzmocnic jej potencjał.
+Ta nieprzemyslana misja jest skazana na porazke,
+ale Nawigatorka nie ujawnia swoich planów, pociagajac
+za sznurki z·ukrycia.
+AGENCI NAWIGATORKI
+Nowator Omincara potrzebuje zdolnych i·godnych
+zaufania agentów, by chronic interesy Domu. Maja
+wykonywac jej wole poza obrebem jej Sanctum Navis.
+Lady Octavia jest matka starozytnego Domu Navis
+Nobilite, ma wiec dostep do nieprzebranych zasobów,
+w·tym wszelkich sług, strazników i·innych oficjeli. Czesto
+szuka tez przedstawicieli zdolnych do wykonywania
+jawnych i·sekretnych misji.
+Nowator traktuje wiekszosc swoich agentów
+z·uprzejmym dystansem. Jedynie ci najbardziej zaufani
+moga spodziewac sie przekazywania rozkazów osobiscie,
+a·nawet wtedy zazwyczaj jedynie poprzez vox
+zamontowany na zewnatrz skrywajacych jej kapsułe
+izolacyjna aksamitnych zasłon. Wiekszosc dostaje polecenia
+od posredników, najczesciej w·formie infoczytników
+lub szeptów, w·zaleznosci od delikatnosci
+sprawy. Jej słudzy powszechnie sadza, ze·nawet nieobecna,
+nowator widzi naprawde wiele, dlatego zawsze
+sumiennie wykonuja rozkazy i·nakłaniaja agentów do
+tego samego.
+Lady Octavia wzywa bohaterów na przerózne
+misje majace na celu zwiekszenie prestizu Domu Omincara.
+Postacie biegłe w·skradaniu sie moga otrzymac
+zadanie zebrania informacji, ewentualnie kradziezy
+tajemnic imperialnych frakcji lub konkurencyjnych
+nawigatorskich rodów, jak chocby Taliandru. Misje
+agentów działajacych otwarcie zaskarbiaja przysługi
+imperialnych magnatów i·organizacji, czy to z·uwagi
+na istniejace pakty, czy w·roli podwaliny pod przyszłe
+sojusze. Nikt nie ma pojecia, ze·jej tajnym celem jest
+zbudowanie własnego Astronomicanu, choc wielu jest
+zaangazowanych w·porywanie psioników niezbednych
+do podjecia tego próznego wysiłku. Pozornie zbiera
+potezne jednostki połaczone z·Empireum w·celu badan
+i·wsparcia Adeptus Astra Telepathica, ale niewielu
+ponownie słyszało o·pechowcach sprowadzonych do
+nowator Domu Omincara, która hojnie nagradza dyskrecje
+swoich łowców psioników.
+Los Domu Nawigatorów opiera sie przede
+wszystkim na mistrzostwie zeglowania po falach Empireum.
+Agenci wysłani do krypt ukrytych głeboko w·kopcach
+Gilead Primus czy wrakach uwiezionych wewnatrz
+„Załosci Persefony” maja za zadanie odzyskac starozytne
+mapy Osnowy i·nawigatorskie archeotechnologie.
+Plotkuje sie tez o·legendarnym kosmolabium
+Empyrius, lezacym gdzies pod czarnymi głazami Uru.
+
+	INKWIZYTORKA ORDO MALLEUS TYTRONA DIKAISUNE
+Inkwizytorka Tytrona Dikaisune jest wysoka i·olsniewajaca,
+a·kazdy, kto ja spotyka, czuje jej przejmujaca
+obecnosc. Poswieciła czas kilku zyc na walke z·arcywrogiem
+ludzkosci, czego nie kwestionuje nikt, na kim
+spoczeło jej miazdzace spojrzenie, choc intensywne
+zabiegi odmładzajace i·augmentacje najlepszej jakosci
+tuszuja jej liczne blizny. Rzadko pojawia sie bez bogato
+zdobionego ciezkiego pancerza skorupowego i·błogosławionej
+broni, symbolu członkostwa w·Ordo Malleus –
+poteznego młota Nemezis.
+Dikaisune jest doswiadczona łowczynia demonów
+Ordo Malleus, lecz działała daleko poza sektorem,
+w·którym pojawiła sie tuz przed powstaniem Wielkiej
+Wyrwy. Nie spowiada sie z·powodów przybycia
+do Gileadu, twierdzac jedynie, ze·juz wszystko załatwione.
+Niektórzy nie wierza, ze·jest to prawda, i·uwazaja,
+ze·ma w·systemie jakies niedokonczone sprawy,
+jednak nikt nie osmieli sie zgłebiac tej kwestii. Osobistosci
+systemu w·duzej mierze traktuja ja z·(uzasadnionym)
+lekiem, ale wszyscy zgadzaja sie, ze·jej
+obecnosc jest błogosławienstwem dla Gileadu. Badz co
+badz któz w·obliczu demonicznej napasci odrzuciłby
+pozyteczna obecnosc inkwizytorki Ordo Malleus, jesli
+nie najgorszego rodzaju heretyk?
+Uwaga inkwizytorki skupiona jest na Cicatrix
+Maledictum i·jego nastepstwach. Dikaisune, odcieta od
+wsparcia braci i·sióstr, a·takze wiekszosci Imperium,
+nie liczy na wyleczenie tej wielkiej rany w·rzeczywistosci,
+stara sie tylko tamowac krwawienie. Niewielu
+wojowników Imperium jest przygotowanych do walki
+z·demonami, która staje sie koniecznoscia na niespotykana
+wczesniej skale. Inkwizytorka Dikaisune
+podrózuje od jednego konfliktu czy wtargniecia do
+innego, wspierajac imperialne siły swoimi zdolnosciami
+i·w·miare mozliwosci dzielac sie tez wiedza. W·przeszłosci
+Dikaisune nigdy nie pozwoliłaby sobie na tak
+hojne szafowanie sekretami, niegdys juz sama wiedza
+o·demonach była powodem do egzekucji wiekszosci
+obywateli. W·systemie Gilead, na granicy Wielkiej
+Wyrwy, bezposredniosc zagrozenia przewaza jednak
+nad tajnoscia.
+Dociekliwe pytania nie omijaja nawet długoletnich
+sojuszników. Tytrona chce sama swoja obecnoscia
+wywoływac nerwowosc ludzi, aby winni popełnili błedy
+i·sie ujawnili. Jesli sporadycznie ktos niewinny bedzie
+tak przerazony jej osoba, ze·tez złapie sie w·te pułapke,
+bedzie to dla niej mała strata. Atmosfere strachu wokół
+Dikaisune wzmacnia jej bardzo publiczna i·nieustanna
+obecnosc w·systemie. Zaden z·władców Gileadu, nawet
+Jakel Varonius, nie ma takiego doswiadczenia. Wiekszosc
+inkwizytorów działa w·tajemnicy, ujawniajac
+sie lokalnym władzom jedynie w·kluczowym punkcie
+sledztwa – o·ile w·ogóle to robi. Przerazajacy inkwizytorzy
+znani z·publicznych pogromów i·czystek rzadko
+zostaja na długo w·tym samym miejscu, gdyz nieustannie
+oczyszczaja i·terroryzuja kolejne systemy i·sektory.
+AGENCI INKWIZYTORKI
+Inkwizytorka zazwyczaj działa otwarcie, ale polega
+na tajnych akolitach, którzy przeprowadzaja sledztwa
+niepostrzezenie i·bez sladów. Dzieki temu cieszy sie
+strachem i·szacunkiem waznych person i·maluczkich
+obywateli, co zacheca do dzielenia sie informacjami
+i·podejrzeniami. Jednoczesnie działajacy potajemnie
+akolici sprawdzaja skłonnych do współpracy mieszkanców
+pod katem oznak zdrady. W·zaleznosci od natury
+odkrytego wystepku Dikaisune oczekuje od agentów,
+by rozwiazali problem osobiscie, doniesli jej o·niebezpieczenstwie
+lub zaprzegli do pomocy miejscowe siły.
+Gilead stoi naprzeciw niezliczonych zagrozen,
+dlatego inkwizytorka jest zmuszona polegac na sieci
+agentów bardziej niz kiedykolwiek przedtem. Niektórzy
+przybyli do systemu razem z·nia, ale wiekszosc
+została zrekrutowana juz w·Imperium Nihilus bezposrednio
+przez nia lub przez wyzszych ranga agentów.
+Jej podwładni maja rózne pochodzenie i·przeszłosci –
+kazdy zdolny do zaimponowania jej zdolnosciami lub
+zaangazowaniem obywatel Imperium jest potencjalnym
+rekrutem. Granica oddzielajaca akolite od najmity jest
+bardzo cienka. Niektórzy agenci sami moga nie byc
+pewni, czy sa czescia Inkwizycji, czy moze po prostu
+zostali zatrudnieni przez inkwizytorke.
+Poniewaz system został odciety od Imperium,
+inkwizytorzy o·podobnych pogladach musza bardziej
+niz kiedykolwiek współdzielic zasoby. Choc w·Gileadzie
+jest ich zaledwie garstka – w·najlepszym wypadku –
+to agenci Dikaisune czasami współpracuja z·komórkami,
+które odpowiadaja przed innym inkwizytorem.
+Dikaisune jest zdecydowana purytanka i·nie
+toleruje odstepstw posród swoich agentów. Nawet
+w·tak straszliwych czasach uwaza, ze·uzywanie srodków
+wroga oznacza przejscie na jego strone. Niemniej
+jednak Dikaisune wyraznie oddziela heretyckie czyny
+od zaledwie niedozwolonych (ku wielkiemu rozgoryczeniu
+wielu sojuszników). Plotkuje sie, ze·jej agenci
+uzywaja zakazanych bojowych substancji chemicznych,
+w·tym budzacych postrach srodków do wyłacznego
+uzycia przez Officio Assassinorum. Jednak dla agentów
+Dikaisune cel uswieca wszelkie srodki – z·wyjatkiem
+igrania z·zepsuciem Chaosu.
+
+	AKAHIR, PEŁNIACY OBOWIAZKI KAPITANA ABSOLUTORÓW
+Choc kapitan Akahir mierzy ledwie ponad dwa metry
+wzrostu, to sama aura wydaje sie dominowac nad
+innymi Astartes z·Zakonu Absolutorów. Blizny po
+popularnym wsród Absolutorów zagadkowym rytuale
+skaryfikacji przeplataja sie na nim z·poskrecanymi
+szramami nabytymi w·walce z·demonami i·sa sladami
+trzech lat pełnej brutalnosci słuzby. Od kiedy stał sie
+prawdziwym Astartes, ciemna skóra naciagneła sie
+mocno na jego ulepszonym nadludzkim ciele, a·jedyna
+widoczna wada jest augmentyczne oko zamontowane
+w·trakcie bitwy o·Villam Fundus.
+Losy kapitana Akahira i·Jakela Varoniusa zostały
+splecione za sprawa niechlubnej rozpaczliwej prosby
+o·pomoc wysłanej przez zaginione dowództwo Absolutorów.
+Nigdy nie poruszaja tej sprawy w·zasiegu słuchu
+innych ludzi, nikt nie wie wiec, czy Varonius odsłonił
+przez Akahirem tresc wezwania, czy tez kapitan Astartes
+juz znał cała prawde. Inni członkowie rady zauwazaja
+pewne napiecie miedzy tymi dwoma, nie sposób
+jednak powiedziec, czy z·powodu dzielonego i·niewypowiedzianego
+brzemienia, czy głebokiej nieufnosci.
+W·sytuacji nieobecnosci mistrza zakonu i·anarchii,
+jaka nastała w·systemie po zapadnieciu Noctis
+Aeterna, Absolutorzy rozpaczliwie potrzebowali przywódcy.
+Kapelan Heractis podjał decyzje o·awansowaniu
+Akahira na kapitana polowego i·pełniacego obowiazki
+dowódcy w·uznaniu jego sukcesów podczas organizowania
+wczesnej obrony zwykłych ludzi. Nieoficjalnie
+Heractis mówił tez o·przepowiedni z·zapomnianych kronik
+historii Zakonu i·roli, jaka przewidział dla Akahira.
+Okazało sie, ze·ten jest zreczniejszym dyplomata
+niz reszta Absolutorów. Jest w·stanie cierpliwie i·w·ciszy
+znosic politykowanie i·debaty Rady Diademu, zanim
+wypowie taktowna i·ostateczna opinie. Mimo tego stosunki
+miedzy Zakonem a·dynastia Varoniusa sa napiete.
+Absolutorzy znani sa z·braku elastycznosci, a·Akahir
+musi nieustannie zmagac sie z·ulotnymi kaprysami
+ludzi w·Radzie Diademu. Gdyby dowiedział sie, ze·Jakel
+zadaje sie z·xenos, z·pewnoscia zerwałby współprace,
+co mogłoby doprowadzic do przelewu krwi. Akahir jest
+w·stanie znalezc wspólny grunt z·chłodna wydajnoscia
+arcydominy Vakuul, a·czasy niepokoju wzmocniły jedynie
+wiezi miedzy Absolutorami a·Avachrusem. Podtrzymanie
+i·wzmocnienie tej relacji jest kluczowe, gdyz swiat-
+-kuznia uzupełnia ograniczone zródła amunicji Absolutorów.
+Ponadto jedynie na Avachrusie mozna prawidłowo
+wyszkolic zbrojmistrzów, których wiedza w·przedłuzajacej
+sie izolacji jest jedyna szansa na naprawe ekwipunku
+i·maszyn Zakonu – a·Akahir wie, ze·optymizm to słabosc.
+Mimo faktu, ze·Astartes sa priorytetowymi
+odbiorcami, to moce produkcyjne swiata-kuzni osiagneły
+juz swoje maksimum. Z·koniecznosci – oraz chcac
+zawczasu przygotowac sie na jeszcze trudniejsze czasy –
+Akahir nakazał, by w·całym Zakonie kłasc wiekszy
+nacisk na walke wrecz. Wpływa to na wszystkich, od
+rezimu treningowego zwiadowców, do codziennych
+cwiczen bitewnych braci. Uderzyło to nawet w·machiny
+bojowe Absolutorów, gdyz zbrojmistrzowie zaczeli doposazac
+czołgi Predator i·transportery Rhino w·naszpikowane
+zabkowanymi ostrzami lemiesze. Jednoczesnie
+dbaja o·przygotowanie ogromnych rekawic energetycznych
+na wypadek wezwania Drednotów do boju.
+AGENCI KAPITANA ASTARTES
+Choc Zakon Astartes jest w·duzej mierze samowystarczalny,
+w·wyborze celów i·swiatów do obrony czesto
+polega na wywiadzie Imperium i·jego sieci komunikacyjnej.
+Mogłoby sie wydawac, ze·dzieki ograniczeniu
+działan do jednego systemu zmniejszy sie liczba interwencji,
+jednak ilosc i·natura zagrozen czyhajacych na
+Gilead sprawiły, ze·perfekcyjne rozmieszczenie nielicznych
+sił stało sie kluczowe. Ponadto izolacja systemu
+i·nieporzadek w·łancuchach komunikacyjnych sprawiły,
+ze·Akahir rozpoczał niezalezne sledztwa i·inwigilacje
+zdrajców w·Gileadzie. Zaczał polegac na wyselekcjonowanych
+agentach – zwykłych ludziach badz Astartes –
+działajacych poza sankcjonowanym przez Codex Astartes
+łancuchem dowodzenia. Sa jego uszami, oczami
+i·ostrzami w·całym systemie.
+Potrzeba wiarygodnych i·elastycznych w·działaniu
+nieulepszonych agentów wynikła z·watpliwosci
+kapitana co do metod pracy wielu imperialnych organizacji.
+Nie ma zaufania do bezkarnosci i·pokretnych
+metod inkwizytorów, a·na Ministorum spoglada z·politowaniem.
+Uwaza, ze·szeregi kapłanów Eklezjarchatu
+sa miekkie i·pełne hipokryzji, gdyz wymuszaja na
+wiernych poswiecenie dla Imperatora, podczas gdy
+sami zyja we wzglednym luksusie. Kosmiczni Marines
+walcza na pierwszej linii przez całe zycie, niezaleznie
+od szarzy, natomiast wielu kapłanów wykorzystuje
+wyzsza range, by wycofac sie z·pól bitew do zycia
+w·luksusie i·spokoju.
+Niektórzy Kosmiczni Marines krytycznie patrza
+na nieulepszonych agentów, Akahir rozumie jednak,
+ze·ci moga działac na inne sposoby, a·takze dotrzec
+tam, gdzie jawnosc i·budzaca podziw reputacja Astartes
+byłyby zawada. Choc kapitan jest wzglednie wolny od
+uprzedzen, to nie toleruje wszelkich mutantów i·xenos.
+Jak wszyscy Absolutorzy, Akahir najbardziej
+przywiazuje wage do przysiag i·tego samego wymaga
+od agentów, gardzac słaboscia i·wymówkami. Podjecie
+sie misji to obietnica odniesienia sukcesu, a·usprawiedliwianie
+porazki jedynie potwierdza fakt jej złamania.
+Akahir zdaje sobie jednak sprawe ze swych trudnosci
+w·kontaktach społecznych z·ludzmi, co rekompensuje
+przesadnymi pochwałami i·wielka cierpliwoscia. Jego
+próby bratania sie z·ludzmi bywaja dosc niezdarne,
+choc sam kapitan jeszcze tego nie pojmuje. Głównym
+celem Akahira jest obrona Imperium przed militarnymi
+zagrozeniami, lecz zaraził sie podejrzeniami
+trawiacymi członków Rady Diademu. Z·tego powodu
+zaczał rozwazac obserwowanie poczynan innych frakcji,
+oczywiscie dla bezpieczenstwa. Jedynie Absolutorzy
+sa poza podejrzeniem, gdyz to ich zadaniem jest karanie
+zdrad w·całym systemie.
+Kapitan czule wspomina chwile, gdy był jeszcze zwiadowca
+i·przewodził mieszanemu zespołowi imperialnych
+agentów. Nie tylko silnie popiera udział Zakonu
+w·tej niezwykłej tradycji, lecz takze ma skłonnosc do
+wiary w·kompetencje wyselekcjonowanych nieulepszonych
+agentów, którzy ponad wszystko musza odznaczac
+sie prawdziwym pragnieniem ochrony systemu.
+Akahir nie toleruje porazek, natomiast wszelkie zniszczenia
+czy straty wsród cywili sa akceptowalne, o·ile
+zadanie zostało wykonane. Agentom musi wystarczac
+chwała słuzby Imperatorowi, poniewaz koncepcje
+bogactwa czy osobistej satysfakcji sa Akahirowi obce.
+Choc ceremonialne uznanie jest powszechne wsród
+samych Astartes, to niewiele odznaczen jest dostepnych
+dla ludzi. Oferowane nagrody sa nadzwyczaj
+praktyczne: bron, pancerze i·inny sprzet bojowy.
+
+	PRZEORYSZA JEANNE GRACE D’EMYSA
+Przeorysza Jeanne Grace D’Emysa przewodzi Zakonowi
+Uswieconej Tarczy od ponad czterech dekad, a·blizny
+na jej ciele sa tego dowodem. Jest bardzo wysoka
+dzieki w·pełni bionicznym nogom – własne straciła
+jeszcze jako siostra przełozona w·walce z·Kosmicznym
+Marine Chaosu, która niemal przypłaciła zyciem.
+Jej krótko przyciete białe włosy okalaja pogodna, ale
+surowa twarz.
+Jeanne Grace D’Emysa sukcesywnie awansowała
+w·szeregach zakonu dzieki zdolnosciom bojowym,
+sile wiary i·zarliwosci, z·jaka inspiruje podwładne siostry.
+Głównym celem przeoryszy jest ochrona Imperium
+i·niszczenie wrogów Boga-Imperatora. Jej wiara stała
+sie jeszcze bardziej nieugieta, a·chwiejnosc tych, którzy
+twierdza, ze·Imperator porzucił Gilead, szczerze ja
+obrzydza. Obywatele, którzy byli swiadkami cudownych
+wyczynów sióstr Uswieconej Tarczy na polu bitwy,
+twierdza, ze ich wiara stała sie silniejsza.
+Przeorysza D’Emysa podtrzymuje dobre relacje
+z·innymi imperialnymi frakcjami, aby zakon był wiecznie
+gotów walczyc, a·czasem nawet zwalczac z·wyprzedzeniem
+zagrozenia systemu. W·przeszłosci bardzo
+polegała na dyplomatach Eklezjarchatu i·dialogistkach
+z·Zakonu Censura. Jednak w·obliczu niepewnosci wywołanej
+Wielka Wyrwa przeorysza zaczeła angazowac sie
+bardziej osobiscie i·przypomina władcom Gileadu, ze·siostry
+Uswieconej Tarczy nieustannie stoja na ich strazy.
+D’Emysa podtrzymuje wiekuista tradycje zakonu –
+obserwacje przywódców Eklezjarchatu w·Gileadzie,
+by herezje podobne Erze Apostazji nigdy juz sie nie
+wydarzyły. Najwiecej czasu i·uwagi poswieca sytuacji na Enoch.
+Nie tylko musi koordynować obronę wazniejszych
+swiatyn i·przybytków Ministorum przez siły
+sióstr, ale staje sie coraz bardziej zmartwiona sposobem
+działania arcydiakona Merramara Clade’a. Według
+niej Sororitas maja zwalczac heretyków i·zdrajców,
+a zrozpaczeni pielgrzymi do takich nie należą. Na
+prywatnych
+spotkaniach w·blasku swiec z·najbardziej
+zaufanymi siostrami D’Emysa przygotowuje plan działania
+na dzien – choc ma nadzieje, ze·ten nigdy nie
+nadejdzie – w·którym bedzie zmuszona usunąć przywódców
+Ministorum z ich urzędów.
+AGENCI SORORITAS
+Przeorysza D’Emysa tradycyjnie we wszelkich niezbednych
+z·jej punktu widzenia misjach polegała na
+bitewnych siostrach Uswieconej Tarczy i·członkiniach
+innych cywilnych zakonów systemu. Z·powodu anarchii
+na Enoch, a·takze wielu innych zagrozen dla Gileadu,
+siły sióstr niebezpiecznie sie rozciagneły, przeorysza
+musiała wiec poszerzyc swe horyzonty dla dobra
+całego systemu. Nadal woli zawierzac misje Sororitas
+lub sprawdzonym członkom Eklezjarchatu, lecz moze
+tez przyjac na słuzbe poboznych i·wiarygodnych obywateli
+Imperium.
+Przeorysza niechetnie podchodzi do szpiegostwa
+czy machlojek. Niemniej jednak rozumie potrzebe
+obserwowania innych imperialnych instytucji i·szlacheckich
+rodów pod katem oznak apostazji i·herezji.
+W·takich własnie misjach D’Emysa jest szczególnie
+otwarta na współprace z·agentami spoza Sororitas.
+Badz co badz niewiele sióstr poza zakonem Famulous
+ma odpowiednie przeszkolenie do takich działan.
+D’Emysa obawia sie, ze·izolacja systemu rozbudzi
+dekadencje i·herezje wsród róznych wydziałów Adeptus
+Terra w·systemie, widzi wiec koniecznosc zatrudniania
+członków tych instytucji lub osób doswiadczonych
+w·wyszukiwaniu oznak apostazji.
+Agenci D’Emysy do mniej subtelnych misji
+musza miec doswiadczenie bojowe, zwłaszcza pod
+katem obrony majatku Imperium. Zadania te obejmuja
+ochrone podrózujacych przez system kaznodziei
+i·misjonarzy oraz obrone swiatyn i·swietych miejsc
+przed xenos i·heretykami. Bardziej aktywne misje
+obejmuja przebijanie sie przez rojace sie od plugastwa
+ruiny w·celu odzyskania zagubionych relikwii lub
+wyprowadzanie ataków z·wyprzedzeniem na zdrajców
+i·xenos w·Głebi.
+Przeorysza D’Emysa nie toleruje bluznierstwa ani
+nawet najdrobniejszych oznak herezji. Nawet od agentów
+spoza Ministorum wymaga takiej samej poboznosci,
+jaka przystoi sługom Boga-Imperatora. Akceptuje
+jednak fakt, ze·rózne osoby w·rózny sposób demonstruja
+swoja wiare, a·niektórzy sa w·tym bardziej
+skryci niz inni. Potencjalni agenci nie musza otwarcie
+płonac zarem miłosci do Imperatora – z·takimi D’Emysa
+rozmawia osobiscie, by ocenic głebie ich oddania.
+
+	ARCYPROROK TYLANRIEL TARANLYS
+Wysoki, pełen gracji i·niesamowicie piekny Tylanriel
+Taranlys uchodzi za wzorowego przedstawiciela swego
+gatunku. W·jego rysach utrwalił sie wyraz determinacji
+i·melancholii, natomiast głowe – z·wyjatkiem jednego
+długiego warkocza – ma łysa. Na wazne uroczystosci
+i·spotkania w·sprawach biznesowych jest zazwyczaj
+ubrany w·runiczny pancerz w·barwach Ul-Khari,
+zwłaszcza jesli obecne sa osoby niebedace Asuryani.
+Z·twarzy arcyproroka bije pewnosc siebie
+i·tajemniczosc, co jest typowe dla podazajacych Sciezka
+Proroka aeldari. W·bitwach lub w·kontaktach z·ludzmi
+zazwyczaj skrywa twarz za zasłona przyłbicy o·ozdobnym
+grzebieniu. W·rozmowie jest oficjalny i·wymagajacy,
+gdyz pospiech prowadzi do pomyłek, których
+Tylanriel nienawidzi.
+Jako główny arcyprorok Ul-Khari Taranlys czuje,
+ze·zawiódł swiatostatek, gdyz nie przewidział pojawienia
+sie Trolliusa. Niesie wiec to smutne brzemie samotnie.
+Jedyna nadzieja na przetrwanie swiatostatku sa
+jego umiejetnosci, nie moze wiec przyznac sie do takiej
+pomyłki. Mimo tego jego najblizsi przyjaciele i·sojusznicy
+podejrzewaja, ze·Taranlys obwinia sie za tragiczny
+los, jaki przypadł jego ojczyznie.
+Choc Tylanriel jest szanowany przez wszystkich
+Ul-Khari, to jego decyzja o·przymierzu z·Jakelem Varoniusem
+doprowadziła do tarc w·samym swiatostatku.
+Nie wszyscy arcyprorocy i·czarownicy Rady Proroka
+popierali ten czyn, a·wojowniczy mieszkancy światostatku
+są skonsternowani i·zdezorientowani takim
+sojuszem. Ul-Khari od wieków izolowali sie od reszty
+galaktyki, a·przyzwyczajenie sie do nowej sytuacji jest
+trudne z·powodu zakorzenionych zwyczajów.
+Taranlys upiera sie, ze·to niezbedne dla dobra swiatostatku,
+choc jednoczesnie podkresla, ze·Asuryani nie powinni
+ufac zadnemu mon-keigh. To jedynie sojusz z·rozsadku,
+a·choc wykracza poza tradycje, to przeciez
+swiatostatek pierwszy raz w·swej historii utknał w·jednym
+miejscu. W·tej niesłychanej sytuacji sojusz z Imperialnymi siłami,
+jednostronny i·przelotny, zmniejsza ilosc zagrozen wobec aeldari.
+Z·wyjatkiem dynastii Varoniusa Ul-Khari nie
+utrzymuja zadnych kontaktów z·Imperium w·systemie.
+Wobec orków i·wyznawców Chaosu w·regionie
+sa nastawieni jednoznacznie wrogo. Ferianwyr Zielona
+Stal okazała sie oddana sojuszniczka i·poprzysiegła
+bronic swiatostatku. Wydaje sie wiec, ze·oprócz
+tych kilku relacji uwieziony swiatostatek Ul-Khari
+jest otoczony przez wrogów, dlatego Taranlys jest
+otwarty na wszelkie oferty pomocy, o·ile jest pewien,
+ze·pochodza od osób, którym moze zaufac lub chociaz
+je wykorzystac.
+AGENCI SWIATOSTATKU
+Obecna sytuacja jest nietypowa, dlatego zapotrzebowanie
+arcyproroka Tylanriela Taranlysa na zdolnych agentów
+jest tak samo wyjatkowe. Zdolnosci arcyproroka
+kieruja go do tych, którzy moga mu pomóc, ale takze
+sciagaja ich do niego na rózne sposoby.
+Taranlys chetnie przyjmuje oferty pomocy od
+wszelkich aeldari. Słyszy sie nawet plotki, ze·rozwazał
+współprace z·Drukhari, choc wspominanie o·nich
+w·jego obecnosci byłoby wielkim nietaktem. W·tych
+niespokojnych czasach Ferianwyr chetnie udostepnia
+swoich Korsarzy, którzy moga przyjmowac zadania
+bezposrednio od Taranlysa. Nadzwyczajna sytuacja
+wymaga nadzwyczajnych srodków, a·słuzace arcyprorokowi
+grupy agentów składaja sie z·aeldari róznych
+frakcji, a·czasem nawet i·ludzi.
+Taranlys potrzebuje ludzkich agentów przede
+wszystkim w·celu odkrycia tajemnic Trolliusa. Emocjonalny
+rezonans w·lodzie przedziwnie reaguje na
+obecnosc mon-keigh, a·Taranlys wierzy, ze·okaze sie
+to kluczem do zwalczenia nieprzyjaznego srodowiska
+i·uwolnienia swiatostatku.
+Oczywiscie Taranlys woli, by zaufani aeldari towarzyszyli
+ludziom na wszystkich misjach eksploracyjnych
+wysyłanych na lodowy swiat bedacy wiezieniem Ul-
+-Khari. Arcyprorok rozumie potrzebe uzywania ludzi,
+jednak zaufanie to zupełnie odrebna kwestia.
+Taranlys ma inne zastosowanie dla chetnych do
+słuzby ludzi – swiadomie badz nie. Dopóki swiatostatek
+Ul-Khari jest uwieziony w·lodach Trolliusa, arcyprorok
+powinien miec wiedze o·poczynaniach Imperium
+w·systemie. Jego prorocze zdolnosci sa potezne,
+ale tez ograniczone, a·poza tym jest dla nich lepsze
+zastosowanie niz obserwowanie działan mon-keigh,
+dlatego własnie zatrudnia ludzkich agentów z·imperialnych
+społecznosci. Niektórzy nie wiedza nawet, dla
+kogo pracuja, i·przypuszczaja pewnie, ze·jest to jakis
+buntownik, inkwizytor lub szef szajki. Mimowolni
+agenci otrzymuja instrukcje od ostroznych zwiadowców,
+którzy ukrywaja obce rysy pod ciezkimi szatami
+i·dekadami praktyki w·sztuce niezwracania na siebie
+uwagi wsród ludzi. Chetni do słuzby dla xenos moga
+dostapic psionicznych wizji, otrzymac upiorytowe
+tablice w·punktach kontaktu lub – bardzo rzadko –
+spotkac sie osobiscie z·arcyprorokiem w·odosobnionym
+miejscu.
+Nagroda lub zapłata zalezy od tego, czy agenci
+znaja prawde, czy nie. Otwarci sojusznicy otrzymuja
+ekwipunek wyrabiany przez aeldari lub inne przedmioty,
+które w·ciagu tysiacleci znalazły sie na swiatostatku.
+Nieswiadome narzedzia najczesciej otrzymuja
+przesyłki z·lokalna waluta lub kosztownosci, a·takze
+bajeczke wciskana im przez zleceniodawce.
+
+	FERIANWYR, SZMARAGDOWA KSIEZNICZKA
+Aeldari Ferianwyr, Szmaragdowa Ksiezniczka, od wielu
+wieków przewodzi koterii Korsarzy zwanej w·niskim
+gotyku Wojownikami Zielonej Stali. Przybyli do Gileadu
+dekady temu i·pozostali w·systemie po narodzinach
+Cicatrix Maledictum, choc mogliby w·kazdej
+chwili uciec przez Pajeczy Trakt. Mimo iz załogi imperialnej
+marynarki i·transporterów od wielu pokolen
+drza ze strachu na dzwiek jej imienia, dla długowiecznej
+aeldari była to jedynie przelotna zabawa.
+Ferianwyr jest dosc niska jak na swój gatunek,
+ale nadal przewyzsza wiekszosc ludzi. Długie czarne
+włosy czesto nosi rozpuszczone na plecach, by podkreslały
+jej blada skóre. Jej ogromne oczy sa pełne wyrazu,
+choc ludzie miewaja trudnosci z·odczytaniem emocji
+z·ich w·pełni białej powierzchni. Szmaragdowa Ksiezniczka
+czerpie garsciami z·korsarskiego zycia, a·jej
+nieprzewidywalne kaprysy dorównuja gwałtownoscia
+burzom Osnowy. Ludziom wydaje sie wiec nieobliczalna
+i·zmienna, ale aeldari rozumieja przelotnosc jej zachowania.
+Ferianwyr przysiegła bronic swiatostatku Ul-
+-Khari, czemu przyklasneli zarówno aeldari, jak i·ludzie.
+Wrogowie zagrazajacy swiatostatkowi nie moga liczyc
+na litosc, krzyzujac ostrza z·Wojownikami Zielonej Stali.
+Szmaragdowa Ksiezniczka stała sie bohaterka
+przerazajacych legend opowiadanych na statkach
+kupieckich i·wsród sił obronnych systemu. Weterani
+podrózy kosmicznych podkreslaja jej okrucienstwo oraz
+szybkosc, z·jaka wojownicy ksiezniczki pojawiaja sie
+i·osaczaja ofiare. Mało kto moze sie równac z·umiejetnosciami
+szermierczymi i·celnoscia Korsarzy, a·sama
+Ferianwyr jest w·tym najlepsza. Jedyni ludzie, którzy
+przezyli spotkanie z·nia, musieli jej albo zaimponowac,
+albo ja rozbawic, choc zazwyczaj sami nie wiedza, w·jaki
+sposób uszli z·zyciem. Choc jest okrutna i·bezwzgledna
+według ludzkich standardów, to dobrze traktuje swoja
+załoge i·cieszy sie jej szacunkiem. Kieruje sie własna
+definicja honoru, ale dla człowieka sciezki jej umysłu sa
+zbyt poplatane. Wielu Korsarzy słuzy pod Ferianwyr od
+dziesiecioleci, szanujac ja równie mocno za radosc zycia,
+co za taktyczny umysł i·umiejetnosci walki.
+AGENCI KOTERII
+Szmaragdowa Ksiezniczka chetnie przyjmuje w·szeregi
+wszelkiego rodzaju aeldari, nawet chetnych
+sprzeniewierzyc sie juz istniejacym zobowiazaniom,
+o·ile beda pomagac jej w·piractwie i·innych niestandardowych
+zadaniach. Ludzi traktuje niewiele lepiej
+od zwierzat, których celem zycia jest zapewnianie jej
+zabawy. Sojusze i·rozejmy, jak ten z·Jakelem Varoniusem,
+sa przejsciowe.
+Jesli Ferianwyr bedzie miała taki kaprys,
+zatrudni ludzi jako swych agentów, a·moze nawet na
+jakis czas skryje pogarde. Oczywiscie nie obchodzi
+jej ich bezpieczenstwo i·moze nawet zlecic im niemal
+samobójcze misje, chocby po to, by dostarczyc rozrywke
+swej załodze. Nie toleruje przestawania z·Chaosem,
+a·wszystkich jego wyznawców ma za wrogów.
+Orków uznaje za całkowicie obrzydliwych, choc niewiele
+bardziej niz ludzi. Poszczególne jednostki obu
+gatunków moga zaimponowac jej temperamentem lub
+determinacja. Bawiacy ja orkowie zawsze sa zabijani,
+lecz niektórzy ludzie pozostaja przy zyciu i·w·tajemny
+sposób sa kierowani na sciezke zguby.
+Niezaleznie, kim beda, agenci Szmaragdowej
+Ksiezniczki słuza jej na wiele sposobów. Moze wyznaczyc
+im korsarski cel, gdy sama jest zbyt zajeta obrona
+Ul-Khari. Z·drugiej strony, jesli okazja jest dla niej
+bardzo kuszaca, moze scedowac na agentów obowiazek
+nadzorowania sytuacji na Trolliusie. Jesli w·trakcie
+swoich eskapad zdobedzie odpowiednie informacje,
+ksiezniczka Korsarzy zleci agentom zadania odnalezienia
+i·zniszczenia wyznawców Chaosu, a·zwłaszcza
+wiernych Tej, Która Pragnie. Inne misje obejmuja sabotowanie
+imperialnej obrony, wyszukiwanie potencjalnych
+celów i·wszystko, co przynosi korzysc pirackiej
+bandzie. Ferianwyr nagradza agentów wybranymi
+przedmiotami ze swego przepastnego skarbca. Czasami
+wydaja sie wrecz stworzone z·mysla o·obdarowanym,
+a·czasami – jakby wybór był całkowicie losowy.
+Zapłata moze przyjac forme butelki niespotykanego
+trunku produkcji wymarłej cywilizacji, stworzona
+przez aeldari szable badz kufer racji skrobi zwłoczanej
+z·systemu Armageddon. W·przypadku ludzkich agentów
+dary bywaja jeszcze bardziej niestosowne, choc
+ciezko powiedziec, czy to rezultat pogardy, czy zwykłe
+nieporozumienie.
+Ponadto Szmaragdowa Ksiezniczka pozwala
+agentom zatrzymac wiekszosc zdobytych na misjach
+łupów – z·racji swej pozycji wymaga jedynie odpowiedniego
+trybutu. Niepokorni agenci ignorujacy to
+niepisane prawo beda otrzymywac coraz trudniejsze
+lub nawet brawurowe misje albo zostana wyzwani na
+pojedynek – zaleznie od jej humoru.
+
+	HERSZT VAZDROK KOLCOGNIOT
+Herszt znany jako Vazdrok Kolcogniot jest wybitnie
+„mundrym” orkiem z·klanu Krwawych Toporów. Przeprowadza
+wypady bojowe w·całym systemie z·obozu
+ukrytego na dryfujacej asteroidzie w·Głebi. Kapitan
+Zuotozomb i·jego flota moga wycinac sobie krwawy
+szlak w·prózni kosmosu, ale Vazdrok stawia na długoterminowe
+zyski i·głosno chwali swój spryt.
+Mimo tego, ze·garbi sie jak kazdy orkoid, i·tak
+jest wyzszy i·smuklejszy niz typowy ork o·jego masie.
+Dzieki (stosunkowo) zylastym miesniom odznacza
+sie olbrzymia siła, a·swoja pozycje osiagnał, miazdzac
+wielu rywali, którzy osmielali sie go nie doceniac.
+Vazdrok traktuje kapitana Zuotozemba jak kolejnego
+konkurenta i·wie, ze·ostatecznie tylko jeden ork moze
+dowodzic zjednoczonymi Krwawymi Toporami w·systemie.
+W·niecierpliwym oczekiwaniu na nieuchronny
+konflikt Vazdrok stara sie podkopywac wzmacniajace
+Zuotozemba sojusze, w·tym te z·imperialnymi, jak
+chocby z·Jakelem Varoniusem.
+Najbardziej innowacyjnym i·niezwykłym czynem
+Vazdroka było zrozumienie ludzkiego pomysłu
+„wywied-chopców”. Jak sam wyjasnia podwładnym, „to
+te chopcy, co siem umiejom wywiedzac, gdzie je najlepsza
+walka”. Przekucie teorii w·praktyke pociagneło
+za soba powszechne uzywanie komandozów do przeprowadzania
+rozpoznania wrogich pozycji i·ruchów, ale
+Vazdrok zaczał zatrudniac nawet nieorczych szpiegów!
+Dotychczas ze zdecydowana brutalnoscia rozprawiał
+sie ze wszystkimi podwładnymi, którzy kwestionowali
+jego dowództwo lub orczosc działan, ale jedynie
+czas pokaze, czy pomysły Vazdroka nie okaza sie zbyt
+radykalne. Uwaza, ze·w·ten sposób zapewni sobie
+przewage, jakiej potrzebuje do zmiazdzenia kapitana
+Zuotozemba i·zjednoczenia Krwawych Toporów pod
+swoim sztandarem.
+Herszt zamierza odizolowac konkurenta,
+zawiera wiec własne sojusze z·najemnikami, piratami
+i·innymi metami z·Głebi, o·ile w·miare mozliwosci
+zerwa kontakty ze Zuotozembem. Vazdrok odkrył
+w·sobie zyłke do negocjacji z·ludzmi.
+AGENCI ŁOOOMOTU!
+Jak kazdy herszt orków, Vazdrok Kolcogniot jest całkowicie
+samodzielny i·nie potrzebuje zadnej pomocy –
+zleca jedynie wykonanie rzeczy, którymi nie powinien
+sie w·ogóle kłopotac. Biorac pod uwage mundre
+podejscie do wojny, oznacza to, ze·ma całkiem sporo
+zadan dla podwładnych, a·nawet dla chetnych do
+pracy nieorków.
+Wiekszosc sił herszta składa sie z·orków, a·choc
+czasami korzysta z·ludzkich oddziałów, za nic nie
+zaufa aeldari, których uwaza za słabych, tchórzliwych,
+kłamliwych i·zdradliwych. Rzadkie i·wyjatkowe
+okazy ludzi, których Vazdrok woli raczej sterroryzowac,
+niz zabic, albo szybko gina, albo hartuja sie, stajac
+sie zupełnymi wyrzutkami imperialnego społeczenstwa
+i·godnymi przeciwnikami do zmiazdzenia przez
+herszta w·odpowiednim czasie.
+Vazdrok dorobił sie przezwiska „Kolcogniot”
+dzieki walce z·najtwardszymi Kosmicznymi Marines
+Chaosu i·przybieraniu na sile przez zwyciestwa nad
+wieloma z·nich w·straszliwych (i·jakze przyjemnych)
+bitwach w·całym systemie. Choc herszt w·naturalny dla
+orków sposób wyczuwa silne jednostki, to za nic ma
+filozoficzne brednie, wiec nie jest w·stanie odróznic
+przecietnych szumowin od heretyckich wyznawców
+Chaosu. Chetnie przyjmuje ludzkich agentów sposród
+piratów Głebi, kopcowych bandytów, dezerterów Astra
+Militarum i·innych zaprzanców Imperium. Jesli chodzi
+o·czcicieli Chaosu, to pewnie sami uzywaja herszta
+do spełnienia swoich celów. Vazdrok wykorzystuje
+agentów do gromadzenia informacji, sabotazy i·podkopywania
+pozycji konkurencyjnych hersztów. Łatwo
+zgadnac, ze·wiekszosc misji pełna jest wszelkiego
+rodzaju przemocy.
+Choc rekrutacji ludzkich agentów przyswieca idea pewnej
+dyskrecji, to Vazdroka tak naprawde nie obchodzi,
+jak druzyna wykona zadanie, o·ile odniesie sukces.
+Herszt nie zdzierzy porazek, słabosci i·wszystkiego,
+przy czym niezbedna jest choc odrobina cierpliwosci.
+Mimo swej mundrosci Vazdrok, jak wszyscy orkowie,
+skupia sie na instynkcie oraz „tu i·teraz”.
+Szybko zorientował sie, ze·ludzi z·jakiegos
+powodu wcale nie interesuja zemby. Chetnie zatrzymuje
+je wiec dla siebie, a·w·zamian nagradza ludzkich
+agentów bronia, pojazdami i·perspektywa dozycia
+kolejnego dnia. Na mniejsze nagrody moga składac sie
+łupy z·pól bitew, natomiast ci, którym uda sie zaimponowac
+hersztowi, otrzymuja samorupki. Niestety te
+„zorczałe” przedmioty maja skłonnosc do awarii i·rozpadania
+sie, dlatego ulubieni agenci Vazdroka czesto
+koncza z·niczym. Dla orków główna korzyscia patronatu
+Vazdroka jest pewnego rodzaju ochrona przed
+rywalami. W·orczym społeczenstwie zmniejszenie ilosci
+potencjalnych konkurentów to prawdziwy luksus.
+
+	LORD CHAOSU MALOQUENCE
+Mocno zmieniony darami Bogów Chaosu i·odziany
+w·starozytna i·zdobiona zbroje mroczny apostoł znany
+pod mianem Maloquence jest obiektem podziwu ludzkich
+renegatów Wrakowiska i·trwoznego szacunku
+zdradzieckich współbraci. Wiekszosc wierzy, ze·zył
+jeszcze w·czasach Wielkiej Herezji, jednak za kazdym
+razem, gdy opowiada o·tym okresie, szczegóły opowiesci
+sie róznia. Nikt nie wazy sie jednak dochodzic, czy
+to oszustwo, czy przycmiona Osnowa pamiec.
+Ostatecznym celem Maloquence’a·jest zupełne
+zniszczenie imperialnego porzadku w·systemie Gilead.
+Nie spocznie, dopóki kazdy mieszkaniec nie bedzie
+spiewał peanów na czesc Mrocznych Bogów lub lezał
+martwy u·jego stóp. Równie wazne jest to, ze·bogowie,
+wyznawcy i·ofiary widza w·nim architekta tych
+wielkich czynów. Wiara bez chwały, jak zwykł mawiac,
+jest słaba.
+Mroczny apostoł przewodzi bandzie znanej pod
+nazwa Wierni Słowu. Ten niepokojaco wielki oddział
+Chaosu wydaje sie składac z·byłych Marines Głosicieli
+Słowa, lecz z·pewnoscia w·jego skład wchodza zbiegowie
+z·innych zdradzieckich Legionów lub, co gorsza,
+dezerterzy z·formalnie wiernych Zakonów. Wielu
+Marines Chaosu zostało opetanych, głównie dzieki
+zdolnosci Maloquence’a·do przyzywania mieszkanców
+Osnowy.
+Zarówno moc tego daru, jak i·liczba Opetanych posród
+Wiernych Słowu drastycznie wzrosły po otworzeniu sie
+Wielkiej Wyrwy. Postrzepiona i·osłabiona zasłona rzeczywistosci
+stała sie niezwykle nieszczelna, a·demony
+moga bez przeszkód wychodzic z·Cicatrix Maledictum.
+Demoniczne potwornosci wszelkiej masci chetnie odpowiadaja
+na wezwania Maloquence’a·i·z·łatwoscia wnikaja
+w·ciała biorców, a·nastepnie krocza po swiatach
+Gileadu, dopóki ich zywiciel nie zostanie zniszczony.
+Choc Maloquence najwieksza nienawiscia darzy
+Imperium, które w·jego mniemaniu go skrzywdziło, to
+nie braknie mu jej dla zyjacych w·systemie xenos. Gardzi
+słabymi i·dekadenckimi aeldari, chetnie wiec ich
+niszczy, by przypodobac sie Mrocznemu Ksieciu. Nie
+zdziwił sie zbytnio losem swiatostatku Ul-Khari. Mało
+tego, kwestie wyszarpania dusz z·Kregu Wiecznosci
+swiatostatku traktuje bardzo osobiscie. Orków uznaje
+natomiast za niebezpieczne szkodniki. Maloquence nie
+trawi ich głupoty i·nie widzi ich nawet w·roli ofiary
+dla Mrocznych Bogów, mimo tego, ze·ich nieprzewidywalne
+i·nieudolne wypady na system moga zniweczyc
+najlepsze plany.
+AGENCI ZDRAJCY
+Heretyccy Astartes sa potezni, lecz Maloquence bardzo
+chetnie wykorzystuje smiertelnych wyznawców
+w·całym systemie. Tak złowieszcza postac nie moze
+bez dobrego powodu pojawiac sie osobiscie na imperialnych
+swiatach, dlatego rozkazy czesto sa przekazywane
+przez siatke kurierów lub przesyłane w·wizjach,
+snach lub na inne ezoteryczne sposoby.
+Niektórzy agenci moga nawet nie zdawac sobie sprawy
+z·popełnianej herezji lub z·tego, kim naprawde jest ich
+patron. Przynajmniej nie na poczatku. Jesli jeszcze nie
+zostali wyznawcami sprawy, to zlecane przez Maloquence’a
+·misje beda wydawały sie po prostu nielegalne.
+Cele i·szczegóły, a·takze same osoby kurierów maja
+pozory zwyczajnego działania poza prawem w·imieniu
+organizacji przestepczej.
+Jedynie wybrancy moga osobiscie odwiedzic
+twierdze Wiernych Słowu, ukryta na asteroidzie
+w·Głebi. Choc pochodzenie bastionu zagineło
+w·pomroce dziejów, konstrukcja jest starsza niz rejestry
+Administratum. Upływ tysiacleci nie do poznania
+zmienił wiekszosc pomieszczen i·ich zawartosci,
+jednak czesc cudów sie zachowała. Dotychczas heretekowie
+Maloquence’a·zabezpieczyli platformy teleportacyjne
+i·podłaczone do nich urzadzenia w·całym
+systemie. To ogromny atut dla jego oddziałów, poniewaz
+dzieki nim moga uderzac nawet w·głebi Gileadu.
+Jesli odkryja kolejne archeotechnologiczne tajemnice,
+moze to doprowadzic do zagłady całego systemu.
