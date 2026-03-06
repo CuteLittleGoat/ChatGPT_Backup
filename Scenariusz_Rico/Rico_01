@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jądro Popiołu — finał kampanii</title>
+  <style>
+    :root{
+      --bg:#0b0a0d;
+      --bg2:#151219;
+      --panel:#17141c;
+      --panel2:#211b29;
+      --text:#e7dfd0;
+      --muted:#b8ad99;
+      --gold:#b89052;
+      --gold2:#e1c07a;
+      --line:#3a313d;
+      --mg:#3f1818;
+      --pl:#13252d;
+      --quote:#111015;
+      --danger:#7d2b2b;
+      --steel:#83909b;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height:1.7;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top, rgba(184,144,82,.08), transparent 35%),
+        linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
+    }
+
+    .container{
+      width:min(1150px, 92%);
+      margin:0 auto;
+      padding:28px 0 70px;
+    }
+
+    header, section{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+    }
+
+    header{
+      padding:32px 28px;
+      margin-bottom:22px;
+      background:
+        linear-gradient(180deg, rgba(184,144,82,.08), rgba(0,0,0,0)),
+        var(--panel);
+    }
+
+    section{
+      margin-top:22px;
+      padding:26px 24px;
+    }
+
+    h1,h2,h3,h4{
+      line-height:1.2;
+      margin:0 0 14px;
+      letter-spacing:.02em;
+    }
+
+    h1{
+      font-size:2.3rem;
+      text-transform:uppercase;
+      color:var(--gold2);
+    }
+
+    h2{
+      font-size:1.7rem;
+      color:var(--gold2);
+      border-bottom:1px solid var(--line);
+      padding-bottom:8px;
+      margin-top:4px;
+    }
+
+    h3{
+      margin-top:22px;
+      font-size:1.22rem;
+      color:#f0d39e;
+    }
+
+    h4{
+      margin-top:16px;
+      font-size:1rem;
+      color:#f1ddb4;
+    }
+
+    p{margin:0 0 14px}
+    ul,ol{margin:0 0 14px 24px}
+    li{margin:0 0 8px}
+    strong{color:#f6e5bf}
+    em{color:#dbcdb2}
+
+    .subtitle{
+      color:var(--muted);
+      max-width:950px;
+      font-size:1.05rem;
+    }
+
+    .quote{
+      margin-top:18px;
+      padding:18px 20px;
+      background:var(--quote);
+      border-left:4px solid var(--gold);
+      border-radius:12px;
+      color:#d9ccb4;
+      font-style:italic;
+    }
+
+    .toc{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+      gap:12px;
+      margin-top:24px;
+    }
+
+    .toc a{
+      text-decoration:none;
+      color:var(--text);
+      background:var(--panel2);
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:12px 14px;
+      transition:.18s ease;
+    }
+
+    .toc a:hover{
+      border-color:var(--gold);
+      transform:translateY(-1px);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:14px;
+    }
+
+    .card{
+      background:var(--panel2);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:15px 16px;
+    }
+
+    .label{
+      display:inline-block;
+      color:var(--gold);
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      font-size:.78rem;
+      margin-bottom:8px;
+    }
+
+    .scene{
+      margin-top:20px;
+      padding:18px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.02);
+    }
+
+    .mg, .players{
+      margin-top:16px;
+      padding:16px 16px 14px;
+      border-radius:14px;
+      border:1px solid transparent;
+    }
+
+    .mg{
+      background:linear-gradient(180deg, rgba(125,43,43,.18), rgba(63,24,24,.35));
+      border-color:rgba(200,120,120,.26);
+    }
+
+    .players{
+      background:linear-gradient(180deg, rgba(58,99,112,.18), rgba(19,37,45,.38));
+      border-color:rgba(122,173,189,.26);
+    }
+
+    .mg h4::before{content:"☩ "; color:#ffb4b4}
+    .players h4::before{content:"◈ "; color:#addbe7}
+
+    .boxed{
+      margin:14px 0;
+      padding:14px 16px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(0,0,0,.18);
+    }
+
+    .readaloud{
+      font-style:italic;
+      border-left:3px solid #6a9baa;
+      padding-left:14px;
+      color:#ebe3d6;
+    }
+
+    .small{
+      font-size:.95rem;
+      color:var(--muted);
+    }
+
+    .divider{
+      height:1px;
+      margin:28px 0;
+      background:linear-gradient(90deg, transparent, var(--gold), transparent);
+      opacity:.55;
+    }
+
+    .tags{margin-top:8px}
+    .tag{
+      display:inline-block;
+      padding:4px 9px;
+      font-size:.82rem;
+      border:1px solid var(--line);
+      border-radius:999px;
+      margin:4px 6px 0 0;
+      color:#dcc495;
+      background:rgba(255,255,255,.03);
+    }
+
+    .footer-note{
+      color:var(--muted);
+      font-size:.92rem;
+      margin-top:16px;
+    }
+
+    @media print{
+      body{background:#fff;color:#000}
+      header, section, .card, .scene, .mg, .players, .boxed{
+        background:#fff !important;
+        color:#000 !important;
+        box-shadow:none;
+      }
+      .toc{display:none}
+      h1,h2,h3,h4,strong{color:#000}
+      a{color:#000}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Jądro Popiołu</h1>
+      <p class="subtitle">
+        Finał kampanii osadzony na <strong>Gilead Primus</strong>, utrzymany w tonie
+        postapokaliptycznej wyprawy przez toksyczne pustkowia, gdzie lojalność wobec Imperium
+        zderza się z lojalnością wobec ludzi, a hasło
+        <strong>„Pamiętaj komu służysz”</strong> staje się zapalnikiem tragedii.
+      </p>
+
+      <div class="quote">
+        „Na końcu świata najgroźniejsi nie są ci, którzy odrzucają Imperium.
+        Najgroźniejsi są ci, którzy nadal wierzą, że próbują je uratować.”
+      </div>
+
+      <div class="toc">
+        <a href="#zalozenie">Założenie scenariusza</a>
+        <a href="#postacie">Postacie</a>
+        <a href="#mostek">Tajna misja na mostku</a>
+        <a href="#ladunek">Ładunek zagłady</a>
+        <a href="#etap1">Etap I – Desant</a>
+        <a href="#etap2">Etap II – Pustkowia</a>
+        <a href="#etap3">Etap III – Ludzie Rico</a>
+        <a href="#etap4">Etap IV – Zwiadowca Astartes</a>
+        <a href="#etap5">Etap V – Sanktuarium</a>
+        <a href="#final">Finał z Rico</a>
+        <a href="#uwagi">Uwagi dla MG</a>
+      </div>
+    </header>
+
+    <section id="zalozenie">
+      <h2>Założenie scenariusza</h2>
+      <p>
+        Bohaterowie otrzymują od Rogue Tradera Varoniusa misję prowadzoną <strong>po cichu</strong>:
+        mają odnaleźć Rico Williamsa — dawnego lojalnego żołnierza, który porzucił rozkazy,
+        zebrał wokół siebie wygnanych mutantów i prowadzi ich przez skażone pustkowia ku czemuś,
+        co nazywa <strong>„Nowym Imperium”</strong>.
+      </p>
+      <p>
+        Varonius przechwycił urywki transmisji vox. W jednym z nagrań głos Rico mówi:
+        <em>„Imperium was odrzuciło. Ja dam wam nowy cel.”</em>
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <span class="label">Ton</span>
+          <p>Duszne pustkowia, chemiczne burze, pył w filtrach, moralna erozja i charyzmatyczny reformator, który brzmi rozsądniej, niż powinien.</p>
+        </div>
+        <div class="card">
+          <span class="label">Rdzeń</span>
+          <p>Każdy etap podróży odsłania kolejną warstwę prawdy o Rico: żołnierz → prawodawca → prorok.</p>
+        </div>
+        <div class="card">
+          <span class="label">Stawka</span>
+          <p>Bohaterowie niosą relikt Mechanicusa zdolny unicestwić fundamenty miasta-ula i wymazać cały region z mapy.</p>
+        </div>
+      </div>
+
+      <div class="players">
+        <h4>Dla graczy</h4>
+        <p class="readaloud">
+          To nie jest wyprawa po zdrajcę. To wyprawa w miejsce, gdzie rozkaz przestaje wystarczać za odpowiedź.
+          Im dalej zajedziecie w pustkowia, tym mniej będzie wokół was Imperium z pieczęci i raportów,
+          a tym więcej Imperium z krwi, głodu, pyłu i ludzi, których ktoś uznał za koszt dopuszczalny.
+        </p>
+      </div>
+
+      <div class="mg">
+        <h4>Tylko dla MG</h4>
+        <p>
+          Konstrukcja przygody ma działać jak <em>Heart of Darkness</em>:
+          podróż przez kolejne strefy rozkładu porządku, w których Rico nie staje się coraz bardziej szalony,
+          ale coraz bardziej przekonujący.
+        </p>
+        <p>
+          Najważniejsze: <strong>nie prowadź Rico jak kultysty</strong>. On ma brzmieć jak człowiek,
+          który znalazł prostszą, bardziej brutalną i bardziej „skuteczną” odpowiedź na cierpienie świata.
+        </p>
+      </div>
+    </section>
+
+    <section id="postacie">
+      <h2>Postacie</h2>
+
+      <div class="scene">
+        <h3>Rico Williams</h3>
+        <p>
+          Dawniej lojalny służbista. Dziś spokojny reformator pustkowi, który wierzy,
+          że ratuje Imperium przez odrzucenie wszystkiego, co w nim skostniałe, ślepe i bezużyteczne.
+        </p>
+        <div class="tags">
+          <span class="tag">spokojny</span>
+          <span class="tag">logiczny</span>
+          <span class="tag">niepokojąco szczery</span>
+          <span class="tag">narzędzie Zmiany</span>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <ul>
+            <li>Mówi o <strong>celu</strong>, <strong>drodze</strong>, <strong>korekcie</strong>, <strong>porządku</strong>.</li>
+            <li>Nie używa słowa „Chaos”. Podszepty interpretuje jako wzór, intuicję, sumienie i konieczność.</li>
+            <li>Nie chce wyglądać na tyrana. On autentycznie wierzy, że znalazł lepszą odpowiedź.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>Rogue Trader Varonius</h3>
+        <p>
+          Polityk, handlowiec i gracz frakcyjny. Zależy mu nie tylko na rozwiązaniu problemu,
+          ale także na <strong>kontroli narracji</strong>. Rico ma zniknąć tak, aby nikt nie zyskał na tym kapitału politycznego poza nim.
+        </p>
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            Varonius wydaje rozkazy jak ktoś, kto porządkuje chaos w tabeli strat.
+            Nie podnosi głosu bez potrzeby. Każde zdanie ma brzmieć jak decyzja podjęta już wcześniej.
+          </p>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>Lady Taleria Fylamon</h3>
+        <p>
+          Rywalka Varoniusa z kręgów Astra Militarum. Jej obecność nad regionem sprawia,
+          że otwarta operacja lub zrzut orbitalny zostawiłyby zbyt wyraźny polityczny podpis.
+        </p>
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            Nie musi pojawić się osobiście. Wystarczy, że jej cień ciąży nad decyzjami Varoniusa.
+            To dzięki niej bohaterowie muszą ruszyć <strong>lądem</strong>.
+          </p>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>Konwojent Reliktu</h3>
+        <p>
+          Nieznany tech-kapłan Mechanicusa, który nadzoruje wydanie ładunku. Chłodny, liturgiczny,
+          całkowicie oddany procedurze.
+        </p>
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <ul>
+            <li>Nie jest sojusznikiem. Jest funkcją procedury.</li>
+            <li>Traktuje ładunek jak relikwię i własność Omnissiaha.</li>
+            <li>Ma mechaniczny klucz autoryzacyjny i rytuał uzbrojenia.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>Zwiadowca Astartes</h3>
+        <p>
+          Wysłany pierwotnie jako infiltrator i obserwator. Nie wrócił.
+          Nie dlatego, że złamał go strach, lecz dlatego, że Rico trafił w pęknięcie już obecne w jego myśleniu.
+        </p>
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            Jego motywacją jest <strong>„logika celu”</strong>. Widział, jak imperialna administracja
+            poświęca ludzi dla papieru, pieczęci i rozkazu, który dawno przestał służyć zwycięstwu.
+            Rico nazwał to zdradą celu. To do niego przemówiło.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="mostek">
+      <h2>Tajna misja — scena na mostku</h2>
+
+      <div class="scene">
+        <h3>Otwarcie</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <p class="readaloud">
+            Kiedy wchodzicie na mostek, Varonius nie traci czasu na powitania.
+            Nawet światło wygląda tu ostrzej niż zwykle, jakby sam okręt wyczuwał wagę rozmowy.
+            Rogue Trader unosi dłoń i mówi chłodno:
+          </p>
+          <p class="readaloud">
+            <em>— Każdy, kto nie jest niezbędny — wyjść.</em>
+          </p>
+          <p class="readaloud">
+            Oficerowie milkną. Ludzie opuszczają stanowiska. Nawet przyboczny Varoniusa, człowiek,
+            który zwykle stoi przy nim jak cień, odchodzi bez słowa. W końcu zostaje tylko szkieletowa załoga,
+            wy, Varonius i nieruchoma sylwetka kapłana Mechanicusa w czerwonych szatach.
+          </p>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <ol>
+            <li>Varonius każe opróżnić mostek.</li>
+            <li>Ujawnia, że Rico zdradził i przejęto fragmenty jego transmisji vox.</li>
+            <li>Odtwarza urywek: <em>„Imperium was odrzuciło. Ja dam wam nowy cel.”</em></li>
+            <li>Mówi, że sygnał zakłócono, aby zdrada nie wyszła na jaw.</li>
+            <li>Dodaje, że wysłany zwiadowca Astartes nie wrócił.</li>
+            <li>Mechanicus wnosi relikwiarz-ładunek.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>Moment ujawnienia ładunku</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <p class="readaloud">
+            Tech-kapłan kładzie na stół ciężki pakunek. Nie wygląda jak zwykła broń.
+            Bardziej jak relikwiarz wyciągnięty z grobowca wojny: ołowiano-ceramiczny sarkofag
+            opleciony przewodami, blokadami i przełącznikami, z matową blachą noszącą ślady wiekowych rytów.
+          </p>
+          <p class="readaloud">
+            Kiedy metal uderza o stół, mostek wypełnia niski, prawie niesłyszalny szum chłodzenia.
+            Varonius nawet na to nie patrzy. Mówi tylko:
+          </p>
+          <p class="readaloud">
+            <em>— To ładunek zdolny unicestwić fundamenty miasta-ula.</em>
+          </p>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            Varonius ma powiedzieć to bez patosu. Jak ktoś, kto składa zamówienie na rozwiązanie problemu.
+            Mechanicus zaś ma zabrzmieć niemal religijnie:
+          </p>
+          <div class="boxed">
+            <p><em>„Depozyt wydany w trybie zagrożenia. Autoryzacja pozostaje przy mnie. Wy — niesiecie.”</em></p>
+          </div>
+          <p>
+            Dobra linia od Varoniusa:
+          </p>
+          <div class="boxed">
+            <p><em>„Pamiętaj komu służysz. Rico wziął to zdanie zbyt dosłownie.”</em></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>Instrukcja i rozkaz</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <p class="readaloud">
+            Kapłan Mechanicusa uruchamia jeden z bocznych paneli. Małe lumeny zapalają się kolejno
+            jak oczy czegoś cierpliwego i głęboko nieludzkiego. Jego głos jest płaski, bez cienia emocji:
+          </p>
+          <p class="readaloud">
+            <em>— Uzbrojenie następuje przez sekwencję pieczęci, przełamań i katechizmu.
+            Procedura jest wiarą. Błąd jest herezją.</em>
+          </p>
+          <p class="readaloud">
+            Varonius kończy odprawę krótkim rozkazem:
+            orbitalny zrzut odpada. Fylamon obserwuje region.
+            Pojedziecie lądem. Pojazd czeka w hangarze.
+          </p>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            To nie scena mechaniczna. Nie rozpisuj testów. Graj obrazem, ciężarem i procedurą.
+            Bohaterowie mają poczuć, że nie dostali broni — dostali
+            <strong>sakralizowaną formę zagłady</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ladunek">
+      <h2>Ładunek „atomowy” — jak go pokazać</h2>
+
+      <p>
+        W świecie przedstawionym to archeotechniczny relikt Mechanicusa:
+        przenośny ładunek termojądrowy zamknięty w relikwiarzu.
+        Dla bohaterów i ludzi pustkowi ma być czytelny jako <strong>„bomba atomowa”</strong>,
+        ale wciąż wiarygodny lore’owo.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <span class="label">Nazwy</span>
+          <p>Relikt Słońca, Sarkofag Helio-IX, Cinder-Sun Pattern, Ashmaker.</p>
+        </div>
+        <div class="card">
+          <span class="label">Skutek</span>
+          <p>Lokalny kataklizm: dzielnice zdmuchnięte z mapy, zapadnięte fundamenty, stopione podłoże, długotrwały opad toksyczno-radiologiczny.</p>
+        </div>
+        <div class="card">
+          <span class="label">Wygląd</span>
+          <p>Ołowiano-ceramiczny relikwiarz, przewody, blokady rytualne, niski pomruk chłodzenia, piktogram przypominający znak promieniowania.</p>
+        </div>
+      </div>
+
+      <div class="mg">
+        <h4>Tylko dla MG</h4>
+        <ul>
+          <li>Jest ciężki, nienaturalnie gęsty, jakby ważył więcej niż powinien.</li>
+          <li>Kapłan mówi o nim: <em>„to nie broń, to oświadczenie wobec rzeczywistości”</em>.</li>
+          <li>Uzbrojenie ma być rytuałem, nie kliknięciem guzika.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="etap1">
+      <h2>Etap I — Desant</h2>
+
+      <div class="scene">
+        <h3>Pustkowie</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <p class="readaloud">
+            Gilead Primus nie wita was pejzażem, tylko raną.
+            Horyzont dusi się od pyłu. Chemiczne błota połyskują jak ropa na rozbitej stali.
+            Daleko, za pasmami ruin i hałd, widać błyski burz, które nigdy nie przynoszą deszczu —
+            tylko więcej metalu w powietrzu, więcej trucizny na języku i więcej pyłu w filtrach.
+          </p>
+          <p class="readaloud">
+            Wasz quad drży pod ciężarem sprzętu i reliktu. Silnik warczy z wysiłkiem.
+            Przed wami ciągnie się droga, której nikt rozsądny nie nazwałby drogą.
+          </p>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            Prowadź ten etap jak rzekę z <em>Apocalypse Now</em>, tylko zamiast wody masz pył i toksyczne błoto.
+            Monotonia podróży ma być przerywana nagłymi wyspami grozy.
+          </p>
+          <ul>
+            <li>Pojazd: quad z przyczepką, 2-osobowy.</li>
+            <li>Promieniowanie pokazuj punktowo: ruiny, kratery, relikty, stare strefy skażenia.</li>
+            <li>Reszta świata zabija pyłem, toksynami i wycieńczeniem.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>Posterunek i martwi towarzysze Rico</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <p class="readaloud">
+            Porzucony posterunek wynurza się z pyłu jak wybity ząb.
+            Betonowe ściany są spękane. Blacha dawno straciła farbę. Słupy voxowe wyją na wietrze cienkimi,
+            żałosnymi tonami. W środku czekają martwi — ci, którzy kiedyś szli z Rico, a potem stanęli przeciw niemu.
+          </p>
+          <p class="readaloud">
+            Ciała nie leżą w chaosie. Ktoś je odsunął od wejścia. Ktoś zamknął im powieki.
+            To nie wygląda jak rzeź. To wygląda jak rozłam.
+          </p>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            To ludzie, którzy chcieli wybić mutantów i „rozwiązać problem raz na zawsze”.
+            Rico sprzeciwił się temu. Tu po raz pierwszy widać, że jego zdrada nie zaczęła się od ambicji,
+            lecz od wyboru między rozkazem a ludźmi.
+          </p>
+          <p>
+            Bohaterowie znajdują urwany vox-log z przemowy Rico. Niech będzie niedługi,
+            ale wystarczająco mocny, by zacząć podważać prostą narrację Varoniusa.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="etap2">
+      <h2>Etap II — Pustkowia</h2>
+
+      <div class="scene">
+        <h3>Ślady exodusu</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <p class="readaloud">
+            Im dalej jedziecie, tym trudniej udawać, że ścigacie mały oddział dezerterów.
+            W pyle odciśnięto setki śladów. Wyschnięte obozowiska znaczą trasę jak paciorki różańca:
+            puszki po racjach, szmaty używane jako filtry, zardzewiałe beczki na wodę, prowizoryczne osłony
+            przed wiatrem i małe znaki malowane na blachach oraz kamieniach.
+          </p>
+          <p class="readaloud">
+            Ktoś prowadził tędy tłum. I prowadził go tak, jakby naprawdę wiedział, dokąd idzie.
+          </p>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <ul>
+            <li>Rozsiej kartki „Nowego Regulaminu”.</li>
+            <li>Pokaż, że znaki drogi działają lepiej, niż powinny — osłaniają od wiatru, prowadzą ku wodzie, omijają burze.</li>
+            <li>To ma być podszept Zmiany w formie użytecznej praktyki, nie fajerwerków.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>Wraki konwojów</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <p class="readaloud">
+            Natrafiacie na wraki konwojów rozprutych do kości.
+            Nie ma tu ślepej furii ani śladów rabunku tłumu.
+            Skrzynie z amunicją otwarto starannie. Leki zebrano osobno. Jedzenie zabrano prawie co do sztuki.
+            Nawet ciała przesunięto z drogi, jakby ktoś chciał po napadzie zostawić po sobie porządek.
+          </p>
+          <p class="readaloud">
+            Na jednym z pancerzy wypisano farbą:
+            <em>„Ten cud jest dowodem na słuszność naszej drogi.”</em>
+          </p>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            Pojawiają się proporce z przerobionym symbolem Imperium:
+            dwugłowy orzeł pozostaje, ale jego pióra układają się w nienaturalne, fraktalne wzory.
+            To ma być subtelnie złe. Nie kiczowate.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="etap3">
+      <h2>Etap III — Ludzie Rico</h2>
+
+      <div class="scene">
+        <h3>Osada mutantów</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <p class="readaloud">
+            Osada wygląda jak coś zbudowanego nie po to, by trwać, ale by przetrwać jeszcze jedną noc.
+            Blacha, plandeki, szkielety maszyn, zbiorniki po chemikaliach przerobione na destylatory,
+            barykady z rur i płyt pancerza, prowizoryczne kaplice przyklejone do slumsów jak strupy do rany.
+          </p>
+          <p class="readaloud">
+            Ludzie patrzą na was z lękiem, który nie jest nowy.
+            To lęk tych, którzy zbyt wiele razy widzieli, jak „oczyszczanie” znaczy po prostu ich śmierć.
+          </p>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            Rico przechodził tędy i część mieszkańców ruszyła za nim dobrowolnie.
+            Nie był wobec nich agresywny. Oferował sens, drogę i obietnicę, że nikt już nie zostanie porzucony.
+          </p>
+          <ul>
+            <li>Mutanci nie chcą wpuścić BG.</li>
+            <li>Boją się czystki bardziej niż śmierci.</li>
+            <li>Mogą przekazać filtry, paliwo albo wskazówki, byle tylko bohaterowie jak najszybciej odjechali.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>Niepokojąca prawda</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <p class="readaloud">
+            Im dłużej słuchacie tych ludzi, tym trudniej utrzymać wygodny obraz zdrajcy.
+            Mówią o Rico nie jak o tyranie ani świętym. Mówią o nim jak o kimś, kto po prostu się zatrzymał,
+            spojrzał na nich i pierwszy raz nie kazał im znikać z drogi.
+          </p>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            To etap, w którym zaczyna pękać narracja „Rico = wróg”.
+            Niech bohaterowie zobaczą, że jego projekt jest groźny nie dlatego, że opiera się na oczywistym złu,
+            ale dlatego, że wyrasta z autentycznej krzywdy i realnych zaniedbań Imperium.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="etap4">
+      <h2>Etap IV — Zwiadowca Astartes</h2>
+
+      <div class="scene">
+        <h3>Spotkanie</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <p class="readaloud">
+            Pojawia się bez ostrzeżenia. Jedną chwilę pustkowie jest puste, a w następną stoi już tam:
+            ogromny, nieruchomy, jakby wyrósł z kurzu i skały. Pancerz nosi ślady drogi, pyłu i wojny.
+            Nie celuje. Nie grozi. Samą obecnością odbiera jednak złudzenie, że wciąż kontrolujecie tę wyprawę.
+          </p>
+          <p class="readaloud">
+            Kiedy w końcu się odzywa, jego głos nie brzmi jak gniew.
+            Brzmi jak wyrok, który został już przemyślany.
+          </p>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            Zwiadowca ma przekonać BG, by przyszli i wysłuchali Rico.
+            Nie negocjuje jak handlarz. Nie kusi jak demagog. On po prostu stwierdza fakty.
+          </p>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>Monolog zwiadowcy</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <div class="boxed">
+            <p class="readaloud">„Nie przyszedłem po was, żeby was zabić. Gdybym miał taki rozkaz — już byście nie stali.”</p>
+            <p class="readaloud">„Wysłano mnie, bo ktoś uznał, że to sprawa honoru. Ja widzę w tym rachunek.”</p>
+            <p class="readaloud">„Widziałem tu ludzi umierających w kolejkach po filtry, bo formularz miał złą pieczęć. Widziałem transport leków cofnięty, bo brakowało jednego podpisu. Widziałem oddział, który odesłano na skażony szlak, bo tak było w rozkazie, choć każdy wiedział, że to ich zabije.”</p>
+            <p class="readaloud">„To nie była dyscyplina. To była ślepota.”</p>
+            <p class="readaloud">„Rico powiedział wtedy jedno zdanie: żołnierz nie służy rozkazowi — żołnierz służy celowi.”</p>
+            <p class="readaloud">„Nie mówię wam, żebyście go poparli. Mówię wam, żebyście go wysłuchali.”</p>
+            <p class="readaloud">„On wie, co macie w plecaku. I mimo to kazał mi was przyprowadzić. Bo uważa, że jesteście lepsi niż cudzy strach.”</p>
+          </div>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            Jeśli BG zaatakują go słownie, dobra krótka riposta brzmi:
+          </p>
+          <div class="boxed">
+            <p><em>„Jeśli nazywasz to zdradą, nazwij też zdradą tych, którzy porzucili ludzi dla pieczęci.”</em></p>
+          </div>
+          <p>
+            Na końcu przekazuje koordynaty: <strong>opuszczona kopalnia odkrywkowa</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="etap5">
+      <h2>Etap V — Sanktuarium</h2>
+
+      <div class="scene">
+        <h3>Kopalnia odkrywkowa</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <p class="readaloud">
+            Miejsce, do którego docieracie, nie przypomina wojskowej kryjówki.
+            To gigantyczna odkrywka, szeroka jak amfiteatr, wgryziona w ziemię warstwa po warstwie,
+            jakby ktoś próbował wykopać z planety jej własne serce.
+          </p>
+          <p class="readaloud">
+            Na tarasach kopalni stoją namioty, zadaszenia, warsztaty, kuchnie, punkty medyczne,
+            straże i magazyny. Wszystko jest improwizowane, ale nie chaotyczne.
+            Tu nie ma tłumu czekającego na cud. Jest społeczność, która uwierzyła, że już go dostała.
+          </p>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <ul>
+            <li>Na brzegach odkrywki mutanci wznoszą prowizoryczne budynki i umocnienia.</li>
+            <li>Wszyscy wydają się zorganizowani, spokojni i skupieni.</li>
+            <li>To nie ma wyglądać jak obóz szaleńców. To ma wyglądać jak zalążek nowego porządku.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>Atmosfera miejsca</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <p class="readaloud">
+            Najgorsze nie jest to, że wszystko tutaj wydaje się obce.
+            Najgorsze jest to, że wszystko wydaje się działać.
+          </p>
+          <p class="readaloud">
+            Straże zmieniają się punktualnie. Kuchnie karmią ludzi. Medycy naprawdę leczą.
+            Nawet symbole Imperium nie zostały odrzucone — zostały poprawione.
+            Dwugłowe orły wciąż patrzą z chorągwi, ale ich skrzydła przechodzą w zbyt doskonałe,
+            zbyt zawiłe wzory, jakby ktoś przepisał wiarę Imperium cudzą ręką.
+          </p>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            Podszept Zmiany objawia się tu jako <strong>działający porządek</strong>.
+            Najbardziej kuszące w tym miejscu jest to, że naprawdę ratuje ludzi.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="final">
+      <h2>Finał — Rico</h2>
+
+      <div class="scene">
+        <h3>Wejście Rico</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <p class="readaloud">
+            Rico nie wchodzi jak wódz sekty ani jak zdobywca. Nie towarzyszą mu fanfary ani straże
+            ustawione w ceremonialnym półkolu. Po prostu nadchodzi przez pył i światło lamp,
+            jak człowiek, który jest już u siebie.
+          </p>
+          <p class="readaloud">
+            Wita was spokojnie. Jak dawnych towarzyszy broni.
+            Nie ma w nim histerii. Nie ma gniewu. Nie prosi o litość i nie marnuje słów na groźby.
+            W jego spokoju jest coś gorszego — nieznośna logika człowieka, który od dawna wszystko sobie poukładał.
+          </p>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            Rico ma być spokojny, pewny i ludzki. Niech patrzy bohaterom w oczy.
+            Niech mówi tak, jakby naprawdę liczył, że go zrozumieją.
+          </p>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>Rdzeń jego argumentu</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <div class="boxed">
+            <p class="readaloud">„Imperium potrzebuje nowej drogi. Ja ją widzę.”</p>
+            <p class="readaloud">„Zasady są po to, by prowadzić do zwycięstwa. Jeśli nie prowadzą — należy je zmienić.”</p>
+            <p class="readaloud">„Pamiętaj komu służysz.”</p>
+          </div>
+          <p class="readaloud">
+            Rico mówi o Imperium, które zapomniało, że tworzą je ludzie. Mówi o mutantach nie jak o potworach,
+            lecz jak o rachunku wystawionym przez toksyny, przemysł i politykę ula.
+            Mówi, że odrzuceni nie znikają tylko dlatego, że ktoś przestał na nich patrzeć.
+          </p>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            Jego monolog nie ma brzmieć jak kazanie Chaosu.
+            To ma być oskarżenie pod adresem Imperium, które miejscami jest uczciwe.
+            Właśnie dlatego powinno boleć.
+          </p>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>„Iskra”</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <p class="readaloud">
+            Kiedy pada pytanie, czy chce stanąć na czele Nowego Imperium,
+            Rico uśmiecha się słabo, prawie z żalem.
+          </p>
+          <p class="readaloud">
+            <em>— Nie. Nie jestem imperium. Jestem tylko iskrą, która wybuchnie płomieniem.</em>
+          </p>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            To kluczowy moment. Rico nie buduje imperium dla własnej korony.
+            On chce uruchomić proces, którego nie da się już cofnąć.
+          </p>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>Propozycja Rico</h3>
+
+        <div class="players">
+          <h4>Dla graczy</h4>
+          <p class="readaloud">
+            W końcu Rico spogląda na relikwiarz, który niesiecie, jakby od początku był częścią tej rozmowy.
+            Nie pyta, czy go macie. On to wie.
+          </p>
+          <p class="readaloud">
+            Potem mówi spokojnie, niemal łagodnie:
+          </p>
+          <div class="boxed">
+            <p class="readaloud">„Możecie mnie zabić.”</p>
+            <p class="readaloud">„Odciąć mi głowę. Zanieść ją Varoniusowi jako dowód, że wykonaliście rozkaz.”</p>
+            <p class="readaloud">„Ale jeśli chcecie naprawdę coś zmienić, zdetonujcie ten ładunek na jego mostku.”</p>
+          </div>
+        </div>
+
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <p>
+            I tutaj scenariusz się urywa.
+            Nie rozpisuj konsekwencji. Nie zamykaj wyborów za graczy.
+            To ma być punkt, w którym cały ciężar kampanii osiada na jednym pytaniu:
+            <strong>komu naprawdę służą?</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="uwagi">
+      <h2>Uwagi dla MG</h2>
+
+      <div class="scene">
+        <h3>Jak prowadzić podszept Zmiany bez fajerwerków</h3>
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <ul>
+            <li>Rico przewiduje burze i skażenie odrobinę zbyt dobrze.</li>
+            <li>Znaki drogi działają, jakby ktoś liczył wiatr i pył za ludzi.</li>
+            <li>Wzory wracają w symbolice, układzie patroli, organizacji obozów i ornamentach.</li>
+            <li>Najgorsze jest to, że to naprawdę działa i naprawdę ratuje życie.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>Jak prowadzić pustkowia</h3>
+        <div class="mg">
+          <h4>Tylko dla MG</h4>
+          <ul>
+            <li>Pył w zębach, metaliczny wiatr, filtry jak waluta, woda jak trucizna do oswojenia.</li>
+            <li>Ruiny mają być przemysłowe: rury, hałdy, zbiorniki, szkielety maszyn, zdechłe instalacje.</li>
+            <li>W tle zawsze powinien wisieć horyzont burzy lub chmury skażenia.</li>
+            <li>Promieniowanie pokazuj punktowo, nie jako domyślny stan całego świata.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="scene">
+        <h3>Jedno zdanie spinające całą przygodę</h3>
+        <div class="boxed">
+          <p><strong>„Pamiętaj komu służysz.”</strong> — dla wszystkich to rozkaz. Dla Rico stał się objawieniem.</p>
+        </div>
+      </div>
+
+      <p class="footer-note">
+        Ten scenariusz najlepiej działa wtedy, gdy bohaterowie nie są pewni, czy ścigają zdrajcę,
+        czy człowieka, który poszedł o jeden krok za daleko w stronę prawdy.
+      </p>
+    </section>
+
+  </div>
+</body>
+</html>
