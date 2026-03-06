@@ -1,4 +1,3 @@
-<!--
     DOKŁADNY OPIS PANCERZA VARONIUSA – REFERENCJA DO ILUSTRACJI
 
     Jakel Varonius ma na sobie ekskluzywny, relikwiarny pancerz ekspedycyjny Rogue Tradera,
@@ -70,4 +69,3 @@
     - przy Varoniusie stoją Skitarii / adepci Mechanicus, elitarni żołnierze i kilku
       Astartes w pancerzach Terminatorów
     - zimne światło, dym, czerwona sygnalizacja alarmowa, gotowe transportowce w tle
-    -->
