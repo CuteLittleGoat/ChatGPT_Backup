@@ -1,3 +1,5 @@
+Repozytorium "Scenariusze" jest bazą danych do scenariuszy do TTRPG w uniwersum Warhammer 40k.
+
 1. Folder "WrathAndGlory" zawiera ogólne info o systemie Gilead.
 2. Plik "Gilead.html" zawiera zbiorcze informacje z kilku podręczników o planetach, ważnych postaciach itp.
 3. Pliki "*.txt" w folderze "WrathAndGlory" zawiera informacje z różnych podręczników. Mogą być źle sformatowane, mogą być kropki zamiast spacji i może brakować polskich znaków.
