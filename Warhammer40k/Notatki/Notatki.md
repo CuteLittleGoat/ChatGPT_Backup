@@ -31,4 +31,21 @@
 23. Gracze osiąglęli pełen sukces. Zapobiegli profanacji relikwii (Ork ją wziął jako broń boczną), wymordowali Orków, pojmali heretyków oraz sami ukradli jedną z talii.
 24. Gracze podstępem zdobyli talię Tarota Imperatora udając sojuszników heretyków a w rzeczywistości wydali ich od razu jak tylko była możliwość.
 25. Reliwkia została przekazana Varoniusowi, dla któego miała wartość sentymentalną a karty dla Aurelii
-26. 
+26. Aurelia odkryła coś w głębi Warp i chce to zbadać. Podejrzewa, że to nieodkrywa wcześniej ścieżka pozwalająca im uciec z Gilead.
+    26a. Jest to fanowska teoria Deep Warp. Aurelia opisała to jako "spokojny ocean" znajdujący się pod wzburzonymi falami. W tej metaforze wzburzone fale to część Osnowy którymi podróżują statki Imperium a "spokony ocean" to niezbadany fragment - jest to wątek stworzony przez MG w oparciu o teorię fanowską.
+27. Gracze zostali wysłani, żeby zbadać zaginięcie artefaktu w mieście-kuźni Belaxia na planecie Avachrus.
+28. Gracze poznali ważne postacie:
+    28a. Arcydomina Aexekrą Vakuul - w praktyce przewodnicząca całej frakcji Mechanicus w Gilead. Nigdy nie spotkali jej osobiśie, mieli kontakt przez Vox. Wykonali dla niej zadanie.
+    28b. Wysoka Iluminatka Osiffa - przewodnicząca Elektro-kapłanów w Belaxii.
+    28c. Akolita Lokson - śledzczy inkwizycji pragnący dowiedzieć się wszystkiego o zaginięciu artefaktu
+    28d. Baron Korsarzy Kasque - Aeldari pirat. Gracze zawarli z nim kruchy sojusz
+29. Artefaktem była trumna stazy. Wewnątrz znajdował się Kosmiczny Marine Chaosu z czasów Herezji Horusa z legionu Głosicieli Słowa.
+30. Trumna została skradziona na zlecenie Osiffy, która nie interesowała się tym co jest w środku. Chciałą, żeby marnotrastwo prądu się skończyło.
+31. Trumna została skradziona przez podrzędny gang, który chciał ją sprzedać na aukcji
+32. Aukcja odbyłą się na srebrnym księżycu Odo.
+33. Na aukcję przybyło wiele niezwykłych gości: Grupa zmutowanych kultystów, Psyker władający umysłami grupy ludzi, gangsterzy łowcy artefaktów i piraci Aeldari.
+34. Gracze dogadali się z grupą Kasque i wspólnie zabili pozostałych.
+35. Gracze odzyskali artefakt i zwrócili go Vakuul zgodnie z prośbą i w ten sposób, że Lokson oraz reszta inkwizycji o niczym się nie dowiedziała.
+36. Po powrocie na okręt gracze byli świadkami jak astropaci Varoniusa odczytali przekaz nadany w Osnowę. Było to apel od przebudzonego prymarchy Lion El'Johnson. Przebudzenie prymarchy, syna Imperatora, niesamowicie podbiło morale
+37. Okazał się też, że Aurelia korzytając z pomocy półświatka podrobiłą dokumenty i ukradła okręt zwiadowczy klasy Viper i wyruszyła na ekspedycję w Osnowę.
+38. Gracze zostali wysłani do zbadania problemów w Manofaktorium w Belaxii. Fabryka ta produkowała serwitory.
