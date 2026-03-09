@@ -11,6 +11,8 @@ import generate_manifest
 
 
 class ManifestHandler(SimpleHTTPRequestHandler):
+    endpoint_paths = {"/refresh-manifest", "/Main/refresh-manifest"}
+
     def _json_response(self, status: HTTPStatus, payload: dict) -> None:
         body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
         self.send_response(status)
@@ -19,8 +21,8 @@ class ManifestHandler(SimpleHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
-    def do_POST(self) -> None:  # noqa: N802
-        if self.path != "/refresh-manifest":
+    def _handle_manifest_refresh(self) -> None:
+        if self.path not in self.endpoint_paths:
             self._json_response(HTTPStatus.NOT_FOUND, {"ok": False, "error": "Nieznana ścieżka."})
             return
 
@@ -29,6 +31,15 @@ class ManifestHandler(SimpleHTTPRequestHandler):
             self._json_response(HTTPStatus.OK, {"ok": True})
         except Exception as error:  # pragma: no cover
             self._json_response(HTTPStatus.INTERNAL_SERVER_ERROR, {"ok": False, "error": str(error)})
+
+    def do_POST(self) -> None:  # noqa: N802
+        self._handle_manifest_refresh()
+
+    def do_GET(self) -> None:  # noqa: N802
+        if self.path in self.endpoint_paths:
+            self._handle_manifest_refresh()
+            return
+        super().do_GET()
 
 
 def main() -> None:
