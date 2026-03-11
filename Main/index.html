@@ -261,6 +261,7 @@
       { id: 'analizy', title: 'Analizy', segments: ['Analizy'] },
       { id: 'notatki', title: 'Warhammer40k/Notatki', segments: ['Warhammer40k', 'Notatki'] },
       { id: 'gilead', title: 'Warhammer40k/Gilead', segments: ['Warhammer40k', 'Gilead'] },
+      { id: 'test', title: 'Warhammer40k/Test', segments: ['Warhammer40k', 'Test'] },
       { id: 'oko', title: 'Warhammer40k/Scenariusz_Oko', segments: ['Warhammer40k', 'Scenariusz_Oko'] },
       { id: 'rico', title: 'Warhammer40k/Scenariusz_Rico', segments: ['Warhammer40k', 'Scenariusz_Rico'] },
       { id: 'epilog', title: 'Warhammer40k/Scenariusz_Epilog', segments: ['Warhammer40k', 'Scenariusz_Epilog'] }
@@ -268,7 +269,7 @@
 
     const statusElement = document.getElementById('status');
     const stagesContainer = document.getElementById('stagesContainer');
-    const allowedExtensions = new Set(['.html', '.md', '.txt', '.png']);
+    const allowedExtensions = new Set(['.html', '.md', '.txt', '.png', '.pdf', '.docx']);
     const githubConfig = {
       owner: 'cutelittlegoat',
       repo: 'Scenariusze'
