@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Na skrzydłach Valkyrii — scenariusz TTRPG</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --bg-2: #111821;
+      --panel: #131b24;
+      --panel-2: #18222d;
+      --panel-3: #0f151d;
+      --text: #dce6f1;
+      --muted: #93a3b5;
+      --accent: #7fc8ff;
+      --accent-2: #89e0c2;
+      --accent-3: #d8c27a;
+      --danger: #d27a7a;
+      --border: #243140;
+      --border-strong: #324557;
+      --shadow: rgba(0, 0, 0, 0.42);
+      --sidebar-w: 300px;
+      --content-font-size: 18px;
+      --content-max: 1500px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top, rgba(127, 200, 255, 0.05), transparent 25%),
+        linear-gradient(180deg, #0b0f14 0%, #0d131a 100%);
+      color: var(--text);
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: var(--sidebar-w) 1fr;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      padding: 22px 18px 40px;
+      background: linear-gradient(180deg, var(--panel), var(--panel-3));
+      border-right: 1px solid var(--border);
+      box-shadow: 8px 0 24px var(--shadow);
+    }
+
+    .sidebar h2 {
+      margin: 0 0 6px;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent-2);
+    }
+
+    .sidebar p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .font-controls {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .font-controls button,
+    .stat-btn {
+      appearance: none;
+      border: 1px solid var(--border-strong);
+      background: var(--panel-2);
+      color: var(--text);
+      padding: 10px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .font-controls button:hover,
+    .stat-btn:hover {
+      border-color: var(--accent);
+      background: #203040;
+    }
+
+    .nav-group {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 18px;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .nav-group-title {
+      padding: 10px 12px;
+      background: rgba(127,200,255,0.08);
+      border-bottom: 1px solid var(--border);
+      color: var(--accent-2);
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .nav-group a {
+      display: block;
+      padding: 9px 12px;
+      color: var(--text);
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 0.95rem;
+    }
+
+    .nav-group a:last-child {
+      border-bottom: none;
+    }
+
+    .nav-group a:hover {
+      background: rgba(127,200,255,0.08);
+      text-decoration: none;
+    }
+
+    .main {
+      padding: 28px;
+    }
+
+    .content {
+      max-width: var(--content-max);
+      font-size: var(--content-font-size);
+    }
+
+    .hero,
+    .section-card,
+    details.scene,
+    details.info-block {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(19,27,36,0.96), rgba(15,21,29,0.96));
+      box-shadow: 0 12px 28px var(--shadow);
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+
+    .hero {
+      padding: 28px;
+    }
+
+    .eyebrow {
+      color: var(--accent-2);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    h1, h2, h3, h4 {
+      line-height: 1.25;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      margin: 0 0 10px;
+    }
+
+    h3 {
+      font-size: 1.18rem;
+      margin: 22px 0 8px;
+      color: var(--accent-2);
+    }
+
+    h4 {
+      color: var(--accent-3);
+      margin: 18px 0 6px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .section-body,
+    .scene-body {
+      padding: 24px;
+    }
+
+    details.scene summary,
+    details.info-block summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 18px 22px;
+      background: linear-gradient(90deg, rgba(127,200,255,0.10), rgba(137,224,194,0.03));
+      border-bottom: 1px solid var(--border);
+    }
+
+    details.scene summary::-webkit-details-marker,
+    details.info-block summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .scene-intro {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
+    .readaloud,
+    .note,
+    .gm-box,
+    .danger-box {
+      padding: 16px 18px;
+      border-radius: 16px;
+      margin: 14px 0 18px;
+      border: 1px solid var(--border);
+    }
+
+    .readaloud {
+      background: rgba(127,200,255,0.08);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 16px 16px 0;
+      font-style: italic;
+    }
+
+    .note {
+      background: rgba(137,224,194,0.08);
+      border-color: rgba(137,224,194,0.18);
+    }
+
+    .gm-box {
+      background: rgba(216,194,122,0.08);
+      border-color: rgba(216,194,122,0.18);
+    }
+
+    .danger-box {
+      background: rgba(210,122,122,0.10);
+      border-color: rgba(210,122,122,0.22);
+    }
+
+    ul, ol {
+      margin: 10px 0 16px 22px;
+    }
+
+    .materials {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 14px;
+    }
+
+    .material {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .chip {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(127,200,255,0.24);
+      background: rgba(127,200,255,0.10);
+      font-size: 0.9rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-top: 12px;
+    }
+
+    th, td {
+      padding: 14px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: rgba(127,200,255,0.08);
+      color: var(--accent-2);
+      font-weight: 700;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .footer-space {
+      height: 30px;
+    }
+
+    @media (max-width: 1100px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: relative;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .main {
+        padding: 18px;
+      }
+
+      .materials {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Nawigacja scenariusza</h2>
+      <p>Pełna, rozpisana wersja przygody do prowadzenia przy stole.</p>
+
+      <div class="font-controls">
+        <button type="button" onclick="changeFont(1)">Font ▲</button>
+        <button type="button" onclick="changeFont(-1)">Font ▼</button>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-group-title">Wprowadzenie</div>
+        <a href="#wprowadzenie">Wprowadzenie</a>
+        <a href="#skrot">Skrót scenariusza</a>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-group-title">Sceny</div>
+        <a href="#scena1">Scena 1 — Odprawa i lot</a>
+        <a href="#scena2">Scena 2 — Desant</a>
+        <a href="#scena3">Scena 3 — Hangary i kapliczka</a>
+        <a href="#scena4">Scena 4 — Zjazd szybem</a>
+        <a href="#scena5">Scena 5 — Gabriella i chronogladiator</a>
+        <a href="#scena6">Scena 6 — Most i zakłady chemiczne</a>
+        <a href="#scena7">Scena 7 — Obóz lojalistów</a>
+        <a href="#scena8">Scena 8 — Droga wyjścia przez rury</a>
+        <a href="#scena9">Scena 9 — Katedra Imperatora Zwycięskiego</a>
+        <a href="#scena10">Scena 10 — Ucieczka z kościoła</a>
+        <a href="#scena11">Scena 11 — Spotkanie cywilów</a>
+        <a href="#scena12">Scena 12 — Stacja 6 i obóz żołnierzy</a>
+        <a href="#scena13">Scena 13 — Tunel i zasłona opada</a>
+        <a href="#scena14">Scena 14 — Peron</a>
+        <a href="#scena15">Scena 15 — Wspinaczka</a>
+        <a href="#scena16">Scena 16 — Przez tory</a>
+        <a href="#scena17">Scena 17 — Ostatnia prosta</a>
+        <a href="#scena18">Scena 18 — Herold Nurgle’a</a>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-group-title">Domknięcie</div>
+        <a href="#zakonczenie">Zakończenie</a>
+        <a href="#przeciwnicy">Przeciwnicy</a>
+        <a href="#npc">NPC</a>
+        <a href="#ilustracje">Ilustracje</a>
+        <a href="#handouty">Handouty</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="content">
+        <section id="wprowadzenie" class="hero">
+          <div class="eyebrow">Warhammer 40,000 / Wrath & Glory / Gilead Primus</div>
+          <h1>Na skrzydłach Valkyrii</h1>
+          <p>
+            To militarno-horrorowa przygoda osadzona w kopcu Tora Armis na Gilead Primus, świecie-kopcu,
+            który jest jednym z przemysłowych bastionów systemu Gilead. Drużyna zostaje zrzucona za liniami
+            wroga, by wesprzeć uderzenie Imperium, przebić się przez opanowaną przez heretyków iglicę,
+            odnaleźć źródło skażenia i zabić Rauroka — czarnoksiężnika Chaosu, który ogłosił się Heroldem
+            Imperatora i przygotowuje bluźnierczy „powrót” poprzez sztorm Osnowy i masową profanację wiary.
+          </p>
+          <p>
+            Scenariusz łączy wojenny brud, religijny fanatyzm, wewnętrzny rozpad kopca oraz pełzającą grozę
+            Nurgle’a. Stawka jest podwójna: militarna i duchowa. Bohaterowie nie tylko walczą o odzyskanie
+            Tora Armis, ale też o to, by nie dopuścić do ostatecznego wypaczenia imperialnej symboliki:
+            relikwii świętej Salvei, katedry i samego obrazu Imperatora w oczach mieszkańców kopca.
+          </p>
+          <p class="muted">
+            Wersja poniżej rozbija przygodę na mniejsze, praktyczne sceny, tak aby łatwiej było prowadzić
+            sesję, dawkować napięcie i wyciągać osobno walkę, eksplorację, rozmowy, momenty grozy oraz finał.
+          </p>
+        </section>
+
+        <section id="skrot" class="section-card">
+          <div class="section-body">
+            <h2>Skrót scenariusza</h2>
+            <p>
+              Drużyna otrzymuje rozkazy od kapitana Corveya i zostaje przerzucona Valkyrią do Tora Armis.
+              Pierwszym zadaniem jest zabezpieczenie strefy zrzutu, oczyszczenie skażonego obszaru i wejście
+              do wnętrza iglicy. Na miejscu bohaterowie szybko odkrywają, że wróg nie jest zwykłą bandą
+              buntowników: to dobrze uzbrojeni heretycy, kultyści i mutanci, a całe wyższe poziomy kopca
+              toną w religijnym szaleństwie.
+            </p>
+            <p>
+              Podczas zejścia w głąb iglicy bohaterowie ratują Gabrielę z Domu Aromat i trafiają do zakładów
+              chemicznych kontrolowanych przez Jegrina Aromata. Tam dowiadują się o Rauroku, oblężeniu,
+              planach związanych z Katedrą Imperatora Zwycięskiego i relikwią świętej Salvei. Drużyna może
+              zdobyć sojuszników oraz krótkie wytchnienie, lecz tylko na chwilę: z zakładów trzeba jeszcze
+              wydostać się przez skażone rurociągi.
+            </p>
+            <p>
+              W katedrze bohaterowie odkrywają, że Raurok rozpoczął bluźniercze misterium. Wierni są
+              zebrani jak stado prowadzone na rzeź, relikwia ma zostać zbezczeszczona, a biskup-kukła
+              oraz demoniczne sługi pilnują rytuału. Nawet jeśli drużyna zwycięży w świątyni, nie oznacza
+              to końca zagrożenia: z kościoła trzeba się jeszcze wydostać przez zalew ożywionych trupów
+              i nurglicznych siewców ospy.
+            </p>
+            <p>
+              Powrót z katedry prowadzi przez scenę moralnego napięcia: oddział sierżanta Taura chce
+              rozstrzelać cywilów podejrzanych o skażenie i mutację. Następnie bohaterowie docierają do
+              Stacji 6, gdzie kapitan Corvey usiłuje utrzymać imperialne natarcie mimo burzy Osnowy.
+              Ostateczna faza prowadzi przez tunel halucynacji, peron otwarty na sztorm, wspinaczkę po
+              zewnętrznej stronie kopca, przejście przez tory i wejście na wyniesioną platformę w samym
+              sercu zjawiska.
+            </p>
+            <p>
+              Finał to walka z Heroldem Nurgle’a — dronem plagi, będącym potwornym połączeniem części kopca,
+              demona i Rauroka. Zniszczenie tej istoty rozprasza sztorm, przywraca impet siłom Imperium
+              i otwiera drogę do odbicia Tora Armis. Jeśli drużyna zawiedzie, kopiec może stać się miejscem
+              narodzin trwałego plugastwa Osnowy.
+            </p>
+
+            <div class="gm-box">
+              <strong>Ton prowadzenia:</strong> wojna totalna, klaustrofobiczna eksploracja, religijna groza,
+              brud kopca, poczucie ciągłego spóźnienia o kilka chwil — jakby każda scena odbywała się dokładnie
+              tuż przed katastrofą.
+            </div>
+          </div>
+        </section>
+
+        <details id="scena1" class="scene" open>
+          <summary>
+            <h2>Scena 1 — Odprawa i lot</h2>
+            <p class="scene-intro">Otwarcie przygody. Rozkazy, stawka operacji i pierwsze wejście w militarno-religijny ton misji.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Bohaterowie dostają rozkazy od kapitana Corveya z 4. Kompanii Powietrznodesantowej Potomków
+              Tempestus. Mają wykonać uderzenie specjalne w głąb Tora Armis. Dostają dodatkowe wyposażenie,
+              serwoczaszkę Epsilon 6 i świadomość, że będą działać za linią wroga, bez pewności odwrotu.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              W ładowni Valkyrii wszystko drży od przeciągłego wycia silników. Czerwone światła awaryjne
+              tną twarze żołnierzy na ostre, krwawe plamy. Wzdłuż burt siedzą ponurzy weterani i spięci
+              nowicjusze, każdy zaciśnięty wokół własnej broni jak wokół relikwii. Nad tym wszystkim
+              unosi się chłodny zapach smarów, metalu i święconego oleju. Gdy kapitan Corvey staje naprzeciw
+              was, robi się cicho — tak cicho, jakby sam hałas silników bał się przerwać jego słowa.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Corvey przekazuje cel misji: wejść do Tora Armis, wesprzeć natarcie, wbić nóż w serce oporu.</li>
+              <li>Drużyna otrzymuje dodatkowe granaty, amunicję, apteczki, auspex, vox i serwoczaszkę Epsilon 6.</li>
+              <li>MG przedstawia Epsilon 6 jako inteligentną, wierną, prawie „psią” serwoczaszkę.</li>
+              <li>To dobry moment na krótkie kwestie między postaciami, modlitwy, czarne żarty i ustawienie tonu.</li>
+              <li>Lot kończy się gwałtownym przejściem do strefy bojowej.</li>
+            </ol>
+
+            <h3>Co ma wybrzmieć</h3>
+            <ul>
+              <li>Misja jest ważna i desperacka.</li>
+              <li>Corvey nie obiecuje powrotu — tylko obowiązek.</li>
+              <li>Epsilon 6 jest jednocześnie narzędziem i pełnoprawnym elementem klimatu.</li>
+            </ul>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">H1 — Rozkazy Corveya</span>
+                  <span class="chip">H2 — Notka o Epsilon 6</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL1 — Wnętrze Valkyrii</span>
+                  <span class="chip">IL2 — Serwoczaszka Epsilon 6</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena2" class="scene">
+          <summary>
+            <h2>Scena 2 — Desant</h2>
+            <p class="scene-intro">Pierwszy kontakt z polem bitwy. Ogień, zgiełk i natychmiastowa presja działania.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Valkyria wyrzuca drużynę w ogniu walki. Bohaterowie muszą ustabilizować przyczółek, zareagować
+              na opór heretyków i poczuć, że Tora Armis nie jest zwykłym celem wojskowym, lecz miejscem już
+              duchowo nadgniłym.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Rampa opada i cały świat staje się hałasem. W twarz uderza was gryzący dym, popiół i gorący
+              wiatr niosący zapach spalonego promethium. Nad placem przelatują smugacze, a z głębi kopca
+              dudni artyleria. Beton jest popękany, stalowe rusztowania wyją od trafień, a z oddali patrzy
+              na was ogromna, poraniona sylwetka miasta — Tora Armis, które wygląda jak rana wykuta w skale
+              i metalu.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Bohaterowie wyskakują z Valkyrii i zajmują pozycje.</li>
+              <li>Heretycy próbują zepchnąć ich ze strefy lądowania.</li>
+              <li>MG może podkreślić znaczenie wsparcia, komunikacji i użycia terenu.</li>
+              <li>Po zwycięstwie drużyna przechodzi do oczyszczania najbliższego obszaru wejściowego.</li>
+            </ol>
+
+            <div class="gm-box">
+              <strong>Rada MG:</strong> ta scena ma być szybka, agresywna i czytelna. Niech gracze poczują,
+              że są elitarną grupą uderzeniową, ale niech od razu zobaczą też koszt takiej wojny: wraki,
+              rannych, połamane figury świętych i ślady improwizowanych kultów.
+            </div>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">H1 — Rozkazy Corveya</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL3 — Plac desantowy przy kopcu</span>
+                  <span class="chip">IL4 — Ostrzał z Valkyrii</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena3" class="scene">
+          <summary>
+            <h2>Scena 3 — Hangary i kapliczka</h2>
+            <p class="scene-intro">Eksploracja skażonego miejsca i pierwsze mocne zderzenie z profanacją wiary.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Po zabezpieczeniu terenu drużyna wchodzi do strefy hangarowej i natrafia na plugawą kapliczkę.
+              To nie tylko dekoracja: posąg i otoczenie są przesycone energią Osnowy. Bohaterowie mogą ją
+              zniszczyć, oczyścić lub zignorować, co niesie konsekwencje dla morale sojuszników i atmosfery.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Hangar jest martwy w sposób nienaturalny. Nie ma tu zwykłej ciszy po walce — jest zastygłe,
+              pełne oczekiwania milczenie. Pośród porzuconych skrzyń, zerwanych kabli i łusek stoi kapliczka,
+              która powinna być święta, a wygląda jak źle zapamiętana modlitwa. Figura Imperatora patrzy
+              pustymi oczami, ale coś w niej jest nie tak: proporcje są odrobinę błędne, uśmiech zbyt
+              szeroki, a światło świec migocze tak, jakby bało się samego posągu.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Drużyna bada hangar i zabezpiecza podejścia.</li>
+              <li>Gracze zauważają kapliczkę i mogą ją obejrzeć, zignorować albo od razu zniszczyć.</li>
+              <li>Badanie ujawnia wypaczenie i ryzyko Spaczenia.</li>
+              <li>Zniszczenie lub oczyszczenie kapliczki wzmacnia sojuszników i daje moralne zwycięstwo.</li>
+              <li>Pozostawienie jej nietkniętej zwiększa niepokój i daje MG dobry grunt pod dalszą grozę.</li>
+            </ol>
+
+            <div class="danger-box">
+              <strong>Ważne:</strong> nie pokazuj tej sceny tylko jako „testu”. To ma być pierwszy sygnał,
+              że w Tora Armis rozkład ma charakter religijny. Świętość nie została tu po prostu zbrukana —
+              została przerobiona na coś, co próbuje udawać świętość.
+            </div>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">Brak koniecznych</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL5 — Hangar po walce</span>
+                  <span class="chip">IL6 — Skażona kapliczka</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena4" class="scene">
+          <summary>
+            <h2>Scena 4 — Zjazd szybem</h2>
+            <p class="scene-intro">Techniczna, napięta scena zejścia w głąb iglicy i symboliczne wkroczenie do trzewi kopca.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Drużyna musi zjechać kilkaset metrów w dół do wnętrza iglicy. To dobra scena na budowanie
+              klaustrofobii, wysokości, ryzyka błędu i poczucia, że każde kolejne metry oddalają bohaterów
+              od świata „normalnej” wojny i prowadzą do czegoś starszego, brudniejszego i bardziej chorego.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Gdy zaczynacie zjazd, świat powierzchni zostaje nad wami jak odcięta rana światła. Poniżej
+              rozpościera się tylko pionowa czarna studnia, przeorana rurami, kratownicami i migającymi
+              czerwonymi lumenami. Lina drży pod rękami. Z boków szybu spływają skropliny i olej. Im głębiej
+              schodzicie, tym bardziej macie wrażenie, że kopiec nie jest budowlą, tylko olbrzymim mechanicznym
+              organizmem, który was właśnie połyka.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Opisuj dystans, echo i trudność utrzymania tempa.</li>
+              <li>Każdemu etapowi zjazdu towarzyszą drobne stresory: luźne mocowania, wycia metalu, gasnące światła.</li>
+              <li>Epsilon 6 może oświetlać drogę lub badać dalszy odcinek szybu.</li>
+              <li>Scena kończy się przy kratownicy i wejściu do przejścia technicznego.</li>
+            </ol>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">Brak koniecznych</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL7 — Pionowy szyb kopca</span>
+                  <span class="chip">IL8 — Zjazd po linach</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena5" class="scene">
+          <summary>
+            <h2>Scena 5 — Gabriella i chronogladiator</h2>
+            <p class="scene-intro">Pierwszy ważny NPC i pierwsze spotkanie z osobistym okrucieństwem sług Rauroka.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Z panelu technicznego wypada przerażona kobieta z gangu kopcowego, ścigana przez groteskowo
+              zaugmentowanego gladiatora. Po walce bohaterowie poznają Gabrielę, która staje się przewodniczką
+              po wnętrzu iglicy i pierwszym ludzkim głosem lojalistycznego oporu.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Pokrywa panelu wypada z zawiasów z głośnym zgrzytem. Ze środka wysypuje się kobieta o twarzy
+              czarnej od sadzy i strachu. Nie biegnie — ona ucieka całym ciałem, jak ktoś, kto już wiele razy
+              widział śmierć i wie dokładnie, jak blisko jest teraz. Chwilę później z ciemności wyłania się
+              jej prześladowca: ogromny, zaugmentowany potwór o sylwetce człowieka, którego kończyny i broń
+              zrosły się w jedną rzeźniczą całość. Na jego ciele połyskują ohydne znaki. Nie wygląda jak
+              wojownik. Wygląda jak kara.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Drużyna widzi uciekającą Gabrielę i musi zareagować natychmiast.</li>
+              <li>Dochodzi do walki z chronogladiatorem.</li>
+              <li>Na ciele kreatury można znaleźć znak „Ogar Rauroka”.</li>
+              <li>Gabriella przedstawia się i potwierdza, że w iglicy wciąż żyją lojaliści.</li>
+              <li>Jeżeli bohaterowie zdobędą jej zaufanie, prowadzi ich do zakładów chemicznych.</li>
+            </ol>
+
+            <div class="note">
+              <strong>Rola Gabrielli:</strong> nie graj jej jak żołnierza. To ocalała, twarda, sprytna
+              mieszkanka kopca. Jest zmęczona, ale nie złamana. W jej ustach każde słowo o Imperium powinno
+              brzmieć jak mieszanka wdzięczności, gniewu i desperackiej nadziei.
+            </div>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">Brak koniecznych</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL9 — Gabriella</span>
+                  <span class="chip">IL10 — Chronogladiator</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena6" class="scene">
+          <summary>
+            <h2>Scena 6 — Most i zakłady chemiczne</h2>
+            <p class="scene-intro">Przejście przez wąskie gardło iglicy i starcie z szumowinami oraz mutantami.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Gabriella prowadzi drużynę przez tunele do wąskiego pomostu obsadzonego przez gang Padliny,
+              wspierany przez mutantów. Po przejściu przez most bohaterowie docierają do zakładów chemicznych,
+              ostatniej silnej enklawy lojalistów w tej części kopca.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Tunele wiją się jak jelita maszyny. Powietrze jest ciężkie od chemii i stęchlizny, a każdy
+              zakręt wydaje się idealnym miejscem na zasadzkę. W końcu korytarz otwiera się na wąski pomost
+              rozciągnięty nad czarną, głęboką szczeliną. Po drugiej stronie migoczą barykady. Za nimi
+              widzicie ruch, papierosowe żary, błyski ostrzy i twarze ukryte za maskami czaszek.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Gabriella ostrzega, że cała iglica popadła w szaleństwo.</li>
+              <li>Bohaterowie mogą podkraść się, rozpoznać pozycje albo od razu zaatakować.</li>
+              <li>Na moście walczą z hordami szumowin i mutantami.</li>
+              <li>Jeśli walka się przeciąga, pojawiają się kolejne fale przeciwników.</li>
+              <li>Po zwycięstwie drużyna przechodzi do chronionego kombinatu.</li>
+            </ol>
+
+            <div class="gm-box">
+              <strong>Tempo:</strong> to ma być scena bojowa z elementem presji. Most jest świetnym miejscem
+              na granaty, ostrzał zaporowy, spychanie w dół, desperackie sprinty i heroiczną osłonę tyłów.
+            </div>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">Brak koniecznych</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL11 — Wąski pomost nad szczeliną</span>
+                  <span class="chip">IL12 — Barykady gangu Padliny</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena7" class="scene">
+          <summary>
+            <h2>Scena 7 — Obóz lojalistów</h2>
+            <p class="scene-intro">Chwila oddechu, ważne informacje, relacje z ocalałymi i decyzja o kolejnym kierunku.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              W zakładach chemicznych bohaterowie spotykają Jegrina Aromata i ocalałych z Domu Aromat.
+              To nie tylko punkt medyczny i logistyczny, ale też scena socjalna: gracze mogą zyskać wsparcie,
+              wysłuchać wieści o Rauroku, poznać członków gangu i poczuć, o kogo tak naprawdę walczą.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Gdy wchodzicie do wnętrza zakładów, po raz pierwszy od dłuższego czasu widzicie twarze, które
+              nie chcą was zabić. Są wychudzone, brudne, podkrążone od niewyspania i głodu, ale kiedy was
+              zauważają, w ich oczach pojawia się coś groźniejszego od strachu — nadzieja. Dzieci wyciągają
+              szyje, by lepiej zobaczyć zbroje i broń. Dorośli klękają, żegnają się, szepczą modlitwy.
+              W tym miejscu Imperium nie jest abstrakcją. Właśnie weszło przez drzwi i ma wasze twarze.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Gabriella przedstawia drużynę Jegrinowi Aromatowi.</li>
+              <li>Jegrin opowiada o oblężeniu, Rauroku i ultimatum.</li>
+              <li>Gracze mogą zdobyć jego wsparcie dzięki rozmowie i odpowiednim testom społecznym.</li>
+              <li>Ocalałym można poświęcić krótkie scenki: modlitwy, prośby, pytania, wdzięczność, panikę.</li>
+              <li>Jegrin wskazuje Katedrę Imperatora Zwycięskiego jako kluczowy cel.</li>
+            </ol>
+
+            <h3>Ważne informacje do przekazania</h3>
+            <ul>
+              <li>Raurok przejął górne poziomy kopca i głosi, że Imperator umarł, lecz powróci.</li>
+              <li>Zakłady chemiczne bronią się od około dziewięćdziesięciu dni i kończą im się zapasy.</li>
+              <li>Raurok nazywa siebie „Heroldem Imperatora”.</li>
+              <li>Jego dawna siedziba lub centrum działań znajduje się przy Katedrze Imperatora Zwycięskiego.</li>
+            </ul>
+
+            <div class="note">
+              <strong>Dodatkowy atut sceny:</strong> tu możesz wprowadzić członków Domu Aromat jako konkretne
+              twarze wojny. Niech to nie będzie bezimienna masa. Wybierz 2-3 osoby z tła i daj im po jednym
+              zapamiętywalnym geście, lęku albo pragnieniu.
+            </div>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">H3 — Wiadomość o Katedrze</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL13 — Zakłady chemiczne</span>
+                  <span class="chip">IL14 — Jegrin Aromat i obrońcy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena8" class="scene">
+          <summary>
+            <h2>Scena 8 — Droga wyjścia przez rury</h2>
+            <p class="scene-intro">Klaustrofobiczna przeprawa przez odpływy i organiczno-przemysłowy horror.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Z zakładów nie da się wyjść zwyczajnie — snajperzy i miny blokują podejścia. Gabriella proponuje
+              drogę przez rury odpływowe. To niebezpieczna trasa przez osuszone przewody, w których może czaić
+              się pomiot Chaosu i gdzie sam teren jest przeciwnikiem.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Właz otwiera się z metalicznym jękiem i uderza w was odór czegoś pomiędzy ściekami, krwią
+              a chemią. Rury są szerokie, ale przytłaczająco ciasne, bo ich ściany oblepia zaschnięty osad,
+              szlam i rdza. Każdy krok rozchodzi się głuchym echem. Gdzieś dalej coś kapie z rytmem zbyt
+              regularnym, by było przypadkiem.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Jegrin wyjaśnia, że normalne wyjścia są obserwowane i zaminowane.</li>
+              <li>Gabriella proponuje trasę przez odpływy.</li>
+              <li>Drużyna przeciska się przez rurociąg, mierzy z trudnym terenem i ograniczoną widocznością.</li>
+              <li>Może dojść do starcia z pomiotem Chaosu lub inną potwornością czającą się w rurach.</li>
+              <li>Wyjście z rur prowadzi już w pobliże pustego, niepokojąco cichego kopca i katedry.</li>
+            </ol>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">Brak koniecznych</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL15 — Rurociągi odpływowe</span>
+                  <span class="chip">IL16 — Pomiot Chaosu w rurach</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena9" class="scene">
+          <summary>
+            <h2>Scena 9 — Katedra Imperatora Zwycięskiego</h2>
+            <p class="scene-intro">Jedna z najważniejszych scen klimatycznych. Pusty plac, procesja, relikwia i bluźnierstwo.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Bohaterowie docierają do opustoszałej dzielnicy i samej katedry. Wewnątrz tysiące wiernych
+              uczestniczą w makabrycznej procesji, a „biskup” Rauroka niesie relikwię świętej Salvei.
+              Gracze muszą zdecydować, czy uderzają od razu, próbują rozpoznać sytuację, ratować relikwię
+              albo minimalizować rzeź pośród bezbronnych wiernych.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Im bliżej świątyni, tym bardziej kopiec wydaje się martwy. Porzucone posterunki, puste koszary,
+              przewrócona statua Imperatora z odłupaną głową, brunatne sztandary w oknach. A jednak to nie
+              jest cisza. Z wnętrza katedry płynie śpiew — tysiące głosów, słabych, chorych, błagalnych,
+              zlewających się w jeden długi jęk modlitwy. Gdy przekraczacie próg, otwiera się przed wami
+              ogromna nawa pełna ludzi. Klęczą, śpiewają, czekają. Na ich twarzach widać głód, gorączkę,
+              pleśń, łzy i zachwyt. A przez środek świątyni idzie procesja.
+            </div>
+
+            <div class="readaloud">
+              Na jej czele kroczy istota w gnijącej, brunatnej szacie, po której pełzają larwy. W obu rękach
+              unosi relikwię — ludzki kręgosłup opleciony złotym drutem. Głos z wypaczonych głośników niesie się
+              po sklepieniu: „W tym momencie nasz pan, Herold, wznosi się ku linii granicznej, by połączyć się
+              ze swymi wiernymi...”
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Gabriella wyjaśnia znaczenie relikwii świętej Salvei.</li>
+              <li>Gracze obserwują procesję i mogą przygotować plan.</li>
+              <li>Biskup-opętaniec, kultyści i demoniczni słudzy zabezpieczają rytuał.</li>
+              <li>Jeśli gracze zwlekają, relikwia może zostać zbezczeszczona.</li>
+              <li>Walka w świątyni powinna być brutalna, ale pełna przeszkód w postaci tłumu i sakralnego wnętrza.</li>
+            </ol>
+
+            <div class="danger-box">
+              <strong>Najważniejsze napięcie tej sceny:</strong> nie chodzi wyłącznie o pokonanie przeciwników.
+              Chodzi o to, czy gracze zdołają uratować coś świętego w miejscu, które zostało zamienione
+              w rytualną maszynę rozkładu.
+            </div>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">H4 — Relikwia świętej Salvei</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL17 — Zewnętrze katedry</span>
+                  <span class="chip">IL18 — Wnętrze katedry i procesja</span>
+                  <span class="chip">IL19 — Biskup-opętaniec</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena10" class="scene">
+          <summary>
+            <h2>Scena 10 — Ucieczka z kościoła</h2>
+            <p class="scene-intro">Natychmiastowa eskalacja po zwycięstwie. Zwycięstwo w środku świątyni nie kończy problemu.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Po walce w katedrze z posadzki i naw zaczynają podnosić się masy trupów, a siewcy ospy
+              odcinają wyjścia. Drużyna musi wydostać się z kościoła z relikwią lub bez niej, decydując
+              czy przebija się przez masę ciał, czy ucieka górą przez figury i okna.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Gdy ostatni wrzask kona pod sklepieniem świątyni, słyszycie nowy dźwięk — szelest, chlupot,
+              przesuwanie. Ciała leżące na posadzce zaczynają drgać. Stosy trupów osuwają się i pęcznieją,
+              jakby pod nimi poruszało się coś wielkiego. Z pęknięć między zwłokami wychodzą blade dłonie.
+              Tysiące martwych, które jeszcze przed chwilą były tylko tłem tej profanacji, teraz podnoszą się
+              jak jedna, bezmyślna fala.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Opisuj nagłe przejście od triumfu do paniki.</li>
+              <li>Uaktywniają się siewcy ospy i masa ożywionych ciał.</li>
+              <li>Gracze wybierają drogę: przebijanie się do wrót albo wspinaczka na figury i wyjście przez okna.</li>
+              <li>Jeśli relikwia przetrwała, może działać jak duchowa osłona przed demonami.</li>
+              <li>Ocalałych z Domu Aromat można uratować albo stracić, zależnie od tempa i decyzji.</li>
+            </ol>
+
+            <div class="gm-box">
+              <strong>Tu ma być chaos.</strong> Nie licz tylko obrażeń. Opisuj ślizgającą się krew, depczące
+              stopy, ręce wyciągające się z ciał pod nogami, chory śpiew, który jeszcze przez chwilę brzmi
+              gdzieś w nawie mimo masakry.
+            </div>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">H4 — Relikwia świętej Salvei</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL20 — Martwi w katedrze</span>
+                  <span class="chip">IL21 — Wspinaczka po posągach i murze</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena11" class="scene">
+          <summary>
+            <h2>Scena 11 — Spotkanie cywilów</h2>
+            <p class="scene-intro">Moralny punkt zwrotny. Po drodze z katedry bohaterowie muszą zdecydować, czym jest dla nich lojalność Imperium.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Oddział sierżanta Taura zgromadził pod ścianą przerażonych cywilów i szykuje się do egzekucji
+              podejrzanych o skażenie. Wśród nich znajduje się Rura — początkująca psioniczka na granicy
+              utraty kontroli. Gracze mogą perswadować, blefować, odwoływać się do wiary, wezwać Corveya
+              albo dopuścić do rozstrzelania.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Za następnym załomem ulicy słyszycie płacz. Nie bojowy krzyk, nie panikę tłumu — tylko płacz
+              ludzi, którzy już zrozumieli, że nikt ich nie uratuje. Pod ścianą stoją cywile: wychudzeni,
+              drżący, ściśnięci jeden przy drugim. Naprzeciw nich ustawieni są szturmowcy z Potomków
+              Tempestus. Ich sierżant ma twarz człowieka, który modlił się długo, by dostać prawo do
+              naciśnięcia spustu, i jest gotów potraktować to jak akt łaski.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Drużyna widzi sytuację i ma chwilę na reakcję.</li>
+              <li>Sierżant Taur uzasadnia egzekucję strachem przed plagą, mutacją i utratą kontroli.</li>
+              <li>Gracze mogą wejść w negocjacje, autorytet, zastraszanie lub kontakt vox z Corveyem.</li>
+              <li>Jeśli zauważą Rudę i jej stan, sytuacja może nagle wymknąć się spod kontroli.</li>
+              <li>Rezultat wpływa na dalsze wsparcie ze strony Domu Aromat i oddziału Taura.</li>
+            </ol>
+
+            <div class="note">
+              <strong>Najmocniejsza wersja tej sceny:</strong> niech Taur nie będzie sadystą. On powinien
+              wierzyć, że robi to, co konieczne. Dzięki temu rozmowa będzie trudniejsza i ciekawsza.
+            </div>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">Brak koniecznych</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL22 — Cywile pod ścianą</span>
+                  <span class="chip">IL23 — Sierżant Taur i szturmowcy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena12" class="scene">
+          <summary>
+            <h2>Scena 12 — Stacja 6 i obóz żołnierzy</h2>
+            <p class="scene-intro">Scena wojskowa po części horrorowej. Corvey potrzebuje impulsu do wznowienia natarcia.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Bohaterowie docierają do Stacji 6, gdzie siły Imperium utknęły naprzeciw dobrze okopanej
+              zdradzieckiej gwardii. Kapitan Corvey przedstawia sytuację: sztorm Osnowy dławi morale,
+              artyleria nie działa jak powinna, a wejście na stację i dalej ku źródłu zjawiska wymaga
+              zdecydowanego działania.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Stacja 6 wygląda jak ranione zwierzę trzymane przy życiu wyłącznie siłą woli. Worki z piaskiem,
+              prowizoryczne osłony, rannych wynoszonych spod ognia, techników klęczących przy zepsutych voxach,
+              oficerów próbujących przekrzyczeć burzę. Nad wszystkim czarne błyskawice rysują po niebie
+              kształty, których lepiej nie rozpoznawać. Gdy Corvey odwraca się w waszą stronę, na jego twarzy
+              nie ma ulgi. Jest tylko chłodna kalkulacja człowieka, który właśnie dostał narzędzie do zadania
+              niemożliwego ciosu.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Corvey omawia sytuację na linii granicznej i wskazuje Stację 6 jako punkt wejścia do finału.</li>
+              <li>Gracze mogą obejrzeć teren, zebrać zapasy, dopiąć ekwipunek i przygotować plan.</li>
+              <li>MG podkreśla, że przeciwnik trzyma stację dzięki ciężkiej broni, bunkrom i Chimerze-redutzie.</li>
+              <li>Ta scena jest dobrym miejscem na krótką odprawę finałową przed wejściem w strefę Osnowy.</li>
+            </ol>
+
+            <h3>Ważne elementy tła</h3>
+            <ul>
+              <li>Stacja 6 leży przy jednej z głównych arterii kopca.</li>
+              <li>Heretycy okopali się wokół stacji i wykorzystują ją jako punkt obrony.</li>
+              <li>Burza Osnowy łamie morale, ale nie zatrzymała jeszcze natarcia całkowicie.</li>
+            </ul>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">H5 — Szkic Stacji 6</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL24 — Obóz Corveya przy Stacji 6</span>
+                  <span class="chip">IL25 — Linia graniczna i Chimera</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena13" class="scene">
+          <summary>
+            <h2>Scena 13 — Tunel i zasłona opada</h2>
+            <p class="scene-intro">Psychologiczny horror. Pierwsze bezpośrednie uderzenie burzy Osnowy w umysły postaci.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Wejście do Stacji 6 prowadzi przez tunel, w którym sztorm Osnowy ściska zmysły bohaterów.
+              Koszmary stają się namacalne, postacie mogą rzucić się na sojuszników, a drużyna musi ratować
+              siebie nawzajem słowami, autorytetem lub psychiczną dyscypliną.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Tunel jest ciemny, ale nie dlatego, że brak tu światła. To ciemność gęstsza, jakby sama
+              przestrzeń była czymś zapchana. Każdy krok odbija się z opóźnieniem, jak echo w złym śnie.
+              Nagle czujecie, że ktoś jest tu z wami. Nie obok. Tuż przy karku. W zbroi. W skórze.
+              W pamięci. Głosy z przeszłości zaczynają szeptać waszymi własnymi głosami.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Postacie wykonują testy odporności psychicznej na wpływ sztormu.</li>
+              <li>Niektórzy mogą popaść w amok i zobaczyć dawnych wrogów lub wyrzuty sumienia.</li>
+              <li>Sojusznicy pomagają im wrócić do zmysłów rozmową i testami społecznymi.</li>
+              <li>Scena ma odsłonić coś osobistego o bohaterach.</li>
+              <li>Po przejściu przez tunel drużyna wychodzi na peron.</li>
+            </ol>
+
+            <div class="gm-box">
+              <strong>Najlepszy sposób prowadzenia:</strong> zadawaj pytania graczom. „Kogo teraz widzisz?”,
+              „Jaki głos słyszysz?”, „Komu próbujesz udowodnić, że jeszcze żyjesz?”. Ta scena daje świetną
+              okazję do wykorzystania historii postaci bez przerywania rytmu przygody.
+            </div>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">Brak koniecznych</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL26 — Tunel spaczony przez Osnowę</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena14" class="scene">
+          <summary>
+            <h2>Scena 14 — Peron</h2>
+            <p class="scene-intro">Wyjście z wnętrza kopca na krawędź katastrofy. Wielka skala i pierwsze pełne spojrzenie na sztorm.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Bohaterowie wychodzą na peron dawnej kolei magnetycznej. Tory częściowo zniknęły, otoczenie
+              rozszarpuje burza, a daleko pod nimi wciąż trwa wojna. To scena oddechu wizualnego przed
+              wspinaczką — szeroki, niemal apokaliptyczny kadr.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Korytarz otwiera się na zewnątrz i nagle cały kopiec przestaje być ciasny. Przed wami rozciąga
+              się wysokość tak ogromna, że przez chwilę trudno ją objąć wzrokiem. Wiatr ryczy przez szczątki
+              peronu. Tam, gdzie kiedyś biegły tory, zieje przepaść. Daleko pod wami płoną czołgi i poruszają
+              się punkty ognia. Nad wszystkim szaleją czarne błyskawice, które nie rozświetlają nieba — one
+              wydają się je rozdzierać.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Drużyna opuszcza tunel i po raz pierwszy widzi pełną skalę sztormu.</li>
+              <li>MG pokazuje zniszczenia dawnej infrastruktury i odległość, która grozi śmiercią.</li>
+              <li>Gracze mogą zabezpieczyć liny, sprawdzić sprzęt wspinaczkowy i ustalić kolejność działań.</li>
+            </ol>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">H5 — Szkic Stacji 6</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL27 — Peron kolei magnetycznej</span>
+                  <span class="chip">IL28 — Burza nad Tora Armis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena15" class="scene">
+          <summary>
+            <h2>Scena 15 — Wspinaczka</h2>
+            <p class="scene-intro">Fizyczne zmaganie z kopcem i żywiołem. Droga ku finałowi jest sama w sobie próbą charakteru.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Bohaterowie wspinają się po zewnętrznych strukturach kopca. Burza Osnowy i wysokość są niemal
+              równorzędnymi przeciwnikami. To osobna scena, bo sama wspinaczka ma ciężar dramaturgiczny:
+              wyczerpuje, izoluje i buduje poczucie, że finał został zawieszony ponad zwykłym polem bitwy.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Metal jest śliski od deszczu i sadzy. Każdy chwyt wymaga siły większej, niż powinien, bo wiatr
+              stara się odciągnąć was od ściany i rzucić w pustkę. Z dołu niesie się huk wojny, lecz z góry
+              schodzi coś gorszego — szepczące przez sztorm słowa: „On powstanie... on powstanie...”
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Postacie wykonują testy wspinaczki i wzajemnie się asekurują.</li>
+              <li>Komplikacje mogą oznaczać obrażenia, utratę wyposażenia albo konieczność ratowania towarzysza.</li>
+              <li>W połowie wspinaczki pojawia się przelotny znak: światło kapsuły desantowej ginącej w sztormie.</li>
+              <li>Drużyna dociera do rejonu torowiska.</li>
+            </ol>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">Brak koniecznych</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL29 — Wspinaczka po ścianie kopca</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena16" class="scene">
+          <summary>
+            <h2>Scena 16 — Przez tory</h2>
+            <p class="scene-intro">Krótki, ale bardzo filmowy segment. Groza wysokości i paraliżującego zwątpienia.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Drużyna musi przejść przez poskręcane szczątki linii magnetycznej zawieszone niemal kilometr
+              nad ziemią. Porażka nie musi oznaczać od razu upadku — może znaczyć paraliż, panikę i konieczność
+              wyciągania ludzi z psychicznej krawędzi.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Tory nie są już torami. To splątana, poharatana konstrukcja wisząca nad bezdenną wysokością,
+              drżąca przy każdym uderzeniu wiatru. Stawiacie stopy na stali, która kiedyś niosła tłumy,
+              a teraz ledwie pamięta, czym była. Głos w burzy jest bliżej niż wcześniej. Nie słyszycie go
+              uszami. Słyszycie go w kościach.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Każda postać musi pokonać torowisko lub zatrzymać się z lęku.</li>
+              <li>Sojusznicy mogą pomagać słowem, autorytetem i przykładem.</li>
+              <li>Każda zwłoka wzmacnia presję sztormu i dokłada Traumy.</li>
+              <li>Po przejściu torów rozlega się nowe wezwanie z burzy: „Wstąpienie się zbliża”.</li>
+            </ol>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">Brak koniecznych</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL30 — Złamane tory nad przepaścią</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena17" class="scene">
+          <summary>
+            <h2>Scena 17 — Ostatnia prosta</h2>
+            <p class="scene-intro">Krótka scena wejścia do finału. Cel jest już widoczny, ale wciąż trzeba go dosięgnąć.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Ostatni odcinek to wejście na wyniesioną platformę. Światło błyskawic odsłania pulsujący wir
+              Chaosu i kokon zawieszony pośród szczątków anten. To chwila przed konfrontacją — ostatnie
+              dociśnięcie tempa i ostatnia szansa na krótką wymianę spojrzeń czy słów.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Nad wami, zaledwie kilkanaście metrów wyżej, wisi cel całej tej drogi. W świetle błyskawic
+              widzicie krawędź platformy, poszarpane anteny i coś jeszcze — wir, rozdarcie, ranę w samej
+              rzeczywistości. W jego centrum kołysze się kokon oblepiony metalem, kablami i czymś,
+              co wygląda jak zaschnięta tkanka. Cała burza zdaje się oddychać jego rytmem.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Bohaterowie pokonują ostatnią przeszkodę wspinaczkową.</li>
+              <li>MG buduje chwilę ciszy przed walką.</li>
+              <li>Jeśli gracze chcą, mogą wymienić krótkie deklaracje, modlitwy, przysięgi lub pożegnania.</li>
+              <li>Przejście do finału powinno być natychmiastowe i ciężkie.</li>
+            </ol>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">H5 — Szkic Stacji 6</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL31 — Platforma pod wirem Chaosu</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="scena18" class="scene">
+          <summary>
+            <h2>Scena 18 — Herold Nurgle’a</h2>
+            <p class="scene-intro">Walka finałowa. Raurok staje się czymś większym i gorszym od człowieka.</p>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie sceny</h3>
+            <p>
+              Na platformie bohaterowie stają naprzeciw serca sztormu: dronowi plagi, który stanowi ohydne
+              połączenie elementów kopca, demonicznej materii i ciała Rauroka. To właśnie ten byt jest
+              Heroldem Nurgle’a. Jego zniszczenie rozprasza sztorm i łamie kręgosłup oporu heretyków.
+            </p>
+
+            <h3>Sekcja dla Graczy</h3>
+            <div class="readaloud">
+              Gdy zbliżacie się do kokonu, wichura przybiera na sile. Pancerz platformy oblepia tłusta,
+              czarna wilgoć Osnowy. Metalowe płyty kokonu rozchylają się z jękiem, a ze środka wylatuje
+              plugawa istota — dron plagi, ale większy, cięższy, bardziej nienaturalny. W jego sylwetce
+              widać ślady kopca, wojny i człowieka, który pozwolił się pożreć własnej herezji. To już nie
+              jest tylko Raurok. To Herold.
+            </div>
+
+            <h3>Scena Krok-po-kroku</h3>
+            <ol>
+              <li>Opis pojawienia się Herolda i gwałtownego nasilenia sztormu.</li>
+              <li>Walka powinna wykorzystywać platformę, wysokość, błyskawice i niestabilne otoczenie.</li>
+              <li>MG może używać burzy jako dodatkowego zagrożenia i tła dla starcia.</li>
+              <li>Zniszczenie Herolda powoduje załamanie zjawiska i rozproszenie wiru.</li>
+              <li>Następuje natychmiastowa zmiana tonu: od piekła na krawędzi rzeczywistości do wojennego zwycięstwa z ciężkim kosztem.</li>
+            </ol>
+
+            <div class="danger-box">
+              <strong>Nie oszczędzaj opisu finału.</strong> To powinien być obraz wielki, nieludzki i bluźnierczy:
+              skorodowana świętość, gnijąca transcendencja, triumf, który dokonuje się dosłownie kilka sekund
+              przed upadkiem całego miejsca w pełne spaczenie.
+            </div>
+
+            <h3>Powiązane materiały</h3>
+            <div class="materials">
+              <div class="material">
+                <strong>Handouty</strong>
+                <div class="chips">
+                  <span class="chip">Brak koniecznych</span>
+                </div>
+              </div>
+              <div class="material">
+                <strong>Ilustracje</strong>
+                <div class="chips">
+                  <span class="chip">IL32 — Raurok / Herold Nurgle’a</span>
+                  <span class="chip">IL33 — Wir Chaosu nad platformą</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details id="zakonczenie" class="info-block" open>
+          <summary>
+            <h2>Zakończenie — Odzyskany kopiec</h2>
+          </summary>
+          <div class="scene-body">
+            <h3>Streszczenie zakończenia</h3>
+            <p>
+              Zniszczenie Herolda rozprasza sztorm Osnowy. W niebiosach pojawia się szczelina, przez którą
+              przebijają się siły Imperium, a artyleria odzyskuje zdolność prowadzenia skutecznego ognia.
+              Tora Armis po kilku dniach ciężkich walk wraca w ręce Imperium. Przywódcy rebelii zostają
+              straceni lub zamienieni w serwitory, inni trafiają do niewoli albo do oddziałów karnych.
+            </p>
+            <p>
+              Jegrin Aromat umacnia swoją pozycję, a Dom Aromat zyskuje szansę na wzrost znaczenia w kopcu.
+              Generał Hacker jest zadowolony z działań drużyny i może chcieć zachować ją jako sprawdzoną
+              grupę do kolejnych operacji specjalnych. Jeśli relikwia świętej Salvei przetrwała, jej ocalenie
+              stanie się propagandowym i religijnym symbolem odbicia miasta.
+            </p>
+
+            <h3>Warunki sukcesu</h3>
+            <ul>
+              <li>Pokonanie Herolda Nurgle’a i rozproszenie sztormu.</li>
+              <li>Przebicie się przez wszystkie etapy misji bez załamania operacji.</li>
+              <li>Opcjonalnie: uratowanie relikwii, cywilów i części sojuszników z Domu Aromat.</li>
+            </ul>
+
+            <h3>Warunki porażki</h3>
+            <ul>
+              <li>Śmierć drużyny przed dotarciem do finału.</li>
+              <li>Niepowstrzymanie Rauroka i pełne scalenie wiru z kopcem.</li>
+              <li>Utrata Stacji 6 i załamanie natarcia Imperium.</li>
+            </ul>
+
+            <h3>Opcjonalny epilog do odczytania</h3>
+            <div class="readaloud">
+              Gdy burza wreszcie cichnie, przez rozdartą chmurę przebija się blade światło. Nie jest czyste
+              ani piękne — to tylko zwykłe, zimne światło świata, który ocalał o włos. Pod wami Tora Armis
+              wciąż płonie. Z ruin unoszą się dymy, wyją syreny, dudnią działa. Ale wir nad kopcem gaśnie.
+              Herezja nie zwyciężyła tej nocy. Nie tutaj. Nie jeszcze.
+            </div>
+          </div>
+        </details>
+
+        <details id="przeciwnicy" class="info-block">
+          <summary>
+            <h2>Przeciwnicy</h2>
+          </summary>
+          <div class="scene-body">
+            <h3>Tabela przeciwników</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Nazwa</th>
+                  <th>Rola w scenariuszu</th>
+                  <th>Statystyki</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Heretyccy gwardziści</td>
+                  <td>Podstawowi przeciwnicy w desancie i przy Stacji 6.</td>
+                  <td><button class="stat-btn">Otwórz statystyki</button></td>
+                </tr>
+                <tr>
+                  <td>Szumowiny gangu Padliny</td>
+                  <td>Obsadzają most i tunele w iglicy.</td>
+                  <td><button class="stat-btn">Otwórz statystyki</button></td>
+                </tr>
+                <tr>
+                  <td>Mutanci</td>
+                  <td>Wsparcie szumowin przy przejściu do zakładów chemicznych.</td>
+                  <td><button class="stat-btn">Otwórz statystyki</button></td>
+                </tr>
+                <tr>
+                  <td>Chronogladiator</td>
+                  <td>Łowca Rauroka ścigający Gabrielę.</td>
+                  <td><button class="stat-btn">Otwórz statystyki</button></td>
+                </tr>
+                <tr>
+                  <td>Pomiot Chaosu</td>
+                  <td>Zagrożenie w rurach i strefach skażenia.</td>
+                  <td><button class="stat-btn">Otwórz statystyki</button></td>
+                </tr>
+                <tr>
+                  <td>Biskup-opętaniec</td>
+                  <td>Przywódca bluźnierczej procesji w katedrze.</td>
+                  <td><button class="stat-btn">Otwórz statystyki</button></td>
+                </tr>
+                <tr>
+                  <td>Kultyści</td>
+                  <td>Eskorta rytuału w katedrze.</td>
+                  <td><button class="stat-btn">Otwórz statystyki</button></td>
+                </tr>
+                <tr>
+                  <td>Siewca zarazy</td>
+                  <td>Demoniczny sługa w katedrze.</td>
+                  <td><button class="stat-btn">Otwórz statystyki</button></td>
+                </tr>
+                <tr>
+                  <td>Siewcy ospy</td>
+                  <td>Fala przeciwników podczas ucieczki z kościoła.</td>
+                  <td><button class="stat-btn">Otwórz statystyki</button></td>
+                </tr>
+                <tr>
+                  <td>Chimera-reduta</td>
+                  <td>Kluczowa przeszkoda obronna przy Stacji 6.</td>
+                  <td><button class="stat-btn">Otwórz statystyki</button></td>
+                </tr>
+                <tr>
+                  <td>Herold Nurgle’a / Raurok</td>
+                  <td>Finałowy przeciwnik i serce sztormu Osnowy.</td>
+                  <td><button class="stat-btn">Otwórz statystyki</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+
+        <details id="npc" class="info-block">
+          <summary>
+            <h2>NPC — Postacie niezależne</h2>
+          </summary>
+          <div class="scene-body">
+            <h3>Tabela NPC</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Nazwa</th>
+                  <th>Wygląd</th>
+                  <th>Rola</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Kapitan Corvey</td>
+                  <td>Surowy oficer Potomków Tempestus, opanowany, rzeczowy, zmęczony wojną, ale nadal stalowo zdyscyplinowany.</td>
+                  <td>Dowódca operacji. Zleca misję, utrzymuje łączność z drużyną i stanowi głos wojskowej konieczności.</td>
+                </tr>
+                <tr>
+                  <td>Epsilon 6</td>
+                  <td>Serwoczaszka o wiernym, niemal psim zachowaniu; lumeny, szyfrujące układy, ciche popiskiwanie i posłuszny dryf obok wybranego bohatera.</td>
+                  <td>Łączność, zwiad, oświetlenie, mały element charakterologiczny drużyny. Jednocześnie symbol imperialnej służby trwającej po śmierci.</td>
+                </tr>
+                <tr>
+                  <td>Gabriella</td>
+                  <td>Wychudzona, brudna mieszkanka kopca, ruchliwa, czujna, z twarzą człowieka, który za długo żył w oblężeniu.</td>
+                  <td>Przewodniczka po iglicy, łącznik z Domem Aromat, emocjonalne zakorzenienie przygody w losie mieszkańców.</td>
+                </tr>
+                <tr>
+                  <td>Jegrin Aromat</td>
+                  <td>Przywódca oblężonych lojalistów, zmęczony, lecz dumny zarządca zakładów chemicznych.</td>
+                  <td>Dostarcza kluczowych informacji o Rauroku, oblężeniu i Katedrze. Może zapewnić wsparcie.</td>
+                </tr>
+                <tr>
+                  <td>Sierżant Taur</td>
+                  <td>Pobożny szturmowiec o twardej twarzy, ślepo oddany Imperialnemu Credo, z widocznymi śladami samobiczowania.</td>
+                  <td>Moralny test dla drużyny. Nie jest zdrajcą, lecz fanatykiem przekonanym, że działa słusznie.</td>
+                </tr>
+                <tr>
+                  <td>Rura</td>
+                  <td>Przerażona kobieta z cywilów, spięta, rozbita psychicznie, na progu utraty kontroli nad rozwijającymi się mocami psionicznymi.</td>
+                  <td>Zapłon kryzysu w scenie z egzekucją. Od jej losu zależy ton tej części przygody.</td>
+                </tr>
+                <tr>
+                  <td>Kapral Bingham</td>
+                  <td>Specjalista voxowy działający przy Corveyu, bardziej słyszalny przez urządzenie niż widoczny na scenie.</td>
+                  <td>Obsługuje odpowiedzi w łączności i pomaga poczuć wojskowy łańcuch dowodzenia.</td>
+                </tr>
+                <tr>
+                  <td>Raurok</td>
+                  <td>Początkowo nieobecny fizycznie, stale obecny przez ślady, psy wojenne, rytuały i głosy; w finale przeobrażony w Herolda.</td>
+                  <td>Główny antagonista przygody, czarnoksiężnik Chaosu i źródło katastrofy.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+
+        <details id="ilustracje" class="info-block">
+          <summary>
+            <h2>Ilustracje</h2>
+          </summary>
+          <div class="scene-body">
+            <h3>Lista ilustracji do przygotowania</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Nr</th>
+                  <th>Temat</th>
+                  <th>Krótki prompt / opis</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>IL1</td><td>Wnętrze Valkyrii</td><td>Militarne wnętrze transportowca, czerwone światła, Potomkowie Tempestus, święte inskrypcje, napięcie przed desantem.</td></tr>
+                <tr><td>IL2</td><td>Epsilon 6</td><td>Imperialna serwoczaszka z lumenami i szyfrującymi układami, klimat wojskowo-techniczny.</td></tr>
+                <tr><td>IL3</td><td>Plac desantowy</td><td>Strefa lądowania pod ogniem przy ścianie kopca, dym, beton, ogień przeciwlotniczy.</td></tr>
+                <tr><td>IL4</td><td>Ostrzał z Valkyrii</td><td>Valkyria w zawisie nad ruinami, smugacze, wybuchy, wojenny chaos.</td></tr>
+                <tr><td>IL5</td><td>Hangar</td><td>Opuszczony hangar kopca, skrzynie, pęknięty beton, cisza po walce.</td></tr>
+                <tr><td>IL6</td><td>Skażona kapliczka</td><td>Mała imperialna kapliczka wypaczona przez Chaos, subtelnie bluźniercza, niepokojąca.</td></tr>
+                <tr><td>IL7</td><td>Szyb</td><td>Wysoki pionowy szyb techniczny, liny, rusztowania, czerwone światła w ciemności.</td></tr>
+                <tr><td>IL8</td><td>Zjazd</td><td>Bohaterowie zjeżdżający po linach w otchłań kopca.</td></tr>
+                <tr><td>IL9</td><td>Gabriella</td><td>Młoda kobieta z kopca, brudna, zdeterminowana, w łachmanach i improwizowanym oporządzeniu.</td></tr>
+                <tr><td>IL10</td><td>Chronogladiator</td><td>Groteskowo zaugmentowany łowca, gladiatorska broń zrośnięta z kończynami.</td></tr>
+                <tr><td>IL11</td><td>Most</td><td>Wąski pomost nad przepaścią we wnętrzu kopca.</td></tr>
+                <tr><td>IL12</td><td>Gang Padliny</td><td>Heretyckie szumowiny w maskach czaszek, barykady, narkotyczny i przemocowy klimat.</td></tr>
+                <tr><td>IL13</td><td>Zakłady chemiczne</td><td>Industrialna hala z improwizowanym obozem uchodźców i obrońców.</td></tr>
+                <tr><td>IL14</td><td>Jegrin i obrońcy</td><td>Zmęczeni lojaliści Domu Aromat, dzieci, robotnicy, improwizowana obrona.</td></tr>
+                <tr><td>IL15</td><td>Rury</td><td>Gigantyczny rurociąg odpływowy, rdza, ścieki, szlam, mrok.</td></tr>
+                <tr><td>IL16</td><td>Pomiot w rurach</td><td>Chaosowy stwór w klaustrofobicznym przewodzie.</td></tr>
+                <tr><td>IL17</td><td>Katedra z zewnątrz</td><td>Plac przed katedrą, przewrócona statua Imperatora, brunatne sztandary, pustka.</td></tr>
+                <tr><td>IL18</td><td>Wnętrze katedry</td><td>Monumentalna nawa pełna wiernych, procesja, ponury sakralny rozkład.</td></tr>
+                <tr><td>IL19</td><td>Biskup-opętaniec</td><td>Gnijący pseudo-biskup z relikwią świętej Salvei.</td></tr>
+                <tr><td>IL20</td><td>Martwi w katedrze</td><td>Posadzka zasypana ciałami, z których zaczyna podnosić się fala trupów.</td></tr>
+                <tr><td>IL21</td><td>Ucieczka górą</td><td>Wspinaczka po figurach i murach świątyni podczas naporu z dołu.</td></tr>
+                <tr><td>IL22</td><td>Cywile</td><td>Przerażeni mieszkańcy pod ścianą, dzieci, kobiety, robotnicy.</td></tr>
+                <tr><td>IL23</td><td>Taur</td><td>Szturmowiec Potomków Tempestus gotowy do egzekucji.</td></tr>
+                <tr><td>IL24</td><td>Obóz Corveya</td><td>Linia frontu przy Stacji 6, worki z piaskiem, oficerowie, rannych, sztorm.</td></tr>
+                <tr><td>IL25</td><td>Chimera-reduta</td><td>Okopana Chimera stanowiąca punkt oporu zdradzieckiej gwardii.</td></tr>
+                <tr><td>IL26</td><td>Tunel Osnowy</td><td>Wąski tunel z halucynacyjną, psychiczną grozą.</td></tr>
+                <tr><td>IL27</td><td>Peron</td><td>Ruiny peronu kolei magnetycznej na ogromnej wysokości.</td></tr>
+                <tr><td>IL28</td><td>Burza</td><td>Czarne błyskawice nad kopcem, wojna w dole, apokaliptyczny widok.</td></tr>
+                <tr><td>IL29</td><td>Wspinaczka</td><td>Bohaterowie wspinający się po zewnętrznej ścianie kopca w burzy.</td></tr>
+                <tr><td>IL30</td><td>Tory</td><td>Połamane tory zawieszone nad przepaścią, prawie nierealna wysokość.</td></tr>
+                <tr><td>IL31</td><td>Platforma finału</td><td>Wyniesiona platforma, wir Chaosu, szczątki anten.</td></tr>
+                <tr><td>IL32</td><td>Herold Nurgle’a</td><td>Dron plagi z elementami Rauroka i struktury kopca, monumentalny, ohydny.</td></tr>
+                <tr><td>IL33</td><td>Finałowa burza</td><td>Walka pod wirującą szczeliną rzeczywistości i czarnymi błyskawicami.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+
+        <details id="handouty" class="info-block">
+          <summary>
+            <h2>Handouty</h2>
+          </summary>
+          <div class="scene-body">
+            <h3>Lista przydatnych handoutów</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Nr</th>
+                  <th>Nazwa</th>
+                  <th>Zastosowanie</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>H1</td>
+                  <td>Rozkazy Corveya</td>
+                  <td>Krótki tekst voxu lub rozkazu na start: cel, stawka, punkt wejścia, brak gwarancji odwrotu.</td>
+                </tr>
+                <tr>
+                  <td>H2</td>
+                  <td>Notka o Epsilon 6</td>
+                  <td>Mała karta dla graczy przypominająca, że serwoczaszka może świecić, zwiadować i pomagać technologicznie.</td>
+                </tr>
+                <tr>
+                  <td>H3</td>
+                  <td>Wiadomość o Katedrze</td>
+                  <td>Krótki zapis voxu lub notatki Jegrina: Raurok, relikwia, Katedra Imperatora Zwycięskiego.</td>
+                </tr>
+                <tr>
+                  <td>H4</td>
+                  <td>Relikwia świętej Salvei</td>
+                  <td>Grafika lub opis relikwii do pokazania graczom w chwili jej uratowania lub zagrożenia profanacją.</td>
+                </tr>
+                <tr>
+                  <td>H5</td>
+                  <td>Szkic Stacji 6</td>
+                  <td>Schemat sytuacyjny ostatniego segmentu: stacja, peron, platforma, kierunek wspinaczki.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="note">
+              <strong>Które handouty są naprawdę potrzebne?</strong> Najbardziej użyteczne w praktyce są H1,
+              H3 i H5. H2 i H4 są opcjonalne, ale bardzo dobrze wzmacniają klimat.
+            </div>
+          </div>
+        </details>
+
+        <div class="footer-space"></div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    function changeFont(delta) {
+      const root = document.documentElement;
+      const current = parseInt(getComputedStyle(root).getPropertyValue('--content-font-size'));
+      const next = Math.max(14, Math.min(28, current + delta));
+      root.style.setProperty('--content-font-size', next + 'px');
+    }
+  </script>
+</body>
+</html>
